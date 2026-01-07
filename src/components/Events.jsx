@@ -28,7 +28,13 @@ export function EventCard() {
   return (
     <div className="flex flex-col items-center justify-center gap-y-[2vw]">
       <div className="h-[57vh] w-[22vw] p-[1vw] relative flex items-center justify-center rounded-full border-5 border-primary">
-        <div className="size-full bg-primary rounded-full"></div>
+        <div className="size-full rounded-full overflow-hidden">
+          <img
+            src="https://framerusercontent.com/images/GSbqcDKqnrwlakZFBrW7dNukUr8.png?scale-down-to=1024&width=1051&height=1378"
+            alt="event"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="h-auto w-[15vw] absolute right-[-32%] top-[33%] ">
           <Image
             src={"/img/moon.png"}
@@ -59,8 +65,12 @@ export function EventCard() {
       </div>
       <div className="relative">
         <p className="text40 font-semibold tracking-tight">Mehendi</p>
-        <p className="text12 font-semibold leading-[1.1]">Friday, 13th March 2026</p>
-        <p className="text12 font-semibold leading-[1.1]">The Savay, Maussorie</p>
+        <p className="text12 font-semibold leading-[1.1]">
+          Friday, 13th March 2026
+        </p>
+        <p className="text12 font-semibold leading-[1.1]">
+          The Savay, Maussorie
+        </p>
         <p className="text12 font-semibold leading-[1.1]">6pm Onwards</p>
         <Link className="underline text12 font-bold " href="#">
           See the route
