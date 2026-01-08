@@ -95,7 +95,6 @@ export default function DecorativeSection() {
         <Image
           width={1350}
           height={900}
-          sizes="min(max(min(100vw, 1500px), 1px), 1500px)"
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
@@ -103,7 +102,6 @@ export default function DecorativeSection() {
         <Image
           width={1350}
           height={900}
-          sizes="min(max(min(100vw, 1500px), 1px), 1500px)"
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
@@ -113,7 +111,6 @@ export default function DecorativeSection() {
         <Image
           width={1350}
           height={900}
-          sizes="min(max(min(100vw, 1500px), 1px), 1500px)"
           src="/img/borderl.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -135,7 +132,6 @@ export default function DecorativeSection() {
         <Image
           width={1350}
           height={900}
-          sizes="min(max(min(100vw, 1500px), 1px), 1500px)"
           src="/img/borderl.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -156,7 +152,6 @@ export default function DecorativeSection() {
         <Image
           width={1350}
           height={900}
-          sizes="min(max(min(100vw, 1500px), 1px), 1500px)"
           src="/img/borderb.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -166,7 +161,6 @@ export default function DecorativeSection() {
         <Image
           width={1350}
           height={900}
-          sizes="min(max(min(100vw, 1500px), 1px), 1500px)"
           src="/img/om.png"
           alt=""
           className="block w-full h-full object-contain object-center"
@@ -222,7 +216,6 @@ export default function DecorativeSection() {
             style={floatY1Style}
             width="839"
             height="826"
-            sizes="823px"
             src="https://framerusercontent.com/images/zGRmbM0Kc7cI5GZh2XKWu9xP920.png?width=839&height=826"
             alt=""
             className="block w-full h-full object-contain object-center"
@@ -233,7 +226,6 @@ export default function DecorativeSection() {
             style={floatY2Style}
             width="839"
             height="826"
-            sizes="823px"
             src="https://framerusercontent.com/images/f7Vmkbdc4BW3zKHb26ksJL3fjE.png?width=713&height=698"
             alt=""
             className="block w-full h-full object-contain object-center"
@@ -244,7 +236,6 @@ export default function DecorativeSection() {
             style={floatYCenterStyle}
             width="839"
             height="826"
-            sizes="823px"
             src="https://framerusercontent.com/images/twvHU5G71aUcNiM3cKNcpwJs9M.png?width=1130&height=897"
             alt=""
             className="block w-full h-full object-contain object-center"
@@ -256,7 +247,6 @@ export default function DecorativeSection() {
             style={floatY3Style}
             width="839"
             height="826"
-            sizes="823px"
             src="https://framerusercontent.com/images/zGRmbM0Kc7cI5GZh2XKWu9xP920.png?width=839&height=826"
             alt=""
             className="block w-full h-full object-contain object-center"
@@ -267,7 +257,6 @@ export default function DecorativeSection() {
             style={floatY4Style}
             width="839"
             height="826"
-            sizes="823px"
             src="https://framerusercontent.com/images/f7Vmkbdc4BW3zKHb26ksJL3fjE.png?width=713&height=698"
             alt=""
             className="block w-full h-full object-contain object-center"
