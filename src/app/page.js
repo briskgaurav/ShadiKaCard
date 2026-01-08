@@ -13,7 +13,7 @@ export default function page() {
   return (
     <>
       <HeroSection />
-      {/* <DecorativeSection /> */}
+      <DecorativeSection />
       <Section3 />
       <Events />
       <SeeTheRoute />
