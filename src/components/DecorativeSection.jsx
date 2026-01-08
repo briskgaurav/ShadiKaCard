@@ -1,118 +1,96 @@
 "use client"
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import useTablet from "./IsTablet";
-import gsap from "gsap";
 
 export default function DecorativeSection() {
 
   const isTablet = useTablet();
-  
-  const treeLeftRef = useRef(null);
-  const treeRightRef = useRef(null);
-  const cloudHouseRef = useRef(null);
-  const moonRef = useRef(null);
-  const balloonRef = useRef(null);
-  const floatYLeft1Ref = useRef(null);
-  const floatYLeft2Ref = useRef(null);
-  const floatYCenterRef = useRef(null);
-  const floatY1Ref = useRef(null);
-  const floatY2Ref = useRef(null);
 
-  useEffect(() => {
-    // Tree Left animation
-    gsap.to(treeLeftRef.current, {
-      x: -20,
-      duration: 5,
-      ease: "linear",
-      yoyo: true,
-      repeat: -1,
-    });
+  const treeLeftStyle = {
+    animation: "treeLeft 5s linear infinite alternate"
+  };
 
-    // Tree Right animation
-    gsap.to(treeRightRef.current, {
-      x: 30,
-      duration: 5,
-      ease: "linear",
-      yoyo: true,
-      repeat: -1,
-    });
+  const treeRightStyle = {
+    animation: "treeRight 5s linear infinite alternate"
+  };
 
-    // Cloud House animation
-    gsap.to(cloudHouseRef.current, {
-      x: 100,
-      duration: 5,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const cloudHouseStyle = {
+    animation: "cloudHouse 5s ease-in-out infinite alternate"
+  };
 
-    // Moon animation
-    gsap.to(moonRef.current, {
-      rotation: 5,
-      duration: 2.5,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const moonStyle = {
+    animation: "moonRotate 2.5s ease-in-out infinite alternate"
+  };
 
-    // Balloon animation
-    gsap.to(balloonRef.current, {
-      y: -20,
-      duration: 2,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const balloonStyle = {
+    animation: "balloon 2s ease-in-out infinite alternate"
+  };
 
-    // Float Y Left 1 animation
-    gsap.to(floatYLeft1Ref.current, {
-      y: 8,
-      duration: 2,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const floatY1Style = {
+    animation: "floatY1 2s ease-in-out infinite alternate"
+  };
 
-    // Float Y Left 2 animation
-    gsap.to(floatYLeft2Ref.current, {
-      y: -8,
-      duration: 2.5,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const floatY2Style = {
+    animation: "floatY2 2.5s ease-in-out infinite alternate"
+  };
 
-    // Float Y Center animation
-    gsap.to(floatYCenterRef.current, {
-      y: 5,
-      duration: 3,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const floatYCenterStyle = {
+    animation: "floatYCenter 3s ease-in-out infinite alternate"
+  };
 
-    // Float Y 1 animation
-    gsap.to(floatY1Ref.current, {
-      y: 8,
-      duration: 1.5,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
+  const floatY3Style = {
+    animation: "floatY3 1.5s ease-in-out infinite alternate"
+  };
 
-    // Float Y 2 animation
-    gsap.to(floatY2Ref.current, {
-      y: 10,
-      duration: 2.5,
-      ease: "power1.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
-  }, []);
+  const floatY4Style = {
+    animation: "floatY4 2.5s ease-in-out infinite alternate"
+  };
 
   return (
     <div className="min-h-[350vh] max-md:min-h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] h-fit ">
+      <style jsx>{`
+        @keyframes treeLeft {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-20px); }
+        }
+        @keyframes treeRight {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(30px); }
+        }
+        @keyframes cloudHouse {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(100px); }
+        }
+        @keyframes moonRotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(5deg); }
+        }
+        @keyframes balloon {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-20px); }
+        }
+        @keyframes floatY1 {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(8px); }
+        }
+        @keyframes floatY2 {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-8px); }
+        }
+        @keyframes floatYCenter {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(5px); }
+        }
+        @keyframes floatY3 {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(8px); }
+        }
+        @keyframes floatY4 {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(10px); }
+        }
+      `}</style>
       <div className="h-full w-full absolute inset-0">
         <Image
           width={1350}
@@ -144,7 +122,7 @@ export default function DecorativeSection() {
       {/* TREE LEFT */}
       <div className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%]">
         <Image
-          ref={treeLeftRef}
+          style={treeLeftStyle}
           src="/img/tree_21.png"
           alt=""
           width={1350}
@@ -166,7 +144,7 @@ export default function DecorativeSection() {
       {/* TREE RIGHT */}
       <div className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%]">
         <Image
-          ref={treeRightRef}
+          style={treeRightStyle}
           src="/img/tree_1.png"
           alt=""
           width={1350}
@@ -207,7 +185,7 @@ export default function DecorativeSection() {
       {/* CLOUD HOUSE */}
       <div className="h-[60%] w-[70%] max-md:w-[80%] max-md:top-[55%] absolute left-1/2 -translate-x-1/2 z-5 top-[46%] translate-y-[-50%]">
         <Image
-          ref={cloudHouseRef}
+          style={cloudHouseStyle}
           src="/img/cloud_House.png"
           alt=""
           width={1350}
@@ -218,7 +196,7 @@ export default function DecorativeSection() {
       {/* MOON */}
       <div className="h-[60%] w-[30%] max-md:w-[45%] max-md:left-[72%] max-md:top-[64%] absolute left-[80%] -translate-x-1/2 z-5 top-[56%] translate-y-[-50%]">
         <Image
-          ref={moonRef}
+          style={moonStyle}
           src="/img/moon.png"
           alt=""
           width={1350}
@@ -229,7 +207,7 @@ export default function DecorativeSection() {
       {/* BALOON */}
       <div className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%]">
         <Image
-          ref={balloonRef}
+          style={balloonStyle}
           src={isTablet ? "/img/shoe_Balloon_1.png" : "/img/shoe_Balloon_2.png"}
           alt=""
           width={1350}
@@ -241,7 +219,7 @@ export default function DecorativeSection() {
       <div className="h-[100vh] relative w-full z-2 ">
         <div className="h-full w-full left-[5%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[0%] rotate-10 translate-x-[-50%] absolute z-2">
           <img
-            ref={floatYLeft1Ref}
+            style={floatY1Style}
             width="839"
             height="826"
             sizes="823px"
@@ -252,7 +230,7 @@ export default function DecorativeSection() {
         </div>
         <div className="h-full w-full left-[25%] top-[-5%] max-md:top-[-8%] max-md:left-[20%] max-md:-rotate-30 -rotate-20 translate-x-[-50%] absolute z-1">
           <img
-            ref={floatYLeft2Ref}
+            style={floatY2Style}
             width="839"
             height="826"
             sizes="823px"
@@ -263,7 +241,7 @@ export default function DecorativeSection() {
         </div>
         <div className="h-full w-[60%] max-md:w-[100%] left-[50%] top-[2%] max-md:top-[-4%] translate-x-[-50%] absolute z-0">
           <img
-            ref={floatYCenterRef}
+            style={floatYCenterStyle}
             width="839"
             height="826"
             sizes="823px"
@@ -275,7 +253,7 @@ export default function DecorativeSection() {
 
         <div className="h-full w-full left-[95%] max-md:w-[80%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[1%] -rotate-10 translate-x-[-50%] absolute z-2">
           <img
-            ref={floatY1Ref}
+            style={floatY3Style}
             width="839"
             height="826"
             sizes="823px"
@@ -286,7 +264,7 @@ export default function DecorativeSection() {
         </div>
         <div className="h-full w-full max-md:left-[85%] max-md:top-[-6%] left-[77%] top-[-3%] scale-x-[-1] max-md:rotate-30 rotate-20 translate-x-[-50%] absolute z-1">
           <img
-            ref={floatY2Ref}
+            style={floatY4Style}
             width="839"
             height="826"
             sizes="823px"
