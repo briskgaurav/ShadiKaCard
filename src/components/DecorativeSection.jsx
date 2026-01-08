@@ -213,22 +213,22 @@ export default function DecorativeSection() {
       </div>
 
       <div className="h-[100vh] relative w-full z-2 ">
-        <div className="h-full w-full left-[5%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[0%] rotate-10 translate-x-[-50%] absolute z-2">
-          <img
+        <div className="h-full w-full left-[10%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[-2%] -rotate-60 translate-x-[-50%] absolute z-2">
+          <Image
             style={floatY1Style}
             width="839"
             height="826"
-            src="https://framerusercontent.com/images/zGRmbM0Kc7cI5GZh2XKWu9xP920.png?width=839&height=826"
+            src="/img/flower_2.png"
             alt=""
             className="block w-full h-full object-contain object-center"
           />
         </div>
         <div className="h-full w-full left-[25%] top-[-5%] max-md:top-[-8%] max-md:left-[20%] max-md:-rotate-30 -rotate-20 translate-x-[-50%] absolute z-1">
-          <img
+          <Image
             style={floatY2Style}
             width="839"
             height="826"
-            src="https://framerusercontent.com/images/f7Vmkbdc4BW3zKHb26ksJL3fjE.png?width=713&height=698"
+            src="/img/flower_1.png"
             alt=""
             className="block w-full h-full object-contain object-center"
           />
@@ -244,22 +244,22 @@ export default function DecorativeSection() {
           />
         </div>
 
-        <div className="h-full w-full left-[95%] max-md:w-[80%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[1%] -rotate-10 translate-x-[-50%] absolute z-2">
-          <img
+        <div className="h-full w-full left-[90%] max-md:w-[80%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[-2%] rotate-60 translate-x-[-50%] absolute z-2">
+          <Image
             style={floatY3Style}
             width="839"
             height="826"
-            src="https://framerusercontent.com/images/zGRmbM0Kc7cI5GZh2XKWu9xP920.png?width=839&height=826"
+            src="/img/flower_2.png"
             alt=""
             className="block w-full h-full object-contain object-center"
           />
         </div>
         <div className="h-full w-full max-md:left-[85%] max-md:top-[-6%] left-[77%] top-[-3%] scale-x-[-1] max-md:rotate-30 rotate-20 translate-x-[-50%] absolute z-1">
-          <img
+          <Image
             style={floatY4Style}
             width="839"
             height="826"
-            src="https://framerusercontent.com/images/f7Vmkbdc4BW3zKHb26ksJL3fjE.png?width=713&height=698"
+            src="/img/flower_1.png"
             alt=""
             className="block w-full h-full object-contain object-center"
           />
