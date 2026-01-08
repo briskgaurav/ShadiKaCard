@@ -133,6 +133,47 @@ export default function DecorativeSection() {
           className="w-full h-full object-cover object-center"
         />
       </div>
+      <div className="h-[15%] w-[15%] max-md:w-[20%] z-10 absolute right-[-1%] bottom-[-2%]">
+        <Image
+          width={1920}
+          height={1080}
+          quality={75}
+          src="/img/Ganesh.png"
+          alt=""
+          className="w-full h-full object-contain object-center"
+        />
+      </div>
+      <div className="h-[20%] scale-x-[-1] w-[20%] max-md:w-[20%] z-9 absolute right-[-3.3%] bottom-[-3.5%]">
+        <Image
+          width={1920}
+          height={1080}
+          quality={75}
+          src="/img/ganeshbg.png"
+          alt=""
+          className="w-full h-full object-contain object-center"
+        />
+      </div>
+      <div className="h-[15%] w-[15%]  max-md:w-[20%] z-10 absolute left-[-1%] bottom-[-2%]">
+        <Image
+          width={1920}
+          height={1080}
+          quality={75}
+          src="/img/Ganesh.png"
+          alt=""
+          className="w-full h-full scale-x-[-1] object-contain object-center"
+        />
+      </div>
+      <div className="h-[20%] scale-x-[1] w-[20%] max-md:w-[20%] z-9 absolute left-[-3.3%] bottom-[-3.5%]">
+        <Image
+          width={1920}
+          height={1080}
+          quality={75}
+          src="/img/ganeshbg.png"
+          alt=""
+          className="w-full h-full object-contain object-center"
+        />
+      </div>
+
       {/* TREE LEFT */}
       <div
         id="treeLeftWrapper"
