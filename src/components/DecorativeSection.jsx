@@ -102,22 +102,26 @@ export default function DecorativeSection() {
   return (
     <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] ">
       <div className="h-full w-full absolute inset-0">
-        <Image
-          width={500}
-          height={500}
-          quality={50}
-          src="/img/blue_Star_Bg.png"
-          alt=""
-          className="block w-full h-1/2 object-cover object-center"
-        />
-        <Image
-          width={500}
-          height={500}
-          quality={50}
-          src="/img/blue_Star_Bg.png"
-          alt=""
-          className="block w-full h-1/2 object-cover object-center"
-        />
+        <div className="h-1/2 w-full">
+          <Image
+            width={500}
+            height={500}
+            quality={50}
+            src="/img/blue_Star_Bg.png"
+            alt=""
+            className="block w-full h-full object-cover object-center"
+          />
+        </div>
+        <div className="h-1/2 w-full">
+          <Image
+            width={500}
+            height={500}
+            quality={50}
+            src="/img/blue_Star_Bg.png"
+            alt=""
+            className="block w-full h-full object-cover object-center"
+          />
+        </div>
       </div>
       <div className="h-full w-[10%] max-md:w-[20%] z-4 absolute inset-0">
         <Image
