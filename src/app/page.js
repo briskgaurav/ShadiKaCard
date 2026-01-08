@@ -7,11 +7,13 @@ import Events from "@/components/Events";
 import SeeTheRoute from "@/components/SeeTheRoute";
 import ThingsKnow from "@/components/ThingsKnow";
 import Footer from "@/components/Footer";
+import Sound from "@/components/Sound";
 
 export default function page() {
   return (
     <>
       <HeroSection />
+      <Sound />
       <DecorativeSection />
       <Section3 />
       <Events /> 
