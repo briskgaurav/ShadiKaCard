@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-export function useTablet() {
+function useTablet() {
   const [isTablet, setIsTablet] = useState(false)
 
   useEffect(() => {
