@@ -95,7 +95,7 @@ export default function DecorativeSection() {
         <Image
           width={500}
           height={500}
-          loading="eager"
+        
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
