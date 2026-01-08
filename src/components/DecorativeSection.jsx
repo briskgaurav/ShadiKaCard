@@ -104,33 +104,33 @@ export default function DecorativeSection() {
       <div className="h-full w-full absolute inset-0">
         <div className="h-1/2 w-full">
           <Image
-            width={500}
-            height={500}
-            quality={50}
+           width={1920}
+           height={1080}
+            quality={75}
             src="/img/blue_Star_Bg.png"
             alt=""
-            className="block w-full h-full object-cover object-center"
+            className=" w-full h-full object-cover object-center"
           />
         </div>
         <div className="h-1/2 w-full">
           <Image
-            width={500}
-            height={500}
-            quality={50}
+            width={1920}
+            height={1080}
+            quality={75}
             src="/img/blue_Star_Bg.png"
             alt=""
-            className="block w-full h-full object-cover object-center"
+            className=" w-full h-full object-cover object-center"
           />
         </div>
       </div>
       <div className="h-full w-[10%] max-md:w-[20%] z-4 absolute inset-0">
         <Image
-          width={500}
-          height={500}
-          quality={50}
+           width={1920}
+           height={1080}
+          quality={75}
           src="/img/borderl.png"
           alt=""
-          className="block w-full h-full object-cover object-center"
+          className=" w-full h-full object-cover object-center"
         />
       </div>
       {/* TREE LEFT */}
@@ -139,21 +139,21 @@ export default function DecorativeSection() {
           id="treeLeftImage"
           src="/img/tree_21.png"
           alt=""
-          width={500}
-          height={500}
-          quality={50}
-          className="block w-full h-full object-contain"
+          width={1920}
+          height={1080}
+          quality={75}
+          className=" w-full h-full object-contain"
         />
       </div>
 
       <div className="h-full w-[10%] max-md:w-[20%] absolute z-4 scale-x-[-1] right-0">
         <Image
-          width={500}
-          height={500}
-          quality={50}
+          width={1920}
+          height={1080}
+          quality={75}
           src="/img/borderl.png"
           alt=""
-          className="block w-full h-full object-cover object-center"
+          className=" w-full h-full object-cover object-center"
         />
       </div>
       {/* TREE RIGHT */}
@@ -162,41 +162,41 @@ export default function DecorativeSection() {
           id="treeRightImage"
           src="/img/tree_1.png"
           alt=""
-          width={500}
-          height={500}
-          quality={50}
-          className="block w-full h-full object-contain"
+          width={1920}
+          height={1080}
+          quality={75}
+          className=" w-full h-full object-contain"
         />
       </div>
       <div className="h-[10%] w-[100%] absolute left-0 z-4 bottom-0">
         <Image
-          width={500}
-          height={500}
-          quality={50}
+          width={1920}
+          height={1080}
+          quality={75}
           src="/img/borderb.png"
           alt=""
-          className="block w-full h-full object-cover object-center"
+          className=" w-full h-full object-cover object-center"
         />
       </div>
       <div className="h-[13%] w-[100%] max-md:w-[30%] max-md:left-[35%] absolute left-0 max-md:bottom-[-2%] z-4 bottom-0">
         <Image
-          width={500}
-          height={500}
-          quality={50}
+          width={1920}
+          height={1080}
+          quality={75}
           src="/img/om.png"
           alt=""
-          className="block w-full h-full object-contain object-center"
+          className=" w-full h-full object-contain object-center"
         />
       </div>
       {/* RING */}
       <div className="h-[60%] w-[100%] max-md:h-[35%] max-md:bottom-[-3%] absolute left-0 z-0 bottom-[-12%]">
         <Image
-          width={500}
-          height={500}
-          quality={50}
+          width={1920}
+          height={1080}
+          quality={75}
           src="/img/kneel_Down.png"
           alt=""
-          className="block w-full h-full object-cover"
+          className=" w-full h-full object-cover"
         />
       </div>
       {/* CLOUD HOUSE */}
@@ -205,10 +205,10 @@ export default function DecorativeSection() {
           id="cloudHouseImage"
           src="/img/cloud_House.png"
           alt=""
-          width={500}
-          height={500}
-          quality={50}
-          className="block w-full h-full object-contain"
+          width={1920}
+          height={1080}
+          quality={75}
+          className=" w-full h-full object-contain"
         />
       </div>
       {/* MOON */}
@@ -217,10 +217,10 @@ export default function DecorativeSection() {
           id="moonImage"
           src="/img/moon.png"
           alt=""
-          width={500}
-          height={500}
-          quality={50}
-          className="block w-full h-full object-contain"
+          width={1920}
+          height={1080}
+          quality={75}
+          className=" w-full h-full object-contain"
         />
       </div>
       {/* BALOON */}
@@ -229,10 +229,10 @@ export default function DecorativeSection() {
           id="balloonImage"
           src={isTablet ? "/img/shoe_Balloon_1.png" : "/img/shoe_Balloon_2.png"}
           alt=""
-          width={500}
-          height={500}
-          quality={50}
-          className="block w-full h-full object-contain"
+          width={1920}
+          height={1080}
+          quality={75}
+          className=" w-full h-full object-contain"
         />
       </div>
 
@@ -242,10 +242,10 @@ export default function DecorativeSection() {
             id="floatY1Image"
             width="839"
             height="826"
-            quality={50}
+            quality={75}
             src="/img/flower_2.png"
             alt=""
-            className="block w-full h-full object-contain object-center"
+            className=" w-full h-full object-contain object-center"
           />
         </div>
         <div className="h-full w-full left-[25%] top-[-5%] max-md:top-[-8%] max-md:left-[20%] max-md:-rotate-30 -rotate-20 translate-x-[-50%] absolute z-1">
@@ -253,10 +253,10 @@ export default function DecorativeSection() {
             id="floatY2Image"
             width="839"
             height="826"
-            quality={50}
+            quality={75}
             src="/img/flower_1.png"
             alt=""
-            className="block w-full h-full object-contain object-center"
+            className=" w-full h-full object-contain object-center"
           />
         </div>
         <div className="h-full w-[60%] max-md:w-[100%] left-[50%] top-[2%] max-md:top-[-4%] translate-x-[-50%] absolute z-0">
@@ -264,10 +264,10 @@ export default function DecorativeSection() {
             id="floatYCenterImage"
             width="839"
             height="826"
-            quality={50}
+            quality={75}
             src="/img/shiv.avif"
             alt=""
-            className="block w-full h-full object-contain object-center"
+            className=" w-full h-full object-contain object-center"
           />
         </div>
 
@@ -276,10 +276,10 @@ export default function DecorativeSection() {
             id="floatY3Image"
             width="839"
             height="826"
-            quality={50}
+            quality={75}
             src="/img/flower_2.png"
             alt=""
-            className="block w-full h-full object-contain object-center"
+            className=" w-full h-full object-contain object-center"
           />
         </div>
         <div className="h-full w-full max-md:left-[85%] max-md:top-[-6%] left-[77%] top-[-3%] scale-x-[-1] max-md:rotate-30 rotate-20 translate-x-[-50%] absolute z-1">
@@ -287,10 +287,10 @@ export default function DecorativeSection() {
             id="floatY4Image"
             width="839"
             height="826"
-            quality={50}
+            quality={75}
             src="/img/flower_1.png"
             alt=""
-            className="block w-full h-full object-contain object-center"
+            className=" w-full h-full object-contain object-center"
           />
         </div>
       </div>
