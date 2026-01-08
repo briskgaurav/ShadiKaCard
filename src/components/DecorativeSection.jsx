@@ -103,7 +103,7 @@ export default function DecorativeSection() {
     <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh]">
       <div className="h-full w-full absolute inset-0">
         <div className="h-1/2 w-full">
-          <Image
+         <img
             width={1920}
             height={1080}
             quality={75}
@@ -113,7 +113,7 @@ export default function DecorativeSection() {
           />
         </div>
         <div className="h-1/2 w-full">
-          <Image
+         <img
             width={1920}
             height={1080}
             quality={75}
@@ -124,7 +124,7 @@ export default function DecorativeSection() {
         </div>
       </div>
       <div className="h-full w-[10%] max-md:w-[20%] z-4 absolute inset-0">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -134,7 +134,7 @@ export default function DecorativeSection() {
         />
       </div>
       <div className="h-[15%] w-[15%] max-md:w-[20%] z-10 absolute right-[-1%] bottom-[-2%]">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -144,7 +144,7 @@ export default function DecorativeSection() {
         />
       </div>
       <div className="h-[20%] scale-x-[-1] w-[20%] max-md:w-[20%] z-9 absolute right-[-3.3%] bottom-[-3.5%]">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -154,7 +154,7 @@ export default function DecorativeSection() {
         />
       </div>
       <div className="h-[15%] w-[15%]  max-md:w-[20%] z-10 absolute left-[-1%] bottom-[-2%]">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -164,7 +164,7 @@ export default function DecorativeSection() {
         />
       </div>
       <div className="h-[20%] scale-x-[1] w-[20%] max-md:w-[20%] z-9 absolute left-[-3.3%] bottom-[-3.5%]">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -179,7 +179,7 @@ export default function DecorativeSection() {
         id="treeLeftWrapper"
         className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%]"
       >
-        <Image
+       <img
           src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874880/tree_21_jo8ryo.png"
           alt=""
           width={1920}
@@ -190,7 +190,7 @@ export default function DecorativeSection() {
       </div>
 
       <div className="h-full w-[10%] max-md:w-[20%] absolute z-4 scale-x-[-1] right-0">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -204,7 +204,7 @@ export default function DecorativeSection() {
         id="treeRightWrapper"
         className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%]"
       >
-        <Image
+       <img
           src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874900/tree_1_nj03as.png"
           alt=""
           width={1920}
@@ -214,7 +214,7 @@ export default function DecorativeSection() {
         />
       </div>
       <div className="h-[10%] w-[100%] absolute left-0 z-4 bottom-0">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -224,7 +224,7 @@ export default function DecorativeSection() {
         />
       </div>
       <div className="h-[13%] w-[100%] max-md:w-[30%] max-md:left-[35%] absolute left-0 max-md:bottom-[-2%] z-4 bottom-0">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -235,7 +235,7 @@ export default function DecorativeSection() {
       </div>
       {/* RING */}
       <div className="h-[60%] w-[100%] max-md:h-[35%] max-md:bottom-[-3%] absolute left-0 z-0 bottom-[-12%]">
-        <Image
+       <img
           width={1920}
           height={1080}
           quality={75}
@@ -249,7 +249,7 @@ export default function DecorativeSection() {
         id="cloudHouseWrapper"
         className="h-[60%] w-[70%] max-md:w-[80%] max-md:top-[55%] absolute left-1/2 -translate-x-1/2 z-5 top-[46%] translate-y-[-50%]"
       >
-        <Image
+       <img
           src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874877/cloud_House_dj3so5.png"
           alt=""
           width={1920}
@@ -263,7 +263,7 @@ export default function DecorativeSection() {
         id="moonWrapper"
         className="h-[60%] w-[30%] max-md:w-[45%] max-md:left-[72%] max-md:top-[64%] absolute left-[80%] -translate-x-1/2 z-5 top-[56%] translate-y-[-50%]"
       >
-        <Image
+       <img
           src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874883/moon_sqs7sg.png"
           alt=""
           width={1920}
