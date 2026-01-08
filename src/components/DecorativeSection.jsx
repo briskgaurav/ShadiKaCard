@@ -9,7 +9,7 @@ export default function DecorativeSection() {
 
   useEffect(() => {
     // Tree Left animation
-    gsap.to("#treeLeftImage", {
+    gsap.to("#treeLeftWrapper", {
       x: -20,
       duration: 5,
       ease: "linear",
@@ -18,7 +18,7 @@ export default function DecorativeSection() {
     });
 
     // Tree Right animation
-    gsap.to("#treeRightImage", {
+    gsap.to("#treeRightWrapper", {
       x: 30,
       duration: 5,
       ease: "linear",
@@ -27,7 +27,7 @@ export default function DecorativeSection() {
     });
 
     // Cloud House animation
-    gsap.to("#cloudHouseImage", {
+    gsap.to("#cloudHouseWrapper", {
       x: 100,
       duration: 5,
       ease: "power1.inOut",
@@ -36,7 +36,7 @@ export default function DecorativeSection() {
     });
 
     // Moon animation
-    gsap.to("#moonImage", {
+    gsap.to("#moonWrapper", {
       rotation: 5,
       duration: 2.5,
       ease: "power1.inOut",
@@ -45,7 +45,7 @@ export default function DecorativeSection() {
     });
 
     // Balloon animation
-    gsap.to("#balloonImage", {
+    gsap.to("#balloonWrapper", {
       y: -20,
       duration: 2,
       ease: "power1.inOut",
@@ -54,7 +54,7 @@ export default function DecorativeSection() {
     });
 
     // Float Y1 animation
-    gsap.to("#floatY1Image", {
+    gsap.to("#floatY1Wrapper", {
       y: 8,
       duration: 2,
       ease: "power1.inOut",
@@ -63,7 +63,7 @@ export default function DecorativeSection() {
     });
 
     // Float Y2 animation
-    gsap.to("#floatY2Image", {
+    gsap.to("#floatY2Wrapper", {
       y: -8,
       duration: 2.5,
       ease: "power1.inOut",
@@ -72,7 +72,7 @@ export default function DecorativeSection() {
     });
 
     // Float Y Center animation
-    gsap.to("#floatYCenterImage", {
+    gsap.to("#floatYCenterWrapper", {
       y: 5,
       duration: 3,
       ease: "power1.inOut",
@@ -81,7 +81,7 @@ export default function DecorativeSection() {
     });
 
     // Float Y3 animation
-    gsap.to("#floatY3Image", {
+    gsap.to("#floatY3Wrapper", {
       y: 8,
       duration: 1.5,
       ease: "power1.inOut",
@@ -90,7 +90,7 @@ export default function DecorativeSection() {
     });
 
     // Float Y4 animation
-    gsap.to("#floatY4Image", {
+    gsap.to("#floatY4Wrapper", {
       y: 10,
       duration: 2.5,
       ease: "power1.inOut",
@@ -100,16 +100,16 @@ export default function DecorativeSection() {
   }, []);
 
   return (
-    <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] ">
+    <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh]">
       <div className="h-full w-full absolute inset-0">
         <div className="h-1/2 w-full">
           <img
-           width={1920}
-           height={1080}
+            width={1920}
+            height={1080}
             quality={75}
             src="/img/blue_Star_Bg.png"
             alt=""
-            className=" w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
         </div>
         <div className="h-1/2 w-full">
@@ -119,30 +119,32 @@ export default function DecorativeSection() {
             quality={75}
             src="/img/blue_Star_Bg.png"
             alt=""
-            className=" w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
         </div>
       </div>
       <div className="h-full w-[10%] max-md:w-[20%] z-4 absolute inset-0">
         <img
-           width={1920}
-           height={1080}
+          width={1920}
+          height={1080}
           quality={75}
           src="/img/borderl.png"
           alt=""
-          className=" w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center"
         />
       </div>
       {/* TREE LEFT */}
-      <div className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%]">
+      <div
+        id="treeLeftWrapper"
+        className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%]"
+      >
         <img
-          id="treeLeftImage"
           src="/img/tree_21.png"
           alt=""
           width={1920}
           height={1080}
           quality={75}
-          className=" w-full h-full object-contain"
+          className="w-full h-full object-contain"
         />
       </div>
 
@@ -153,19 +155,21 @@ export default function DecorativeSection() {
           quality={75}
           src="/img/borderl.png"
           alt=""
-          className=" w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center"
         />
       </div>
       {/* TREE RIGHT */}
-      <div className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%]">
+      <div
+        id="treeRightWrapper"
+        className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%]"
+      >
         <img
-          id="treeRightImage"
           src="/img/tree_1.png"
           alt=""
           width={1920}
           height={1080}
           quality={75}
-          className=" w-full h-full object-contain"
+          className="w-full h-full object-contain"
         />
       </div>
       <div className="h-[10%] w-[100%] absolute left-0 z-4 bottom-0">
@@ -175,7 +179,7 @@ export default function DecorativeSection() {
           quality={75}
           src="/img/borderb.png"
           alt=""
-          className=" w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center"
         />
       </div>
       <div className="h-[13%] w-[100%] max-md:w-[30%] max-md:left-[35%] absolute left-0 max-md:bottom-[-2%] z-4 bottom-0">
@@ -185,7 +189,7 @@ export default function DecorativeSection() {
           quality={75}
           src="/img/om.png"
           alt=""
-          className=" w-full h-full object-contain object-center"
+          className="w-full h-full object-contain object-center"
         />
       </div>
       {/* RING */}
@@ -196,101 +200,117 @@ export default function DecorativeSection() {
           quality={75}
           src="/img/kneel_Down.png"
           alt=""
-          className=" w-full h-full object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
       {/* CLOUD HOUSE */}
-      <div className="h-[60%] w-[70%] max-md:w-[80%] max-md:top-[55%] absolute left-1/2 -translate-x-1/2 z-5 top-[46%] translate-y-[-50%]">
+      <div
+        id="cloudHouseWrapper"
+        className="h-[60%] w-[70%] max-md:w-[80%] max-md:top-[55%] absolute left-1/2 -translate-x-1/2 z-5 top-[46%] translate-y-[-50%]"
+      >
         <img
-          id="cloudHouseImage"
           src="/img/cloud_House.png"
           alt=""
           width={1920}
           height={1080}
           quality={75}
-          className=" w-full h-full object-contain"
+          className="w-full h-full object-contain"
         />
       </div>
       {/* MOON */}
-      <div className="h-[60%] w-[30%] max-md:w-[45%] max-md:left-[72%] max-md:top-[64%] absolute left-[80%] -translate-x-1/2 z-5 top-[56%] translate-y-[-50%]">
+      <div
+        id="moonWrapper"
+        className="h-[60%] w-[30%] max-md:w-[45%] max-md:left-[72%] max-md:top-[64%] absolute left-[80%] -translate-x-1/2 z-5 top-[56%] translate-y-[-50%]"
+      >
         <img
-          id="moonImage"
           src="/img/moon.png"
           alt=""
           width={1920}
           height={1080}
           quality={75}
-          className=" w-full h-full object-contain"
+          className="w-full h-full object-contain"
         />
       </div>
-      {/* BALOON */}
-      <div className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%]">
+      {/* BALLOON */}
+      <div
+        id="balloonWrapper"
+        className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%]"
+      >
         <img
-          id="balloonImage"
           src={isTablet ? "/img/shoe_Balloon_1.png" : "/img/shoe_Balloon_2.png"}
           alt=""
           width={1920}
           height={1080}
           quality={75}
-          className=" w-full h-full object-contain"
+          className="w-full h-full object-contain"
         />
       </div>
 
-      <div className="h-[100vh] relative w-full z-2 ">
-        <div className="h-full w-full left-[10%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[-2%] -rotate-60 translate-x-[-50%] absolute z-2">
+      <div className="h-[100vh] relative w-full z-2">
+        <div
+          id="floatY1Wrapper"
+          className="h-full w-full left-[10%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[-2%] -rotate-60 translate-x-[-50%] absolute z-2"
+        >
           <img
-            id="floatY1Image"
             width="839"
             height="826"
             quality={75}
             src="/img/flower_2.png"
             alt=""
-            className=" w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center"
           />
         </div>
-        <div className="h-full w-full left-[25%] top-[-5%] max-md:top-[-8%] max-md:left-[20%] max-md:-rotate-30 -rotate-20 translate-x-[-50%] absolute z-1">
+        <div
+          id="floatY2Wrapper"
+          className="h-full w-full left-[25%] top-[-5%] max-md:top-[-8%] max-md:left-[20%] max-md:-rotate-30 -rotate-20 translate-x-[-50%] absolute z-1"
+        >
           <img
-            id="floatY2Image"
             width="839"
             height="826"
             quality={75}
             src="/img/flower_1.png"
             alt=""
-            className=" w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center"
           />
         </div>
-        <div className="h-full w-[60%] max-md:w-[100%] left-[50%] top-[2%] max-md:top-[-4%] translate-x-[-50%] absolute z-0">
+        <div
+          id="floatYCenterWrapper"
+          className="h-full w-[60%] max-md:w-[100%] left-[50%] top-[2%] max-md:top-[-4%] translate-x-[-50%] absolute z-0"
+        >
           <img
-            id="floatYCenterImage"
             width="839"
             height="826"
             quality={75}
             src="/img/shiv.avif"
             alt=""
-            className=" w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center"
           />
         </div>
 
-        <div className="h-full w-full left-[90%] max-md:w-[80%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[-2%] rotate-60 translate-x-[-50%] absolute z-2">
+        <div
+          id="floatY3Wrapper"
+          className="h-full w-full left-[90%] max-md:w-[80%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[-2%] rotate-60 translate-x-[-50%] absolute z-2"
+        >
           <img
-            id="floatY3Image"
             width="839"
             height="826"
             quality={75}
             src="/img/flower_2.png"
             alt=""
-            className=" w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center"
           />
         </div>
-        <div className="h-full w-full max-md:left-[85%] max-md:top-[-6%] left-[77%] top-[-3%] scale-x-[-1] max-md:rotate-30 rotate-20 translate-x-[-50%] absolute z-1">
+        <div
+          id="floatY4Wrapper"
+          className="h-full w-full max-md:left-[85%] max-md:top-[-6%] left-[77%] top-[-3%] scale-x-[-1] max-md:rotate-30 rotate-20 translate-x-[-50%] absolute z-1"
+        >
           <img
-            id="floatY4Image"
             width="839"
             height="826"
             quality={75}
             src="/img/flower_1.png"
             alt=""
-            className=" w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center"
           />
         </div>
       </div>
