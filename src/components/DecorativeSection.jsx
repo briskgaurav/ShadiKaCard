@@ -93,15 +93,15 @@ export default function DecorativeSection() {
       `}</style> */}
       <div className="h-full w-full absolute inset-0">
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
         />
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
@@ -109,8 +109,8 @@ export default function DecorativeSection() {
       </div>
       <div className="h-full w-[10%] max-md:w-[20%] z-4 absolute inset-0">
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/borderl.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -122,16 +122,16 @@ export default function DecorativeSection() {
           style={treeLeftStyle}
           src="/img/tree_21.png"
           alt=""
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           className="block w-full h-full object-contain"
         />
       </div>
    
       <div className="h-full w-[10%] max-md:w-[20%] absolute z-4 scale-x-[-1] right-0">
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/borderl.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -143,15 +143,15 @@ export default function DecorativeSection() {
           style={treeRightStyle}
           src="/img/tree_1.png"
           alt=""
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           className="block w-full h-full object-contain"
         />
       </div>
       <div className="h-[10%] w-[100%] absolute left-0 z-4 bottom-0">
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/borderb.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -159,8 +159,8 @@ export default function DecorativeSection() {
       </div>
       <div className="h-[13%] w-[100%] max-md:w-[30%] max-md:left-[35%] absolute left-0 max-md:bottom-[-2%] z-4 bottom-0">
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/om.png"
           alt=""
           className="block w-full h-full object-contain object-center"
@@ -169,8 +169,8 @@ export default function DecorativeSection() {
       {/* RING */}
       <div className="h-[60%] w-[100%] max-md:h-[35%] max-md:bottom-[-3%] absolute left-0 z-0 bottom-[-12%]">
         <Image
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           src="/img/kneel_Down.png"
           alt=""
           className="block w-full h-full object-cover"
@@ -182,8 +182,8 @@ export default function DecorativeSection() {
           style={cloudHouseStyle}
           src="/img/cloud_House.png"
           alt=""
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           className="block w-full h-full object-contain"
         />
       </div>
@@ -193,8 +193,8 @@ export default function DecorativeSection() {
           style={moonStyle}
           src="/img/moon.png"
           alt=""
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           className="block w-full h-full object-contain"
         />
       </div>
@@ -204,8 +204,8 @@ export default function DecorativeSection() {
           style={balloonStyle}
           src={isTablet ? "/img/shoe_Balloon_1.png" : "/img/shoe_Balloon_2.png"}
           alt=""
-          width={1350}
-          height={900}
+          width={500}
+          height={500}
           className="block w-full h-full object-contain"
         />
       </div>
