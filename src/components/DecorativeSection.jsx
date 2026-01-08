@@ -7,97 +7,97 @@ import { gsap } from "gsap";
 export default function DecorativeSection() {
   const isTablet = useTablet();
 
-  useEffect(() => {
-    // Tree Left animation
-    gsap.to("#treeLeftImage", {
-      x: -20,
-      duration: 5,
-      ease: "linear",
-      repeat: -1,
-      yoyo: true,
-    });
+  // useEffect(() => {
+  //   // Tree Left animation
+  //   gsap.to("#treeLeftImage", {
+  //     x: -20,
+  //     duration: 5,
+  //     ease: "linear",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Tree Right animation
-    gsap.to("#treeRightImage", {
-      x: 30,
-      duration: 5,
-      ease: "linear",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Tree Right animation
+  //   gsap.to("#treeRightImage", {
+  //     x: 30,
+  //     duration: 5,
+  //     ease: "linear",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Cloud House animation
-    gsap.to("#cloudHouseImage", {
-      x: 100,
-      duration: 5,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Cloud House animation
+  //   gsap.to("#cloudHouseImage", {
+  //     x: 100,
+  //     duration: 5,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Moon animation
-    gsap.to("#moonImage", {
-      rotation: 5,
-      duration: 2.5,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Moon animation
+  //   gsap.to("#moonImage", {
+  //     rotation: 5,
+  //     duration: 2.5,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Balloon animation
-    gsap.to("#balloonImage", {
-      y: -20,
-      duration: 2,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Balloon animation
+  //   gsap.to("#balloonImage", {
+  //     y: -20,
+  //     duration: 2,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Float Y1 animation
-    gsap.to("#floatY1Image", {
-      y: 8,
-      duration: 2,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Float Y1 animation
+  //   gsap.to("#floatY1Image", {
+  //     y: 8,
+  //     duration: 2,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Float Y2 animation
-    gsap.to("#floatY2Image", {
-      y: -8,
-      duration: 2.5,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Float Y2 animation
+  //   gsap.to("#floatY2Image", {
+  //     y: -8,
+  //     duration: 2.5,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Float Y Center animation
-    gsap.to("#floatYCenterImage", {
-      y: 5,
-      duration: 3,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Float Y Center animation
+  //   gsap.to("#floatYCenterImage", {
+  //     y: 5,
+  //     duration: 3,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Float Y3 animation
-    gsap.to("#floatY3Image", {
-      y: 8,
-      duration: 1.5,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  //   // Float Y3 animation
+  //   gsap.to("#floatY3Image", {
+  //     y: 8,
+  //     duration: 1.5,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
 
-    // Float Y4 animation
-    gsap.to("#floatY4Image", {
-      y: 10,
-      duration: 2.5,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
-  }, []);
+  //   // Float Y4 animation
+  //   gsap.to("#floatY4Image", {
+  //     y: 10,
+  //     duration: 2.5,
+  //     ease: "power1.inOut",
+  //     repeat: -1,
+  //     yoyo: true,
+  //   });
+  // }, []);
 
   return (
     <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] ">
