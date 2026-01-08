@@ -3,11 +3,10 @@ import dynamic from "next/dynamic";
 import HeroSection from "../components/HeroSection";
 import DecorativeSection from "../components/DecorativeSection";
 import Section3 from "@/components/Section3";
-
-const Events = dynamic(() => import("@/components/Events"));
-const SeeTheRoute = dynamic(() => import("@/components/SeeTheRoute"));
-const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
-const Footer = dynamic(() => import("@/components/Footer"));
+import Events from "@/components/Events";
+import SeeTheRoute from "@/components/SeeTheRoute";
+import ThingsKnow from "@/components/ThingsKnow";
+import Footer from "@/components/Footer";
 
 export default function page() {
   return (
@@ -15,10 +14,10 @@ export default function page() {
       <HeroSection />
       <DecorativeSection />
       <Section3 />
-      <Events />
-      <SeeTheRoute />
-      <ThingsKnow />
-      <Footer />
+      <Events /> //dynamic import
+      <SeeTheRoute />  //dynamic import
+      <ThingsKnow /> //dynamic import
+      <Footer />  //dynamic import
     </>
   );
 }
