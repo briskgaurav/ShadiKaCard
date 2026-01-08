@@ -5,7 +5,7 @@ import RotationComponent from "./RotationComponent";
 
 export default function SeeTheRoute() {
   return (
-    <div className="min-h-[250vh] w-full h-fit relative">
+    <div className="min-h-[250vh] w-full h-fit relative max-md:flex max-md:flex-col max-md:justify-end max-md:min-h-[240vh] max-md:w-screen  ">
       <div className="h-full  w-full absolute inset-0">
         <Image
           src="/img/greenbg.avif"
@@ -16,7 +16,7 @@ export default function SeeTheRoute() {
         />
       </div>
 
-      <div className="h-full w-full gap-[2vw] py-[10vw] flex items-center justify-center flex-col relative ">
+      <div className="h-full overflow-x-hidden w-full  gap-[2vw]  py-[10vw] flex items-center justify-center flex-col relative max-md:absolute max-md:top-[-20%] left-0 ">
         <RotationComponent />
 
         <div className="h-auto w-[7vw] rounded-full aspect-square relative">
@@ -28,11 +28,11 @@ export default function SeeTheRoute() {
             className="w-full h-full object-contain"
           />
         </div>
-        <p className="text-secondary text-[3vw] font-normal ">MEET THE</p>
-        <p className="text-secondary text60 font-thin  leading-[.8] text-center">
+        <p className="text-secondary text-[3vw] max-md:text-[8vw] font-normal ">MEET THE</p>
+        <p className="text-secondary text60 font-thin max-md:mt-[5vw] leading-[.8] text-center">
           Bride & <br /> Groom
         </p>
-        <p className="text-secondary w-[45%] mt-[1vw] leading-[1.2]  font-semibold  text-center text18">
+        <p className="text-secondary w-[45%] mt-[1vw] max-md:mt-[5vw] leading-[1.2]  max-md:w-[80%] font-semibold  text-center text18">
           We are both so delighted that you are able to join us in celebrating
           what we hope will be one of the happiest days of our lives. The
           affection shown to us by so many people since our roka has been
@@ -41,8 +41,11 @@ export default function SeeTheRoute() {
           kindness. We are looking forward to see you at the wedding functions.
         </p>
       </div>
+      <div className="max-md:w-screen max-md:pb-[10%] max-md:overflow-x-hidden ">
 
       <Swiper1 />
+      </div>
+
     </div>
   );
 }

@@ -8,6 +8,7 @@
   --font-cormorant-upright: var(--font-cormorant-upright);
   --font-cormorant-unicase: var(--font-cormorant-unicase);
   --font-manrope: var(--font-manrope);
+  
 }
 
 @theme inline {
@@ -18,6 +19,7 @@
   --font-cormorant-unicase: var(--font-cormorant-unicase);
   --font-manrope: var(--font-manrope);
   --color-secondary: var(--color-secondary);
+  --breakpoint-md: 1025px;
 
 }
 
@@ -34,6 +36,7 @@ body {
   color: var(--foreground);
   padding: 0vw;
   font-family: var(--font-cormorant-upright);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -58,4 +61,25 @@ body {
 }
 .text60{
   font-size: 9vw;
+}
+
+@media (max-width: 1025px) {
+  .text12{
+    font-size: 4vw;
+  }
+  .text18{
+    font-size: 5vw;
+  }
+  .text30{
+    font-size: 8vw;
+  }
+  .text40{
+    font-size: 13vw;
+  }
+  .text50{
+    font-size: 18vw;
+  }
+  .text60{
+    font-size: 20vw;
+  }
 }

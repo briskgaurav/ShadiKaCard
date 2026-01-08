@@ -17,13 +17,13 @@ export default function Swiper1() {
   const nextRef = useRef(null);
 
   return (
-    <div className="h-auto w-full mt-[-5vw] relative">
+    <div className="h-auto w-full max-md:w-[200%] max-md:translate-x-[-25%] mt-[-5vw] relative">
       <img
         src="https://framerusercontent.com/images/ZcRhO3OIg6FxXJGYnWlxDDJdt00.png?width=1123&height=1123"
         alt="background"
         className="w-full h-full object-contain"
       />
-      <div className="h-[30vw] w-[24vw] rounded-full bg-zinc-900 overflow-hidden border-4 border-secondary swiperimages z-2 absolute top-[48.5%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="h-[30vw] w-[24vw] max-md:w-[50vw] max-md:h-[65vw] rounded-full bg-zinc-900 overflow-hidden border-4 border-secondary swiperimages z-2 absolute top-[48.5%] left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Swiper
           spaceBetween={0}
           slidesPerView={1}

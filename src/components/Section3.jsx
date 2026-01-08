@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Section3() {
   return (
-    <div className="h-[200vh] w-full overflow-hidden py-[4vw] relative">
+    <div className="h-[200vh] max-md:h-fit max-md:min-h-[100vh] max-md:py-[10vh] w-full overflow-hidden py-[4vw] relative">
       <div className="h-full w-full absolute inset-0">
         <img
           src="https://framerusercontent.com/images/SPr0bvMk9Lu3lQOpXzLoknBPaJo.png?width=1596&height=4794"
@@ -39,11 +39,11 @@ export default function Section3() {
         />
       </div>
 
-      <div className="h-full w-full relative  text-primary space-y-[2vw] text-center flex flex-col items-center justify-center relative">
-        <p className="w-[30%] leading-[1]  text12 text-center">
+      <div className="h-full w-full relative  text-primary space-y-[2vw] max-md:space-y-[6vw] text-center flex flex-col items-center justify-center relative">
+        <p className="w-[30%] leading-[1] text12 text-center">
           ॐ श्री गणेशाय नम
         </p>
-        <div className="w-[15%]  h-auto ">
+        <div className="w-[15%] max-md:w-[35%]  h-auto ">
           <img
             src="https://framerusercontent.com/images/PyU8hByuFeV32eoPq4qDye3jQ18.png?width=417&height=418"
             alt=""
@@ -56,11 +56,11 @@ export default function Section3() {
         </div>
         <span className="w-[5%] bg-primary h-[1.5px] rounded-full"></span>
         <p className="text30 font-semibold tracking-tight">Mrs. Reena & Mr. Rajiv Kapoor</p>
-        <p className="text50 leading-none">INVITE</p>
+        <p className="text50 leading-none max-md:my-[20vw]">INVITE</p>
         <p className="text30 font-semibold tracking-tight">You to join us in the wedding celebrations of</p>
 
         <p className="text60 leading-[1.1] text-center mt-[4vw] ">
-          Abhishek <br /> & <br /> Kanika
+          Bhaskar <br /> & <br /> Garima
         </p>
         <div className="text30 font-semibold tracking-tight mt-[4vw]">
           <p>Daughter of</p>
