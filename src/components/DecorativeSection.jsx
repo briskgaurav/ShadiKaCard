@@ -49,7 +49,7 @@ export default function DecorativeSection() {
 
   return (
     <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] ">
-      <style jsx>{`
+      {/* <style jsx>{`
         @keyframes treeLeft {
           0% { transform: translateX(0); }
           100% { transform: translateX(-20px); }
@@ -90,7 +90,7 @@ export default function DecorativeSection() {
           0% { transform: translateY(0); }
           100% { transform: translateY(10px); }
         }
-      `}</style>
+      `}</style> */}
       <div className="h-full w-full absolute inset-0">
         <Image
           width={500}
