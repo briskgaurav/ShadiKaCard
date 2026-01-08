@@ -48,7 +48,7 @@ export default function DecorativeSection() {
   };
 
   return (
-    <div className="min-h-[350vh] max-md:min-h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] h-fit ">
+    <div className="h-[350vh] max-md:h-[170vh] overflow-x-hidden overflow-hidden relative mt-[-50vh] h-fit ">
       {/* <style jsx>{`
         @keyframes treeLeft {
           0% { transform: translateX(0); }
