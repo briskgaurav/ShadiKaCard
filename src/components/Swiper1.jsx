@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -13,8 +13,7 @@ const images = [
 ];
 
 export default function Swiper1() {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const [swiper, setSwiper] = useState(null);
 
   return (
     <div className="h-auto w-full max-md:w-[200%] max-md:translate-x-[-25%] mt-[-5vw] relative">
@@ -34,14 +33,7 @@ export default function Swiper1() {
             delay: 2000,
             disableOnInteraction: false,
           }}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
+          onSwiper={setSwiper}
           className="w-full h-full"
         >
           {images.map((src, index) => (
@@ -58,23 +50,23 @@ export default function Swiper1() {
       
       {/* Custom Navigation Buttons */}
       <button
-        ref={prevRef}
-        className="absolute left-[5%] cursor-pointer top-1/2 -translate-y-1/2 z-10 w-[4vw] h-[4vw] rounded-full bg-[#003f6b] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 shadow-lg"
+        onClick={() => swiper?.slidePrev()}
+        className="absolute left-[5%] cursor-pointer top-1/2 max-md:top-[85%] max-md:left-[32%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#003f6b] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
       >
         <img
           src="/img/arrow.svg"
           alt="prev arrow"
-          className="w-[2vw] h-[2vw] object-contain rotate-180"
+          className="w-[2vw] max-md:w-[5vw] h-[2vw] max-md:h-[5vw] object-contain rotate-180"
         />
       </button>
       <button
-        ref={nextRef}
-        className="absolute right-[5%] cursor-pointer top-1/2 -translate-y-1/2 z-10 w-[4vw] h-[4vw] rounded-full bg-[#003f6b] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 shadow-lg"
+        onClick={() => swiper?.slideNext()}
+        className="absolute right-[5%] max-md:right-[32%] max-md:top-[85%] cursor-pointer top-1/2 -translate-y-1/2 z-10 max-md:w-[10vw] max-md:h-[10vw] w-[4vw] h-[4vw] rounded-full bg-[#003f6b] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
       >
         <img
           src="/img/arrow.svg"
           alt="next arrow"
-          className="w-[2vw] h-[2vw] object-contain"
+          className="w-[2vw] max-md:w-[5vw] h-[2vw] max-md:h-[5vw] object-contain"
         />
       </button>
     </div>

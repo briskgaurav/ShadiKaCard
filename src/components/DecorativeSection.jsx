@@ -107,7 +107,7 @@ export default function DecorativeSection() {
             width={1920}
             height={1080}
             quality={75}
-            src="/img/blue_Star_Bg.png"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874874/blue_Star_Bg_ogg8t4.png"
             alt=""
             className="w-full h-full object-cover object-center"
           />
@@ -117,7 +117,7 @@ export default function DecorativeSection() {
             width={1920}
             height={1080}
             quality={75}
-            src="/img/blue_Star_Bg.png"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874874/blue_Star_Bg_ogg8t4.png"
             alt=""
             className="w-full h-full object-cover object-center"
           />
@@ -128,7 +128,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/borderl.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874875/borderl_pnwykk.png"
           alt=""
           className="w-full h-full object-cover object-center"
         />
@@ -138,7 +138,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/Ganesh.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874878/Ganesh_kwai6q.png"
           alt=""
           className="w-full h-full object-contain object-center"
         />
@@ -148,7 +148,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/ganeshbg.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874879/ganeshbg_l6witm.png"
           alt=""
           className="w-full h-full object-contain object-center"
         />
@@ -158,7 +158,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/Ganesh.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874878/Ganesh_kwai6q.png"
           alt=""
           className="w-full h-full scale-x-[-1] object-contain object-center"
         />
@@ -168,7 +168,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/ganeshbg.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874879/ganeshbg_l6witm.png"
           alt=""
           className="w-full h-full object-contain object-center"
         />
@@ -180,7 +180,7 @@ export default function DecorativeSection() {
         className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%]"
       >
         <Image
-          src="/img/tree_21.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874880/tree_21_jo8ryo.png"
           alt=""
           width={1920}
           height={1080}
@@ -194,7 +194,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/borderl.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874875/borderl_pnwykk.png"
           alt=""
           className="w-full h-full object-cover object-center"
         />
@@ -205,7 +205,7 @@ export default function DecorativeSection() {
         className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%]"
       >
         <Image
-          src="/img/tree_1.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874900/tree_1_nj03as.png"
           alt=""
           width={1920}
           height={1080}
@@ -218,7 +218,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/borderb.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874873/borderb_eg5ql5.png"
           alt=""
           className="w-full h-full object-cover object-center"
         />
@@ -228,7 +228,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/om.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874884/om_hytvue.png"
           alt=""
           className="w-full h-full object-contain object-center"
         />
@@ -239,7 +239,7 @@ export default function DecorativeSection() {
           width={1920}
           height={1080}
           quality={75}
-          src="/img/kneel_Down.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874887/kneel_Down_xdn5ne.png"
           alt=""
           className="w-full h-full object-cover"
         />
@@ -250,7 +250,7 @@ export default function DecorativeSection() {
         className="h-[60%] w-[70%] max-md:w-[80%] max-md:top-[55%] absolute left-1/2 -translate-x-1/2 z-5 top-[46%] translate-y-[-50%]"
       >
         <Image
-          src="/img/cloud_House.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874877/cloud_House_dj3so5.png"
           alt=""
           width={1920}
           height={1080}
@@ -264,7 +264,7 @@ export default function DecorativeSection() {
         className="h-[60%] w-[30%] max-md:w-[45%] max-md:left-[72%] max-md:top-[64%] absolute left-[80%] -translate-x-1/2 z-5 top-[56%] translate-y-[-50%]"
       >
         <Image
-          src="/img/moon.png"
+          src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874883/moon_sqs7sg.png"
           alt=""
           width={1920}
           height={1080}
@@ -296,7 +296,7 @@ export default function DecorativeSection() {
             width="839"
             height="826"
             quality={75}
-            src="/img/flower_2.png"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874880/flower_2_kgfs9n.png"
             alt=""
             className="w-full h-full object-contain object-center"
           />
@@ -309,7 +309,7 @@ export default function DecorativeSection() {
             width="839"
             height="826"
             quality={75}
-            src="/img/flower_1.png"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874878/flower_1_tcktd0.png"
             alt=""
             className="w-full h-full object-contain object-center"
           />
@@ -322,7 +322,7 @@ export default function DecorativeSection() {
             width="839"
             height="826"
             quality={75}
-            src="/img/shiv.avif"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874875/shiv_gbvmvl.avif"
             alt=""
             className="w-full h-full object-contain object-center"
           />
@@ -336,7 +336,7 @@ export default function DecorativeSection() {
             width="839"
             height="826"
             quality={75}
-            src="/img/flower_2.png"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874880/flower_2_kgfs9n.png"
             alt=""
             className="w-full h-full object-contain object-center"
           />
@@ -349,7 +349,7 @@ export default function DecorativeSection() {
             width="839"
             height="826"
             quality={75}
-            src="/img/flower_1.png"
+            src="https://res.cloudinary.com/dpggec6ks/image/upload/v1767874878/flower_1_tcktd0.png"
             alt=""
             className="w-full h-full object-contain object-center"
           />
