@@ -57,8 +57,10 @@ export default function Events() {
   return (
     <div className="min-h-[100vh]  max-md:pt-[15vh] max-md:mt-[-1vh] h-fit w-full pb-[30vh] max-md:pb-[15vh] overflow-x-hidden overflow-hidden py-[4vw] max-md:py-[8vw] relative">
       <div className="h-full w-full absolute inset-0">
-        <img
-          src="https://framerusercontent.com/images/SPr0bvMk9Lu3lQOpXzLoknBPaJo.png?width=1596&height=4794"
+        <Image
+          src="/img/bluebg.avif"
+          width={1000}
+          height={1000}
           alt=""
           className="w-full h-full object-cover"
         />
