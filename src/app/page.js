@@ -14,10 +14,10 @@ export default function page() {
       <HeroSection />
       <DecorativeSection />
       <Section3 />
-      <Events /> //dynamic import
-      <SeeTheRoute />  //dynamic import
-      <ThingsKnow /> //dynamic import
-      <Footer />  //dynamic import
+      <Events /> 
+      <SeeTheRoute />  
+      <ThingsKnow /> 
+      <Footer />  
     </>
   );
 }
