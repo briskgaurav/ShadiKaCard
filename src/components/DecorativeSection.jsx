@@ -46,7 +46,7 @@ export default function DecorativeSection() {
 
     // Balloon animation
     gsap.to("#balloonWrapper", {
-      y: -20,
+      y: "-3%",
       duration: 2,
       ease: "power1.inOut",
       repeat: -1,
