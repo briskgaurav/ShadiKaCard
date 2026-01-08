@@ -96,8 +96,7 @@ export default function DecorativeSection() {
           width={500}
           height={500}
           loading="eager"
-          priority
-          unoptimized
+
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
@@ -106,8 +105,6 @@ export default function DecorativeSection() {
           width={500}
           height={500}
           loading="eager"
-          priority
-          unoptimized
           src="/img/blue_Star_Bg.png"
           alt=""
           className="block w-full h-1/2 object-cover object-center"
@@ -117,9 +114,6 @@ export default function DecorativeSection() {
         <Image
           width={500}
           height={500}
-          loading="eager"
-          priority
-          unoptimized
           src="/img/borderl.png"
           alt=""
           className="block w-full h-full object-cover object-center"
@@ -129,9 +123,6 @@ export default function DecorativeSection() {
       <div className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%]">
         <Image
           style={treeLeftStyle}
-          loading="eager"
-          priority
-          unoptimized
           src="/img/tree_21.png"
           alt=""
           width={500}
@@ -146,7 +137,6 @@ export default function DecorativeSection() {
           height={500}
           src="/img/borderl.png"
           alt=""
-          
           className="block w-full h-full object-cover object-center"
         />
       </div>
