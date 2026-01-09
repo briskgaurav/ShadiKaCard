@@ -78,6 +78,12 @@ export default function Loader() {
   }, []);
   useEffect(() => {
     if (!isImagesLoaded || !lenis) return;
+
+    gsap.to("#logo", {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    });
   
     gsap.to("#loader", {
       opacity: 0,
@@ -87,8 +93,16 @@ export default function Loader() {
       onComplete: () => {
         lenis.start();
       },
-    });
+    },"<+.5");
   }, [isImagesLoaded, lenis]);
+
+  useEffect(() => {
+   gsap.set("#logo", {
+    opacity: 1,
+   
+   });
+  }, [])
+  
     
   return (
     <div
@@ -118,7 +132,7 @@ export default function Loader() {
           </span>{" "}
         </p>
       </div>
-      <div className="w-[15vw] h-[15vw] max-md:w-[40vw] max-md:h-[40vw]">
+      <div id="logo" className="w-[15vw] opacity-0 h-[15vw] max-md:w-[40vw] max-md:h-[40vw]">
         <svg
           width="291"
           height="290"
