@@ -15,71 +15,81 @@ export default function Loader() {
 
   const [isImagesLoaded, setIsImagesLoaded] = useState(false);
 
+  const minLoaderTime = () =>
+    new Promise((resolve) => setTimeout(resolve, 3000));
+  
   useEffect(() => {
-    if (lenis) {
-      lenis.stop();
-      imagesLoaded(document.body, () => {
-        setIsImagesLoaded(true);
-        console.log("LOADED");
-      });
-      lenis.stop();
-    }
+    if (!lenis) return;
+  
+    lenis.stop();
+  
+    Promise.all([
+      new Promise((resolve) =>
+        imagesLoaded(document.body, resolve)
+      ),
+      minLoaderTime(),
+    ]).then(() => {
+      setIsImagesLoaded(true);
+    });
+  
   }, [lenis]);
+  
+  
 
   useEffect(() => {
-    if (isImagesLoaded) {
-      gsap.set(logoRef.current, {
-        scale: 0.8,
-        opacity: 0,
-        transformOrigin: "center",
-      });
-      gsap.set(linePath.current, {
-        drawSVG: "100% 100%",
-      });
-      alphabetsRef.current.forEach((items) =>
-        gsap.set(items, {
-          opacity: 0,
-        })
-      );
-
-      const loaderTimeline = gsap.timeline();
-
-      loaderTimeline
-        .to(logoRef.current, {
-          scale: 1,
-          opacity: 1,
-          duration: 1,
+    gsap.set(logoRef.current, {
+      scale: 0.8,
+      opacity: 0,
+      transformOrigin: "center",
+    });
+  
+    gsap.set(linePath.current, {
+      drawSVG: "100% 100%",
+    });
+  
+    alphabetsRef.current.forEach((el) =>
+      gsap.set(el, { opacity: 0 })
+    );
+  
+    const tl = gsap.timeline();
+  
+    tl.to(logoRef.current, {
+      scale: 1,
+      opacity: 1,
+      duration: 1,
+      ease: "power2.inOut",
+    })
+      .to(
+        linePath.current,
+        {
+          drawSVG: "0% 100%",
+          duration: 1.5,
           ease: "power2.inOut",
-        })
-        .to(
-          linePath.current,
-          {
-            drawSVG: "0% 100%",
-            duration: 1.5,
-            ease: "power2.inOut",
-          },
-          "<"
-        )
-        .to(alphabetsRef.current, {
-          opacity: 1,
-          duration: 1,
-          stagger: 0.05,
-          ease: "linear",
-        })
-        .to("#loader", {
-          opacity: 0,
-
-          duration: 1,
-          delay: 0.5,
-          ease: "power2.inOut",
-          onComplete: () => {
-            setIsImagesLoaded(true);
-            lenis.start();
-          },
-        });
-    }
-  }, [isImagesLoaded]);
-
+        },
+        "<"
+      )
+      .to(alphabetsRef.current, {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.05,
+        ease: "linear",
+      });
+  
+  }, []);
+  useEffect(() => {
+    if (!isImagesLoaded || !lenis) return;
+  
+    gsap.to("#loader", {
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      ease: "power2.inOut",
+      onComplete: () => {
+        lenis.start();
+      },
+    });
+  }, [isImagesLoaded, lenis]);
+    
   return (
     <div
       id="loader"
