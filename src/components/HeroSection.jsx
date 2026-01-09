@@ -17,12 +17,24 @@ export default function HeroSection() {
 
       />
 
-      <div className="absolute top-[-8%] left-1/2 -translate-x-1/2 h-full w-full flex flex-col items-center justify-center">
+      <div className="absolute top-[-8%] left-1/2 flex max-md:flex-col -translate-x-1/2 h-full w-full items-center justify-center  gap-[2vw]">
         <Copy>
-          <p className="text-[rgb(172,149,69)] w-[100%] max-md:w-[50%] leading-[1] font-light font-cormorant-upright text-[80px] max-md:text-[60px] text-center">
-            Garima Weds Bhaskar
+          <p className="text-[rgb(172,149,69)]  leading-[1] font-light font-cormorant-upright text-[80px] max-md:text-[60px] text-center">
+            Garima 
           </p>
-        </Copy>
+          </Copy>
+          <Copy>
+<p className="text-[rgb(172,149,69)]  leading-[1] font-light font-cormorant-upright text-[80px] max-md:text-[60px] text-center">
+             Weds
+          </p>
+          </Copy>
+          <Copy>
+<p className="text-[rgb(172,149,69)]  leading-[1] font-light font-cormorant-upright text-[80px] max-md:text-[60px] text-center">
+           Bhaskar
+          </p>
+          </Copy>
+          
+        
       </div>
     </div>
   );
