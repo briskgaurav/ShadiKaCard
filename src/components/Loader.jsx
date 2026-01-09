@@ -85,10 +85,10 @@ export default function Loader() {
       id="loader"
       className="h-screen bg-[#ede3c3] fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
     >
-      <div className="absolute right-8 bottom-5">
-        <p className="flex items-center gap-[.5vw]">
+      <div className="absolute right-4 bottom-3 max-md:right-3 max-md:bottom-2">
+        <p className="flex items-center gap-[.5vw] max-md:gap-1 max-md:text-sm">
           Loading{" "}
-          <span className="h-[1vw] block relative w-[1vw] ">
+          <span className="h-[1vw] block relative w-[1vw] max-md:h-4 max-md:w-4">
             <svg
               className="h-full w-full animate-spin"
               viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ export default function Loader() {
           </span>{" "}
         </p>
       </div>
-      <div className="w-[15vw] h-[15vw]">
+      <div className="w-[15vw] h-[15vw] max-md:w-[40vw] max-md:h-[40vw]">
         <svg
           width="291"
           height="290"

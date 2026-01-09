@@ -22,6 +22,7 @@
 
   --animate-wiggle: wiggle 3s ease-in-out infinite;
   --animate-updown: updown 3s ease-in-out infinite;
+  --animate-updown2: updown 3s ease-in-out infinite;
 
   @keyframes wiggle {
     0%,
@@ -39,6 +40,15 @@
     }
     50% {
       transform: translateY(-2px);
+    }
+  }
+  @keyframes updown2 {
+    0%,
+    100% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(-30px);
     }
   }
 }

@@ -200,7 +200,7 @@ export default function Decorative() {
           />
         </div>
         {/* BALLOON */}
-        <div className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%] animate-balloon">
+        <div className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%] animate-updown2">
           <Image
             src={isTablet ? shoeBalloon1 : shoeBalloon2}
             alt="Shoe balloon decoration"
