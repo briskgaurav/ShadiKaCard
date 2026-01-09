@@ -7,7 +7,7 @@ import Copy from "./Copy";
 
 export default function SeeTheRoute() {
   return (
-    <div className="min-h-[250vh] w-full h-fit relative max-md:mt-[8vh]  max-md:flex max-md:flex-col max-md:justify-end max-md:min-h-[240vh] max-md:w-screen  ">
+    <div className="min-h-[250vh] w-full h-fit relative max-md:mt-[8vh]  max-md:flex max-md:flex-col max-md:justify-end max-md:min-h-[500vw] max-md:w-screen  ">
       <div className="h-full  w-full absolute inset-0">
         <Image
           src="/img/webp/greenbg.webp"
@@ -18,7 +18,7 @@ export default function SeeTheRoute() {
         />
       </div>
 
-      <div className="h-full overflow-x-hidden w-full  gap-[2vw]  py-[10vw] flex items-center justify-center flex-col relative max-md:absolute max-md:top-[-20%] left-0 ">
+      <div className="h-full overflow-x-hidden w-full max-md:py-0 max-md:pt-[50vw]   gap-[2vw]  py-[10vw] flex items-center justify-center flex-col relative max-md:absolute max-md:top-[-20%] left-0 ">
         <RotationComponent />
 
         <div className="h-auto fadeup w-[7vw] rounded-full aspect-square relative max-md:w-[18vw]">
