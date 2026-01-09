@@ -8,7 +8,7 @@ export default function DynamicCounter() {
   const prevValues = useRef({});
 
   useEffect(() => {
-    const targetDate = new Date('2026-02-19T17:00:00').getTime();
+    const targetDate = new Date('2026-02-19T15:00:00').getTime();
     const today = new Date();
     // const targetDate = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12, 49, 0).getTime();
 

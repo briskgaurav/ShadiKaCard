@@ -63,21 +63,21 @@ export default function ThingsKnow() {
             },
             {
               icon: "/img/webp/sun.png",
-              title: "Hashtag",
+              title: "Weather",
               description:
-                "Use #thebestmarathon to share your journey runners.",
+                "It will be mostly cloudy with temperature reaching up to 22 degrees at the venue",
             },
             {
               icon: "/img/webp/card.png",
-              title: "Hashtag",
+              title: "Staff",
               description:
-                "Use #thebestmarathon to share your journey runners.",
+                "We recommend the nearby lodge called Amba Valley near the venue for the staff members",
             },
             {
               icon: "/img/webp/parking.png",
-              title: "Hashtag",
+              title: "Parking",
               description:
-                "Use #thebestmarathon to share your journey runners.",
+                "Valet parking for all our guests will be available at the venue",
             },
           ].map((item, index) => (
             <div

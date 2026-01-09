@@ -6,7 +6,6 @@ const Events = dynamic(() => import("@/components/Events"));
 const SeeTheRoute = dynamic(() => import("@/components/SeeTheRoute"));
 const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
 const Footer = dynamic(() => import("@/components/Footer"));
-import DecorativeSection2 from "@/components/Decorative2";
 import Sound from "@/components/Sound";
 import Loader from "@/components/Loader";
 import Decorative from "@/components/Decorative";
@@ -14,9 +13,10 @@ import Decorative from "@/components/Decorative";
 export default function page() {
   return (
     <>
-     <Loader/>
+      <Loader />
+    
       <HeroSection />
-      <Decorative/>
+      <Decorative />
       <Sound />
       {/* <DecorativeSection /> */}
       {/* <DecorativeSection2 /> */}
