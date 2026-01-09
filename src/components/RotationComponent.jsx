@@ -13,7 +13,7 @@ export default function RotationComponent({
   isScale = false,
   wheelImage = "/img/webp/wheel1/yellowwheel-1.png",
   centerImage = "/img/webp/wheel1/red-cover.png",
-  iconImage = "https://framerusercontent.com/images/FMx33N0QNZEN9o98413jFSazlw.png?width=585&height=586",
+  iconImage = "/img/webp/yellow-design.png",
   textColor = "text-primary",
   title = "See the",
   titleLine2 = "route",
