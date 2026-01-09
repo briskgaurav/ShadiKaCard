@@ -83,7 +83,7 @@ export default function Loader() {
   return (
     <div
       id="loader"
-      className="h-screen bg-[#ede3c3] fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
+      className="h-screen bg-[#ede3c3] pointer-events-none fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
     >
       <div className="absolute right-4 bottom-3 max-md:right-3 max-md:bottom-2">
         <p className="flex items-center gap-[.5vw] max-md:gap-1 max-md:text-sm">
