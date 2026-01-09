@@ -21,8 +21,8 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "12 pm Onwards",
     image: "/img/illustrations/mehndi.png",
-    illustration1:"/img/illustrations/diya.png",
-   illustration2:"/img/illustrations/kalash.png"
+    illustration1:"/img/illustrations/motif.png",
+   illustration2:"/img/illustrations/hand.png"
   },
   {
     id: 3,
@@ -112,7 +112,7 @@ export function EventCard({ event }) {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[40vw] absolute left-[-20%] max-md:left-[-5%] top-[-20%] max-md:top-[-8%]">
+        <div className="h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[40vw] absolute left-[-20%] max-md:left-[-5%] top-[-15%] max-md:top-[-8%]">
           <Image
             src={event.illustration2}
             alt="moon"
