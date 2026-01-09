@@ -24,7 +24,7 @@ export default function Swiper1() {
         alt="background"
         className="w-full h-full object-contain brightness-80"
       />
-      <div className="h-[30vw] w-[24vw] max-md:w-[50vw] max-md:h-[65vw] rounded-full bg-zinc-900 overflow-hidden border-4 border-secondary swiperimages z-2 absolute top-[48.5%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="h-[30vw] w-[24vw] max-md:w-[50vw] max-md:h-[65vw] rounded-full bg-zinc-900 overflow-hidden border-4 border-[#a20601] swiperimages z-2 absolute top-[48.5%] left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Swiper
         effect={'fade'}
           spaceBetween={0}
@@ -54,7 +54,7 @@ export default function Swiper1() {
       {/* Custom Navigation Buttons */}
       <button
         onClick={() => swiper?.slidePrev()}
-        className="absolute left-[5%] cursor-pointer top-1/2 max-md:top-[85%] max-md:left-[32%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
+        className="absolute left-[5%] cursor-pointer top-1/2 max-md:top-[85%] max-md:left-[32%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
       >
         <img
           src="/img/Unc/arrow.svg"
@@ -64,7 +64,7 @@ export default function Swiper1() {
       </button>
       <button
         onClick={() => swiper?.slideNext()}
-        className="absolute right-[5%] max-md:right-[32%] max-md:top-[85%] cursor-pointer top-1/2 -translate-y-1/2 z-10 max-md:w-[10vw] max-md:h-[10vw] w-[4vw] h-[4vw] rounded-full bg-[#a20601] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
+        className="absolute right-[5%] max-md:right-[32%] max-md:top-[85%] cursor-pointer top-1/2 -translate-y-1/2 z-10 max-md:w-[10vw] max-md:h-[10vw] w-[4vw] h-[4vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
       >
         <img
           src="/img/Unc/arrow.svg"

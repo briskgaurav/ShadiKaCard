@@ -44,7 +44,7 @@ export default function Footer() {
             <DynamicCounter />
           </CopyLines>
           <CopyLines>
-            <p className="text12 leading-[1.2] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
+            <p className="text18 leading-[1.2] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
               Mittal family is excited that you are able to join us in
               celebrating what we hope will be one of the happiest days of our
               lives.

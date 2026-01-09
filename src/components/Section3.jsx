@@ -64,7 +64,7 @@ export default function Section3() {
           <p className="text30 font-semibold tracking-tight"></p>
         </Copy>
         <Copy>
-          <p className="text30 max-md:w-[67%] leading-none max-md:my-[20vw]">
+          <p className="text30 max-md:w-[67%] leading-[1.2] max-md:my-[20vw]">
             We invite you to join us in the wedding{" "}
             <br className="hidden max-md:block" /> celebrations of
           </p>

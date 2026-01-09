@@ -56,25 +56,25 @@ export default function ThingsKnow() {
         <div className="w-[80%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[5vw]">
           {[
             {
-              icon: "/img/webp/hastag.png",
+              icon: "/img/webp/hastag-2.png",
               title: "Hashtag",
               description:
                 "Use #thebestmarathon to share your journey runners.",
             },
             {
-              icon: "/img/webp/sun.png",
+              icon: "/img/webp/sun-2.png",
               title: "Hashtag",
               description:
                 "Use #thebestmarathon to share your journey runners.",
             },
             {
-              icon: "/img/webp/card.png",
+              icon: "/img/webp/card-2.png",
               title: "Hashtag",
               description:
                 "Use #thebestmarathon to share your journey runners.",
             },
             {
-              icon: "/img/webp/parking.png",
+              icon: "/img/webp/parking-2.png",
               title: "Hashtag",
               description:
                 "Use #thebestmarathon to share your journey runners.",
