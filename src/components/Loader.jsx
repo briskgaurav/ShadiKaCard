@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useState, useRef } from 'react';
-import imagesLoaded from 'imagesloaded';
-import { gsap } from 'gsap';
+
+import { useEffect, useState, useRef } from "react";
+import { gsap } from "gsap";
 
 export default function Loader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -9,14 +9,24 @@ export default function Loader() {
   const loaderRef = useRef(null);
 
   useEffect(() => {
-    const imgLoad = imagesLoaded(document.body, { background: true });
-    
-    imgLoad.on('always', () => {
-      setIsLoading(false);
-    });
+    let imgLoad = null;
+
+    const loadImages = async () => {
+      const imagesLoaded = (await import("imagesloaded")).default;
+
+      imgLoad = imagesLoaded(document.body, { background: true });
+
+      imgLoad.on("always", () => {
+        setIsLoading(false);
+      });
+    };
+
+    loadImages();
 
     return () => {
-      imgLoad.off('always');
+      if (imgLoad) {
+        imgLoad.off("always");
+      }
     };
   }, []);
 
@@ -25,10 +35,8 @@ export default function Loader() {
       gsap.to(loaderRef.current, {
         opacity: 0,
         duration: 0.8,
-        ease: 'power2.out',
-        onComplete: () => {
-          setIsVisible(false);
-        }
+        ease: "power2.out",
+        onComplete: () => setIsVisible(false),
       });
     }
   }, [isLoading]);
@@ -36,11 +44,11 @@ export default function Loader() {
   if (!isVisible) return null;
 
   return (
-    <div 
+    <div
       ref={loaderRef}
-      className='bg-primary text-white h-screen w-full fixed inset-0 flex items-center justify-center z-9999'
+      className="bg-primary text-white h-screen w-full fixed inset-0 flex items-center justify-center z-[9999]"
     >
-        <p>LOADER</p>
+      <p>LOADER</p>
     </div>
   );
 }
