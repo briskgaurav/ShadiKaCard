@@ -106,7 +106,7 @@ export default function Decorative() {
         </div>
 
         {/* TREE LEFT */}
-        <div className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-15%] max-md:w-[170%] z-2 bottom-[-18%] animate-slide-left">
+        <div className="h-full w-[100%] absolute left-[-55%] max-md:left-[-90%] max-md:bottom-[-20%] max-md:w-[170%] z-2 bottom-[-18%] animate-slide-left">
           <Image
             src={tree21}
             alt="Decorative tree left"
@@ -130,7 +130,7 @@ export default function Decorative() {
           />
         </div>
         {/* TREE RIGHT */}
-        <div className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%] animate-slide-right">
+        <div className="h-full w-[100%] absolute right-[-55%] max-md:w-[230%] max-md:right-[-117%] max-md:-rotate-0 max-md:top-[8%] -rotate-5 z-2 top-[10%] max-md:hidden animate-slide-right">
           <Image
             src={tree1}
             alt="Decorative tree right"
@@ -221,7 +221,7 @@ export default function Decorative() {
               priority
               src={flower2}
               alt="Flower decoration 1"
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full max-md:hidden object-contain object-center"
             />
           </div>
           <div className="h-full w-full left-[25%] top-[-5%] max-md:top-[-8%] max-md:left-[20%] max-md:-rotate-30 -rotate-20 translate-x-[-50%] absolute z-1 animate-float-y2">
@@ -232,10 +232,10 @@ export default function Decorative() {
               priority
               src={flower1}
               alt="Flower decoration 2"
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full max-md:hidden object-contain object-center"
             />
           </div>
-          <div className="h-full w-[60%] max-md:w-[100%] left-[50%] top-[2%] max-md:top-[-4%] translate-x-[-50%] absolute z-0 animate-float-y-center">
+          <div className="h-full w-[60%] max-md:w-[150%] left-[50%] top-[2%] max-md:top-[-7%] translate-x-[-50%] absolute z-0 animate-float-y-center">
             <Image
               width="839"
               height="826"
@@ -247,7 +247,7 @@ export default function Decorative() {
             />
           </div>
 
-          <div className="h-full w-full left-[90%] max-md:w-[80%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[-2%] rotate-60 translate-x-[-50%] absolute z-2 animate-float-y3">
+          <div className="h-full w-full left-[90%] max-md:w-[100%] max-md:top-[-2%] max-md:left-[100%] -scale-x-100 top-[-2%] rotate-60 translate-x-[-50%] absolute z-2 animate-float-y3">
             <Image
               width="839"
               height="826"
@@ -255,7 +255,7 @@ export default function Decorative() {
               priority
               src={flower2}
               alt="Flower decoration 3"
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full max-md:hidden object-contain object-center"
             />
           </div>
           <div className="h-full w-full max-md:left-[85%] max-md:top-[-6%] left-[77%] top-[-3%] scale-x-[-1] max-md:rotate-30 rotate-20 translate-x-[-50%] absolute z-1 animate-float-y4">
@@ -266,7 +266,7 @@ export default function Decorative() {
               priority
               src={flower1}
               alt="Flower decoration 4"
-              className="w-full h-full object-contain object-center"
+              className="w-full h-full max-md:hidden object-contain object-center"
             />
           </div>
         </div>
