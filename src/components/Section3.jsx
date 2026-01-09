@@ -73,11 +73,11 @@ export default function Section3() {
           <p className="text30 font-semibold tracking-tight"></p>
         </CopyLines>
         <Copy>
-          <p className="text60 leading-none text-center mt-[5vw] ">Bhaskar</p>
+          <p className="text60 leading-none text-center mt-[5vw] ">Garima</p>
         </Copy>
         <CopyLines>
           <div className="text30 max-md:w-[80%] font-semibold tracking-tight ">
-            <p>Son of </p>
+            <p>Daughter of </p>
             <p>Mrs. Reena & Mr. Rajiv Kapoor</p>
           </div>
         </CopyLines>
@@ -85,12 +85,12 @@ export default function Section3() {
           <p className="text60 leading-none text-center ">&</p>
         </Copy>
         <Copy>
-          <p className="text60 leading-none text-center ">Garima</p>
+          <p className="text60 leading-none text-center ">Bhaskar</p>
         </Copy>
 
         <CopyLines>
           <div className="text30 max-md:w-[80%] font-semibold tracking-tight">
-            <p>Daughter of</p>
+            <p>Son of</p>
             <p>Mrs. Shalini & Mr. Aakash Mittal,</p>
           </div>
         </CopyLines>
