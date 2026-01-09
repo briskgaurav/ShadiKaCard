@@ -93,10 +93,10 @@ export default function Loader() {
   return (
     <div
       id="loader"
-      className="h-screen bg-[#580e02] pointer-events-none fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
+      className="h-[100dvh] bg-[#580e02] pointer-events-none fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
     >
-      <div className="absolute text-[#ac9546] right-4 bottom-3 max-md:right-3 max-md:bottom-2">
-        <p className="flex items-center gap-[.5vw] max-md:gap-1 max-md:text-sm">
+      <div className="absolute max-md:left-1/2 max-md:w-fit max-md:-translate-x-1/2 max-md:bottom-[35%] max-md:translate-y-1/2 text-[#ac9546] right-4 bottom-3">
+        <p className="flex  items-center gap-[.5vw] max-md:gap-4 max-md:text-lg">
           Loading{" "}
           <span className="h-[1vw] block relative w-[1vw] max-md:h-4 max-md:w-4">
             <svg
