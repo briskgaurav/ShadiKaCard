@@ -56,7 +56,9 @@ body {
   padding: 0vw;
   font-family: var(--font-cormorant-upright);
   overflow-x: hidden;
+  user-select: none;
 }
+
 
 ::-webkit-scrollbar {
   display: none;

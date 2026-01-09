@@ -84,14 +84,14 @@ export function EventCard({ event }) {
   return (
     <div className="flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
       <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
-        <div className="size-full  rounded-full overflow-hidden">
+        <div className={`size-full rounded-full ${event.mirror ? "scale-x-[-1] group-hover:scale-x-[-1.1]":""} overflow-hidden group`}>
           <img
             src={event.image}
             alt="event"
-            className={`w-full h-full object-cover ${event.mirror ? "scale-x-[-1]":""}`}
+            className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 `}
           />
         </div>
-        <div className="h-auto animate-wiggle w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
+        <div className="h-auto animate-wiggle pointer-events-none w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
           <Image
             src={"/img/moon.png"}
             alt="moon"
@@ -100,7 +100,7 @@ export function EventCard({ event }) {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="h-auto w-[15vw] animate-updown max-md:w-[40vw] absolute left-[-10%] max-md:left-[-5%] top-[-10%] max-md:top-[-8%]">
+        <div className="h-auto w-[15vw] animate-updown pointer-events-none max-md:w-[40vw] absolute left-[-10%] max-md:left-[-5%] top-[-10%] max-md:top-[-8%]">
           <Image
             src={"/img/shoe_Balloon_2.png"}
             alt="moon"
@@ -109,7 +109,7 @@ export function EventCard({ event }) {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="h-auto w-[15vw] animate-wiggle max-md:w-[40vw] -rotate-15 max-md:-rotate-8 absolute left-[-25%] max-md:left-[-25%] top-[58%] max-md:top-[55%]">
+        <div className="h-auto w-[15vw] animate-wiggle pointer-events-none max-md:w-[40vw] -rotate-15 max-md:-rotate-8 absolute left-[-25%] max-md:left-[-25%] top-[58%] max-md:top-[55%]">
           <Image
             src={"/img/cloud_House.png"}
             alt="moon"
