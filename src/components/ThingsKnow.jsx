@@ -17,7 +17,7 @@ export default function ThingsKnow() {
         />
       </div>
 
-      <div className="h-full w-full gap-[2vw] overflow-x-hidden max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-4%] left-0 flex items-center justify-center flex-col relative ">
+      <div className="h-full w-full gap-[2vw] overflow-x-hidden max-md:pt-[10vh]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-4%] left-0 flex items-center justify-center flex-col relative ">
         <RotationComponent
           wheelImage="/img/webp/wheel2/redwheel-2.png"
           centerImage="/img/webp/wheel2/yellow-cover.png"
@@ -41,7 +41,7 @@ export default function ThingsKnow() {
           MEET THE
         </p> */}
         <Copy>
-          <p className="text-primary text-center text60  leading-[1.2] text-center">
+          <p className="text-primary text-center text60  leading-[1.2]">
             Things to <br /> know
           </p>
         </Copy>

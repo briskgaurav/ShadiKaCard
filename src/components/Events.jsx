@@ -70,7 +70,7 @@ export default function Events() {
         />
       </div>
 
-      <div className="h-full w-full relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[5vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center relative max-md:px-[5vw]">
+      <div className="h-full w-full relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[5vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center max-md:px-[5vw]">
         {eventsData.map((event) => (
           <EventCard key={event.id} event={event} />
         ))}
