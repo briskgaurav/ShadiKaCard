@@ -11,6 +11,8 @@ const eventsData = [
     venue: "Meerut",
     time: "6 pm Onwards",
     image: "/img/illustrations/chadath.png",
+    illustration1:"/img/illustrations/turban.png",
+   illustration2:"/img/illustrations/shehnai.png"
   },
   {
     id: 2,
@@ -19,6 +21,8 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "12 pm Onwards",
     image: "/img/illustrations/mehndi.png",
+    illustration1:"/img/illustrations/diya.png",
+   illustration2:"/img/illustrations/kalash.png"
   },
   {
     id: 3,
@@ -27,6 +31,8 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "6 pm Onwards",
     image: "/img/illustrations/Engagment.png",
+    illustration1:"/img/illustrations/ring.png",
+   illustration2:"/img/illustrations/lotus.png"
   },
   {
     id: 4,
@@ -35,6 +41,8 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "10 am Onwards",
     image: "/img/illustrations/Haldi.png",
+    illustration1:"/img/illustrations/marigold.png",
+   illustration2:"/img/illustrations/haldipowder.png"
   },
   {
     id: 5,
@@ -43,7 +51,9 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "5 pm Onwards",
     image: "/img/illustrations/shaadi.png",
-   mirror:true
+   mirror:true,
+   illustration1:"/img/illustrations/diya.png",
+   illustration2:"/img/illustrations/kalash.png"
   },
   {
     id: 6,
@@ -52,7 +62,9 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "8 pm Onwards",
     image: "/img/illustrations/reception.png",
-   mirror:true
+   mirror:true,
+   illustration1:"/img/illustrations/glass.png",
+   illustration2:"/img/illustrations/champaign.png"
 
   },
 ];
@@ -91,27 +103,18 @@ export function EventCard({ event }) {
             className={`w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 `}
           />
         </div>
-        <div className="h-auto animate-wiggle pointer-events-none w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
+        <div className="h-auto animate-wiggle pointer-events-none w-[12vw] max-md:w-[45vw] absolute right-[-25%] max-md:right-[-30%] top-[60%] max-md:top-[25%]">
           <Image
-            src={"/img/moon.png"}
+            src={event.illustration1}
             alt="moon"
             width={1000}
             height={1000}
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="h-auto w-[15vw] animate-updown pointer-events-none max-md:w-[40vw] absolute left-[-10%] max-md:left-[-5%] top-[-10%] max-md:top-[-8%]">
+        <div className="h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[40vw] absolute left-[-20%] max-md:left-[-5%] top-[-20%] max-md:top-[-8%]">
           <Image
-            src={"/img/shoe_Balloon_2.png"}
-            alt="moon"
-            width={500}
-            height={500}
-            className="w-full h-full object-contain"
-          />
-        </div>
-        <div className="h-auto w-[15vw] animate-wiggle pointer-events-none max-md:w-[40vw] -rotate-15 max-md:-rotate-8 absolute left-[-25%] max-md:left-[-25%] top-[58%] max-md:top-[55%]">
-          <Image
-            src={"/img/cloud_House.png"}
+            src={event.illustration2}
             alt="moon"
             width={500}
             height={500}
