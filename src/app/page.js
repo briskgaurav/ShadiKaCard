@@ -9,11 +9,13 @@ const Footer = dynamic(() => import("@/components/Footer"));
 import Sound from "@/components/Sound";
 import Loader from "@/components/Loader";
 import Decorative from "@/components/Decorative";
+import { UseScrollToTopOnReload } from "@/components/ReloadToTop";
 
 export default function page() {
   return (
     <>
       <Loader />
+      <UseScrollToTopOnReload />
       <HeroSection />
       <Decorative />
       <Sound />
