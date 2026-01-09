@@ -22,6 +22,9 @@ const manrope = Manrope({
 export const metadata = {
   title: "Bhaskar Weds Garima",
   description: "Bhaskar Weds Garima",
+  icons: {
+    icon: "/2.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
