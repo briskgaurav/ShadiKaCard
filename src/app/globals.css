@@ -19,6 +19,28 @@
   --font-manrope: var(--font-manrope);
   --color-secondary: var(--color-secondary);
   --breakpoint-md: 1025px;
+
+  --animate-wiggle: wiggle 3s ease-in-out infinite;
+  --animate-updown: updown 3s ease-in-out infinite;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+  }
+  @keyframes updown {
+    0%,
+    100% {
+      transform: translateY(2px);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

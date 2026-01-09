@@ -2,6 +2,9 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Copy from "./Copy";
+import CopyLines from "./CopyLines";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,14 +66,22 @@ export default function RotationComponent({
         className="w-[76%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-auto object-contain"
       />
 
-      <div className={`absolute ${isScale ? 'max-md:scale-50' : 'max-md:scale-100'} text-center flex flex-col items-center justify-center gap-y-[.5vw] max-md:gap-y-[2vw] ${textColor} top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}>
-        <p className="text40 font-semibold leading-[.6]">
-          {title} <br /> {titleLine2}
-        </p>
-        <p className="text18 mt-[1vw] max-md:mt-[3vw] font-semibold leading-[1.1]">
-          {subtitle}
-        </p>
-        <div className="w-[4vw] max-md:w-[20vw] h-[4vw] max-md:h-[20vw] flex items-center justify-center">
+      <div
+        className={`absolute ${
+          isScale ? "max-md:scale-50" : "max-md:scale-100"
+        } text-center flex flex-col items-center justify-center gap-y-[.5vw] max-md:gap-y-[2vw] ${textColor} top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
+      >
+        <Copy>
+          <p className="text40 font-semibold leading-[.6]">
+            {title} <br /> {titleLine2}
+          </p>
+        </Copy>
+        <CopyLines>
+          <Link href={'/'} className="text18 mt-[1vw] hover:brightness-150 duration-300 transition-opacity max-md:mt-[3vw] font-semibold leading-[1.1]">
+            {subtitle}
+          </Link>
+        </CopyLines>
+        <div className="w-[4vw] fadeup max-md:w-[20vw] h-[4vw] max-md:h-[20vw] flex items-center justify-center">
           <img
             src={iconImage}
             alt="icon"

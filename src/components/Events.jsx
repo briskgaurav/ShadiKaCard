@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const eventsData = [
   {
@@ -76,17 +77,18 @@ export default function Events() {
 }
 
 export function EventCard({ event }) {
+    
   return (
     <div className="flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
-      <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 max-md:border-4 border-primary">
-        <div className="size-full rounded-full overflow-hidden">
+      <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
+        <div className="size-full  rounded-full overflow-hidden">
           <img
             src={event.image}
             alt="event"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="h-auto w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
+        <div className="h-auto animate-wiggle w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
           <Image
             src={"/img/moon.png"}
             alt="moon"
@@ -95,7 +97,7 @@ export function EventCard({ event }) {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="h-auto w-[15vw] max-md:w-[40vw] absolute left-[-10%] max-md:left-[-5%] top-[-10%] max-md:top-[-8%]">
+        <div className="h-auto w-[15vw] animate-updown max-md:w-[40vw] absolute left-[-10%] max-md:left-[-5%] top-[-10%] max-md:top-[-8%]">
           <Image
             src={"/img/shoe_Balloon_2.png"}
             alt="moon"
@@ -104,7 +106,7 @@ export function EventCard({ event }) {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="h-auto w-[15vw] max-md:w-[40vw] -rotate-15 max-md:-rotate-8 absolute left-[-25%] max-md:left-[-25%] top-[58%] max-md:top-[55%]">
+        <div className="h-auto w-[15vw] animate-wiggle max-md:w-[40vw] -rotate-15 max-md:-rotate-8 absolute left-[-25%] max-md:left-[-25%] top-[58%] max-md:top-[55%]">
           <Image
             src={"/img/cloud_House.png"}
             alt="moon"
@@ -114,7 +116,7 @@ export function EventCard({ event }) {
           />
         </div>
       </div>
-      <div className="relative">
+      <div className="relative fadeup">
         <p className="text40 font-semibold tracking-tight">{event.title}</p>
         <p className="text12 font-semibold leading-[1.1]">
           {event.date}

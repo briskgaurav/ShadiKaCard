@@ -1,6 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import RotationComponent from "./RotationComponent";
+import CopyLines from "./CopyLines";
+import Link from "next/link";
+import HoverLineComponent from "./HoverLineComponent";
+import DynamicCounter from "./DynamicCounter";
 
 export default function Footer() {
   return (
@@ -18,8 +22,8 @@ export default function Footer() {
       {/* Section 1 - Rotation Component */}
       <div className="h-screen w-full flex items-center max-md:absolute  overflow-x-hidden overflow-hidden  max-md:top-[-5%] justify-center relative">
         <RotationComponent
-         scale= 'max-md:scale-200'
-         isScale={true}
+          scale="max-md:scale-200"
+          isScale={true}
           wheelImage="/img/yellowwheel.avif"
           centerImage="/img/yellowbglayer.avif"
           iconImage="https://framerusercontent.com/images/BS00HRHT5NWobvzo4WjW9UA763g.png?width=380&height=380"
@@ -33,35 +37,59 @@ export default function Footer() {
       {/* Section 2 - Footer Content */}
       <div className="h-fit w-full flex items-center justify-center relative">
         <div className="flex flex-col space-y-[2vw] max-md:space-y-[5vw] text-[#451173] font-serif items-center justify-center w-[50%] max-md:w-[90%]">
-          <p className="text40 w-[60%] max-md:w-[90%] font-cormorant-upright leading-[1.1] text-center">
-            The countdown begins 61D 13H 04M
-          </p>
-          <p className="text12 leading-[1] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
-            Mittal family is excited that you are able to join us in celebrating
-            what we hope will be one of the happiest days of our lives.
-          </p>
+          <CopyLines>
+            <p className="text40 w-[100%] max-md:w-[90%] font-cormorant-upright leading-[1.1] text-center">
+              The countdown begins
+            </p>
+            <DynamicCounter />
+          </CopyLines>
+          <CopyLines>
+            <p className="text12 leading-[1] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
+              Mittal family is excited that you are able to join us in
+              celebrating what we hope will be one of the happiest days of our
+              lives.
+            </p>
+          </CopyLines>
 
           <div className="flex items-center justify-between max-md:justify-center w-[60%] max-md:w-[90%] font-cormorant-upright gap-[2vw] max-md:gap-[10vw] text18 my-[2vw] max-md:my-[5vw]">
             <div className="text-center space-y-[.5vw] max-md:space-y-[2vw]">
-              <p className="font-bold">Links</p>
-              <ul>
-                <li>Venue location</li>
-                <li>RSVP</li>
-                <li>Instagram</li>
-              </ul>
+              <CopyLines>
+                <p className="font-bold">Links</p>
+                <ul>
+                  <li>
+                    <HoverLineComponent text="Venue location" />
+                  </li>
+                  <li>
+                    <HoverLineComponent text="RSVP" />
+                  </li>
+                  <li>
+                    <HoverLineComponent text="Instagram" />
+                  </li>
+                </ul>
+              </CopyLines>
             </div>
             <div className="text-center space-y-[.5vw] max-md:space-y-[2vw]">
-              <p className="font-bold">Links</p>
-              <ul>
-                <li>Venue location</li>
-                <li>RSVP</li>
-                <li>Instagram</li>
-              </ul>
+              <CopyLines>
+                <p className="font-bold">Navigation</p>
+                <ul>
+                  <li>
+                    <HoverLineComponent text="The invite" />
+                  </li>
+                  <li>
+                    <HoverLineComponent text="Bride and Groom" />
+                  </li>
+                  <li>
+                    <HoverLineComponent text="Things to know" />
+                  </li>
+                </ul>
+              </CopyLines>
             </div>
           </div>
-          <p className="text12 leading-[1] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium mt-[2vw] max-md:mt-[5vw]">
-            © Copyright 2026. All rights reserved.
-          </p>
+          <CopyLines>
+            <p className="text12 leading-[1] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium mt-[2vw] max-md:mt-[5vw]">
+              © Copyright 2026. All rights reserved.
+            </p>
+          </CopyLines>
         </div>
       </div>
     </div>

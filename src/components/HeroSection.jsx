@@ -1,9 +1,13 @@
-  'use client'  
+"use client";
 import React from "react";
 import useTablet from "./IsTablet";
+import Copy from "./Copy";
+import { useFadeUpAnim, useLineAnim } from "./Animation";
 
 export default function HeroSection() {
   const isTablet = useTablet();
+  useFadeUpAnim();
+  useLineAnim();
   return (
     <div className="h-[80vh] overflow-hidden max-md:h-[60vh] z-999 w-full relative">
       <img
@@ -13,15 +17,11 @@ export default function HeroSection() {
       />
 
       <div className="absolute top-[-15%] left-1/2 -translate-x-1/2 h-full w-full flex flex-col items-center justify-center">
-        <p className="text-[rgb(172,149,69)] leading-[1] font-light font-cormorant-upright text-[80px] max-md:text-[60px] text-center">
-          Bhaskar
-        </p>
-        <p className="text-[rgb(172,149,69)]  leading-[1] mt-[.3vw] text-[53px] max-md:text-[30px] text-center">
-          weds
-        </p>
-        <p className="text-[rgb(172,149,69)] leading-[1] text-[80px] max-md:text-[60px] text-center">
-          Garima
-        </p>
+        <Copy>
+          <p className="text-[rgb(172,149,69)] w-[20%] leading-[1] font-light font-cormorant-upright text-[80px] max-md:text-[60px] text-center">
+            Bhaskar weds <br /> Garima
+          </p>
+        </Copy>
       </div>
     </div>
   );
