@@ -8,7 +8,7 @@ import DynamicCounter from "./DynamicCounter";
 
 export default function Footer() {
   return (
-    <div className="min-h-[160vh] max-md:min-h-[160vh] max-md:justify-end max-md:pb-[15vh] flex flex-col py-[5vw] items-center justify-between w-full relative">
+    <div className="min-h-[160vh] max-md:min-h-[130vh] max-md:justify-end max-md:pb-[15vh] flex flex-col py-[5vw] items-center justify-between w-full relative">
       <div className="h-full w-full absolute inset-0">
         <Image
           src="/img/webp/yellowbg.webp"
@@ -22,8 +22,8 @@ export default function Footer() {
       {/* Section 1 - Rotation Component */}
       <div className="h-screen w-full flex items-center max-md:absolute  overflow-x-hidden overflow-hidden  max-md:top-[-5%] justify-center relative">
         <RotationComponent
-          scale="max-md:scale-200"
-          isScale={true}
+          scale="max-md:scale-100"
+          isScale={false}
           wheelImage="/img/webp/wheel3/yellowwheel.png"
           centerImage="/img/webp/wheel3/yellowbglayer.png"
           iconImage="/img/webp/wheel3/yellow-design.png"

@@ -57,7 +57,7 @@ export default function Sound() {
   };
 
   return (
-    <div className="fixed mix-blend-difference inset-0 px-[2vw] max-md:px-[4vw] max-md:py-[2vw] py-[1vw] w-full z-999 h-fit flex items-center justify-between">
+    <div className="fixed  inset-0 px-[2vw] max-md:px-[4vw] max-md:py-[2vw] py-[1vw] w-full z-999 h-fit flex items-center justify-between">
       <div className="w-[5vw] max-md:w-[14vw] h-[5vw] max-md:h-[14vw]">
         <svg viewBox="0 0 300 300" className="w-full h-full">
           <path
@@ -89,9 +89,7 @@ export default function Sound() {
             />
           ))}
         </div>
-        {isPlaying && (
-          <span className="absolute -inset-1 rounded-full border border-white/30 animate-ping" />
-        )}
+      
       </button>
       <audio ref={audioRef} src="/sound/wedding.mp3" />
     </div>
