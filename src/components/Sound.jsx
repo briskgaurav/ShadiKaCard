@@ -1,18 +1,49 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react'
-import Image from 'next/image'
+import gsap from 'gsap'
 
 export default function Sound() {
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(true)
   const audioRef = useRef(null)
+  const barsRef = useRef([])
 
   useEffect(() => {
-    // Initialize audio
+    // Initialize audio and autoplay
     if (audioRef.current) {
       audioRef.current.loop = true
       audioRef.current.volume = 0.5 // Set volume to 50%
+      audioRef.current.play().catch(() => {
+        // Autoplay was prevented, set isPlaying to false
+        setIsPlaying(false)
+      })
     }
-  }, [])
+  }, [isPlaying])
+
+  useEffect(() => {
+    if (isPlaying) {
+      // Animate bars when playing
+      barsRef.current.forEach((bar, index) => {
+        gsap.to(bar, {
+          scaleY: () => Math.random() * 0.5 + 0.5,
+          duration: 0.2 + Math.random() * 0.3,
+          repeat: -1,
+          yoyo: true,
+          ease: 'power1.inOut',
+          delay: index * 0.1
+        })
+      })
+    } else {
+      // Reset bars when paused
+      barsRef.current.forEach((bar) => {
+        gsap.killTweensOf(bar)
+        gsap.to(bar, {
+          scaleY: 0.2,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+      })
+    }
+  }, [isPlaying])
 
   const toggleMusic = () => {
     if (audioRef.current) {
@@ -26,26 +57,25 @@ export default function Sound() {
   }
 
   return (
-    <div className='fixed right-10 z-999 top-8'>
+    <div className='fixed mix-blend-difference right-10 z-999 top-8'>
       <button 
         onClick={toggleMusic}
         className={`cursor-pointer border border-white rounded-full p-2 
           transition-all duration-300 ease-in-out
           hover:scale-110 hover:bg-white/10 hover:shadow-lg hover:shadow-white/20
           active:scale-95
-          ${isPlaying ? 'animate-pulse bg-white/5' : ''}
+          ${isPlaying ? 'bg-white/5' : ''}
         `}
       >
-        <div className={`relative `} >
-          <Image 
-            src={isPlaying ? '/sound/sound.svg' : '/sound/nosound.svg'} 
-            alt={isPlaying ? 'Music On' : 'Music Off'}
-            width={40}
-            height={40}
-            className={`w-6 h-6 object-contain transition-all duration-300
-              ${isPlaying ? 'drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]' : 'opacity-70 hover:opacity-100'}
-            `}
-          />
+        <div className='flex items-center justify-center gap-[3px] w-6 h-6'>
+          {[...Array(4)].map((_, index) => (
+            <div
+              key={index}
+              ref={(el) => (barsRef.current[index] = el)}
+              className='w-[2px] h-full bg-white rounded-full origin-center'
+              style={{ transform: 'scaleY(0.3)' }}
+            />
+          ))}
         </div>
         {isPlaying && (
           <span className='absolute -inset-1 rounded-full border border-white/30 animate-ping' />

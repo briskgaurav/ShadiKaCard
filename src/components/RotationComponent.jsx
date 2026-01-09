@@ -69,15 +69,15 @@ export default function RotationComponent({
       <div
         className={`absolute ${
           isScale ? "max-md:scale-50" : "max-md:scale-100"
-        } text-center flex flex-col items-center justify-center gap-y-[.5vw] max-md:gap-y-[2vw] ${textColor} top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
+        } text-center flex flex-col items-center justify-center gap-y-[.5vw] max-md:gap-y-[2vw] ${textColor} top-[62%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
       >
         <Copy>
-          <p className="text40 font-semibold leading-[.6]">
+          <p className="text40 font-semibold leading-[1.2]">
             {title} <br /> {titleLine2}
           </p>
         </Copy>
         <CopyLines>
-          <Link href={'/'} className="text18 mt-[1vw] hover:brightness-150 duration-300 transition-opacity max-md:mt-[3vw] font-semibold leading-[1.1]">
+          <Link href={'/'} className="text18 mt-[1vw] hover:brightness-150 duration-300 transition-opacity max-md:mt-[3vw] font-semibold leading-[1.2]">
             {subtitle}
           </Link>
         </CopyLines>

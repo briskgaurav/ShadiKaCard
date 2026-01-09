@@ -18,7 +18,7 @@ export default function page() {
       {/* <Loader /> */}
       <Sound />
       {/* <DecorativeSection /> */}
-      <DecorativeSection2 />
+      {/* <DecorativeSection2 /> */}
       <Section3 />
       <Events />
       <SeeTheRoute />

@@ -38,13 +38,13 @@ export default function Footer() {
       <div className="h-fit w-full flex items-center justify-center relative">
         <div className="flex flex-col space-y-[2vw] max-md:space-y-[5vw] text-[#451173] font-serif items-center justify-center w-[50%] max-md:w-[90%]">
           <CopyLines>
-            <p className="text40 w-[100%] max-md:w-[90%] font-cormorant-upright leading-[1.1] text-center">
+            <p className="text40 w-[100%] max-md:w-[100%] font-cormorant-upright leading-[1.2] text-center">
               The countdown begins
             </p>
             <DynamicCounter />
           </CopyLines>
           <CopyLines>
-            <p className="text12 leading-[1] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
+            <p className="text12 leading-[1.2] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
               Mittal family is excited that you are able to join us in
               celebrating what we hope will be one of the happiest days of our
               lives.
