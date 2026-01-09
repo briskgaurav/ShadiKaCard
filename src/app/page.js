@@ -14,7 +14,6 @@ export default function page() {
   return (
     <>
       <Loader />
-    
       <HeroSection />
       <Decorative />
       <Sound />
