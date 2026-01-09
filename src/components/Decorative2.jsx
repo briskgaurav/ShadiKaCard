@@ -308,7 +308,7 @@ export default function DecorativeSection2() {
           id="floatY1Wrapper"
           className="h-full w-full left-[10%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[-2%] -rotate-60 translate-x-[-50%] absolute z-2"
         >
-          <Image
+          <img
             width="839"
             height="826"
             quality={75}

@@ -6,29 +6,44 @@ import { gsap } from "gsap";
 export default function Loader() {
   const [isLoading, setIsLoading] = useState(true);
   const [isVisible, setIsVisible] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [timeElapsed, setTimeElapsed] = useState(false);
   const loaderRef = useRef(null);
 
   useEffect(() => {
-    let imgLoad = null;
+    // Set minimum time of 10 seconds
+    const timer = setTimeout(() => {
+      setTimeElapsed(true);
+    }, 1000);
 
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
     const loadImages = async () => {
-      const imagesLoaded = (await import("imagesloaded")).default;
+      try {
+        const imagesLoaded = (await import("imagesloaded")).default;
+        
+        const imgLoad = imagesLoaded(document.body, { background: true });
 
-      imgLoad = imagesLoaded(document.body, { background: true });
-
-      imgLoad.on("always", () => {
-        setIsLoading(false);
-      });
+        imgLoad.on("always", () => {
+          setImagesLoaded(true);
+        });
+      } catch (error) {
+        console.error("Failed to load imagesloaded:", error);
+        // Fallback: just mark images as loaded
+        setImagesLoaded(true);
+      }
     };
 
     loadImages();
-
-    return () => {
-      if (imgLoad) {
-        imgLoad.off("always");
-      }
-    };
   }, []);
+
+  useEffect(() => {
+    if (imagesLoaded && timeElapsed) {
+      setIsLoading(false);
+    }
+  }, [imagesLoaded, timeElapsed]);
 
   useEffect(() => {
     if (!isLoading && loaderRef.current) {
