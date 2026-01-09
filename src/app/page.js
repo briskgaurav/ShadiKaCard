@@ -25,10 +25,6 @@ export default function page() {
       <SeeTheRoute />
       <ThingsKnow />
       <Footer />
-      {/* <Events />
-      <SeeTheRoute />
-      <ThingsKnow />
-      <Footer /> */}
     </>
   );
 }

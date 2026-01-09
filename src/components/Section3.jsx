@@ -57,40 +57,60 @@ export default function Section3() {
 
         <div className="text30 font-semibold tracking-tight">
           <CopyLines>
-            <p>With the heavenly blessings of </p>
-          </CopyLines>
-          <CopyLines>
-            <p>Smt. Lata Devi & Sm. Kamal Kapoor</p>
+            <p>With the heavenly blessings of Almighty </p>
           </CopyLines>
         </div>
-        <span className="w-[5%] lineanim origin-center bg-primary h-[1.5px] rounded-full"></span>
-        <CopyLines>
-          <p className="text30 font-semibold tracking-tight">
-            Mrs. Reena & Mr. Rajiv Kapoor
-          </p>
-        </CopyLines>
         <Copy>
-          <p className="text50 leading-none max-md:my-[20vw]">INVITE</p>
+          <p className="text30 font-semibold tracking-tight">
+             
+          </p>
+        </Copy>
+        <Copy>
+          <p className="text30 leading-none max-md:my-[20vw]">We invite you to join us in the wedding celebrations of</p>
         </Copy>
         <CopyLines>
           <p className="text30 font-semibold tracking-tight">
-            You to join us in the wedding celebrations of
+            
           </p>
         </CopyLines>
         <Copy>
-          <p className="text60 leading-[1.1] text-center mt-[4vw] ">
-            Bhaskar <br /> & <br /> Garima
+          <p className="text60 leading-none text-center mt-[5vw] ">
+            Bhaskar 
+          </p>
+        </Copy>
+        <CopyLines>
+          <div className="text30 font-semibold tracking-tight ">
+            <p>Son of </p>
+            <p>Mrs. Reena & Mr. Rajiv Kapoor</p>
+          </div>
+        </CopyLines>
+        <Copy>
+          <p className="text60 leading-none text-center ">
+           &
+          </p>
+        </Copy>
+        <Copy>
+          <p className="text60 leading-none text-center ">
+            Garima
           </p>
         </Copy>
 
           <CopyLines>
-        <div className="text30 font-semibold tracking-tight mt-[4vw]">
+        <div className="text30 font-semibold tracking-tight">
             <p>Daughter of</p>
             <p>Mrs. Shalini & Mr. Aakash Mittal,</p>
         </div>
-        <p className="text30 font-semibold tracking-tight">
+      
+          </CopyLines>
+
+
+
+          <CopyLines>
+            <div className="mt-[6vw]">
+           <p className="text50 font-semibold tracking-tight">
           On the following auspicious day
         </p>
+            </div>
           </CopyLines>
       </div>
     </div>

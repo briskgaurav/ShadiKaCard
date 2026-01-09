@@ -1,56 +1,59 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 
 const eventsData = [
   {
     id: 1,
-    title: "Mehendi",
-    date: "Friday, 13th March 2026",
-    venue: "The Savay, Maussorie",
-    time: "6pm Onwards",
-    image: "/img/mehndi.png",
+    title: "Chadath",
+    date: "Tuesday, 17th February 2026",
+    venue: "Meerut",
+    time: "6 pm Onwards",
+    image: "/img/illustrations/chadath.png",
   },
   {
     id: 2,
-    title: "Haldi",
-    date: "Saturday, 14th March 2026",
-    venue: "The Savay, Maussorie",
-    time: "10am Onwards",
-    image: "/img/haldi.png",
+    title: "Mehndi",
+    date: "Wednesday, 18th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "12 pm Onwards",
+    image: "/img/illustrations/mehndi.png",
   },
   {
     id: 3,
-    title: "Cocktail",
-    date: "Saturday, 14th March 2026",
-    venue: "The Savay, Maussorie",
-    time: "7pm Onwards",
-    image: "/img/cocktail.png",
+    title: "Engagement",
+    date: "Wednesday, 18th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "6 pm Onwards",
+    image: "/img/illustrations/Engagment.png",
   },
   {
     id: 4,
-    title: "Pre-Wedding",
-    date: "Saturday, 14th March 2026",
-    venue: "The Savay, Maussorie",
-    time: "9pm Onwards",
-    image: "/img/ring.png",
+    title: "Haldi",
+    date: "Thursday, 19th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "10 am Onwards",
+    image: "/img/illustrations/Haldi.png",
   },
   {
     id: 5,
-    title: "Shadi",
-    date: "Sunday, 15th March 2026",
-    venue: "The Savay, Maussorie",
-    time: "11am Onwards",
-    image: "/img/shadi.png",
+    title: "Wedding",
+     date: "Thursday, 19th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "5 pm Onwards",
+    image: "/img/illustrations/shaadi.png",
+   mirror:true
   },
   {
     id: 6,
     title: "Reception",
-    date: "Sunday, 15th March 2026",
-    venue: "The Savay, Maussorie",
-    time: "7pm Onwards",
-    image: "/img/reception.png",
+    date: "Thursday, 19th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "8 pm Onwards",
+    image: "/img/illustrations/reception.png",
+   mirror:true
+
   },
 ];
 
@@ -85,7 +88,7 @@ export function EventCard({ event }) {
           <img
             src={event.image}
             alt="event"
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover ${event.mirror ? "scale-x-[-1]":""}`}
           />
         </div>
         <div className="h-auto animate-wiggle w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
@@ -125,9 +128,7 @@ export function EventCard({ event }) {
           {event.venue}
         </p>
         <p className="text12 font-semibold leading-[1.1]">{event.time}</p>
-        <Link className="underline text12 font-bold " href="#">
-          See the route
-        </Link>
+      
       </div>
     </div>
   );

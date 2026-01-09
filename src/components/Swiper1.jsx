@@ -1,15 +1,17 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import 'swiper/css/effect-fade';
 
 const images = [
-  "https://framerusercontent.com/images/97fFKjBlB41svOUd0yNGLWv4.jpeg?width=1080&height=1350",
-  "https://framerusercontent.com/images/97fFKjBlB41svOUd0yNGLWv4.jpeg?width=1080&height=1350",
-  "https://framerusercontent.com/images/97fFKjBlB41svOUd0yNGLWv4.jpeg?width=1080&height=1350",
-  "https://framerusercontent.com/images/97fFKjBlB41svOUd0yNGLWv4.jpeg?width=1080&height=1350",
+  "/img/illustrations/image-1.png",
+  "/img/illustrations/image-3.png",
+  "/img/illustrations/image-4.png",
+  "/img/illustrations/image-2.png",
+
 ];
 
 export default function Swiper1() {
@@ -24,11 +26,12 @@ export default function Swiper1() {
       />
       <div className="h-[30vw] w-[24vw] max-md:w-[50vw] max-md:h-[65vw] rounded-full bg-zinc-900 overflow-hidden border-4 border-secondary swiperimages z-2 absolute top-[48.5%] left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Swiper
+        effect={'fade'}
           spaceBetween={0}
           slidesPerView={1}
           grabCursor={true}
           loop={true}
-          modules={[Autoplay, Navigation]}
+          modules={[Autoplay, Navigation, EffectFade]}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,

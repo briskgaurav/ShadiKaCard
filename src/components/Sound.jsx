@@ -17,7 +17,7 @@ export default function Sound() {
         setIsPlaying(false)
       })
     }
-  }, [isPlaying])
+  }, [])
 
   useEffect(() => {
     if (isPlaying) {
