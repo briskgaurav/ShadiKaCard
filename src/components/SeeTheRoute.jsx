@@ -52,7 +52,7 @@ export default function SeeTheRoute() {
           </p>
         </CopyLines>
       </div>
-      <div className="max-md:w-screen fadeup max-md:pb-[10%]  ">
+      <div className="max-md:w-screen fadeup max-md:pb-[10%] max-md:overflow-x-hidden ">
         <Swiper1 />
       </div>
     </div>
