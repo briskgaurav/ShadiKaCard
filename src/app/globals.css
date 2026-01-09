@@ -8,7 +8,6 @@
   --font-cormorant-upright: var(--font-cormorant-upright);
   --font-cormorant-unicase: var(--font-cormorant-unicase);
   --font-manrope: var(--font-manrope);
-  
 }
 
 @theme inline {
@@ -20,14 +19,12 @@
   --font-manrope: var(--font-manrope);
   --color-secondary: var(--color-secondary);
   --breakpoint-md: 1025px;
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
     --foreground: #000000;
-   
   }
 }
 
@@ -43,43 +40,182 @@ body {
   display: none;
 }
 
-
-.text12{
+.text12 {
   font-size: 1vw;
 }
-.text18{
+.text18 {
   font-size: 1.2vw;
 }
-.text30{
+.text30 {
   font-size: 2vw;
 }
-.text40{
+.text40 {
   font-size: 3vw;
 }
-.text50{
+.text50 {
   font-size: 7vw;
 }
-.text60{
+.text60 {
   font-size: 9vw;
 }
 
+@keyframes slideLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes slideRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes slideCloud {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes rotateMoon {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes floatBalloon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+}
+
+@keyframes floatY1 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes floatY2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatYCenter {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes floatY3 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes floatY4 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 5s linear infinite;
+}
+
+.animate-slide-right {
+  animation: slideRight 5s linear infinite;
+}
+
+.animate-cloud {
+  animation: slideCloud 5s ease-in-out infinite;
+}
+
+.animate-moon {
+  animation: rotateMoon 2.5s ease-in-out infinite;
+}
+
+.animate-balloon {
+  animation: floatBalloon 2s ease-in-out infinite;
+}
+
+.animate-float-y1 {
+  animation: floatY1 2s ease-in-out infinite;
+}
+
+.animate-float-y2 {
+  animation: floatY2 2.5s ease-in-out infinite;
+}
+
+.animate-float-y-center {
+  animation: floatYCenter 3s ease-in-out infinite;
+}
+
+.animate-float-y3 {
+  animation: floatY3 1.5s ease-in-out infinite;
+}
+
+.animate-float-y4 {
+  animation: floatY4 2.5s ease-in-out infinite;
+}
+
 @media (max-width: 1025px) {
-  .text12{
+  .text12 {
     font-size: 4vw;
   }
-  .text18{
+  .text18 {
     font-size: 5vw;
   }
-  .text30{
+  .text30 {
     font-size: 8vw;
   }
-  .text40{
+  .text40 {
     font-size: 13vw;
   }
-  .text50{
+  .text50 {
     font-size: 18vw;
   }
-  .text60{
+  .text60 {
     font-size: 20vw;
   }
 }

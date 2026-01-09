@@ -54,7 +54,7 @@ export default function Swiper1() {
         className="absolute left-[5%] cursor-pointer top-1/2 max-md:top-[85%] max-md:left-[32%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#003f6b] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
       >
         <img
-          src="/img/arrow.svg"
+          src="/img/Unc/arrow.svg"
           alt="prev arrow"
           className="w-[2vw] max-md:w-[5vw] h-[2vw] max-md:h-[5vw] object-contain rotate-180"
         />
@@ -64,7 +64,7 @@ export default function Swiper1() {
         className="absolute right-[5%] max-md:right-[32%] max-md:top-[85%] cursor-pointer top-1/2 -translate-y-1/2 z-10 max-md:w-[10vw] max-md:h-[10vw] w-[4vw] h-[4vw] rounded-full bg-[#003f6b] text-white flex items-center justify-center hover:bg-opacity-80 transition-all duration-300 "
       >
         <img
-          src="/img/arrow.svg"
+          src="/img/Unc/arrow.svg"
           alt="next arrow"
           className="w-[2vw] max-md:w-[5vw] h-[2vw] max-md:h-[5vw] object-contain"
         />
