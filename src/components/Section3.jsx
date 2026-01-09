@@ -5,7 +5,7 @@ import CopyLines from "./CopyLines";
 
 export default function Section3() {
   return (
-    <div className="h-[200vh] max-md:h-fit max-md:min-h-[100vh] max-md:py-[10vh] w-full overflow-hidden py-[4vw] relative">
+    <div className="h-[220vh] max-md:h-fit max-md:min-h-[100vh] max-md:py-[15vh] w-full overflow-hidden py-[4vw] relative">
       <div className="h-full w-full absolute inset-0">
         <img
           src="/img/webp/bluebg.webp"

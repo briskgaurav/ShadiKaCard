@@ -7,6 +7,11 @@ export default function Sound() {
   const audioRef = useRef(null);
   const barsRef = useRef([]);
 
+  // useEffect(() => {
+  //   // oN SCROLL IF SECTION HITS DATA_COLOR THEN CHANGGE COLOR TO RED ELSE RED
+  // }, [])
+  
+
   useEffect(() => {
     // Initialize audio and autoplay
     if (audioRef.current) {

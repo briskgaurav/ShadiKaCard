@@ -88,7 +88,7 @@ export function EventCard({ event }) {
           <img
             src={event.image}
             alt="event"
-            className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 `}
+            className={`w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 `}
           />
         </div>
         <div className="h-auto animate-wiggle pointer-events-none w-[15vw] max-md:w-[45vw] absolute right-[-32%] max-md:right-[-30%] top-[33%] max-md:top-[25%]">
