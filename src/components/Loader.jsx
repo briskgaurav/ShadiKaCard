@@ -1,14 +1,29 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DrawSVGPlugin } from "gsap/dist/DrawSVGPlugin";
+import imagesLoaded from "imagesloaded";
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 export default function Loader() {
   const linePath = useRef();
   const logoRef = useRef();
   const alphabetsRef = useRef([]);
+
+  const [isImagesLoaded, setIsImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    imagesLoaded(document.body, () => {
+      gsap.to(".loader", {
+       yPercent:-100,
+        duration: 1,
+        delay:3,
+        ease:'power2.inOut',
+        onComplete: () => setIsImagesLoaded(true),
+      });
+    });
+  }, []);
 
   useEffect(() => {
     gsap.set(logoRef.current, {
@@ -34,11 +49,15 @@ export default function Loader() {
         duration: 1,
         ease: "power2.inOut",
       })
-      .to(linePath.current, {
-        drawSVG: "0% 100%",
-        duration: 1.5,
-        ease: "power2.inOut",
-      },"<")
+      .to(
+        linePath.current,
+        {
+          drawSVG: "0% 100%",
+          duration: 1.5,
+          ease: "power2.inOut",
+        },
+        "<"
+      )
       .to(alphabetsRef.current, {
         opacity: 1,
         duration: 1,
@@ -47,8 +66,33 @@ export default function Loader() {
       });
   }, []);
 
+
+  if (isImagesLoaded) return null
   return (
-    <div className="h-screen bg-[#ede3c3] fixed z-99999 top-0 left-0 flex items-center justify-center w-full">
+    <div id="loader" className="h-screen bg-[#ede3c3] fixed z-99999 top-0 left-0 flex items-center justify-center w-full">
+      <div className="absolute right-8 bottom-5">
+        <p className="flex items-center gap-[.5vw]">
+          Loading{" "}
+          <span className="h-[1vw] block relative w-[1vw] ">
+            <svg
+              className="h-full w-full animate-spin"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeDasharray="31.4 31.4"
+              />
+            </svg>
+          </span>{" "}
+        </p>
+      </div>
       <div className="w-[15vw] h-[15vw]">
         <svg
           width="291"
