@@ -42,7 +42,7 @@ const eventsData = [
     title: "Haldi",
     date: "Thursday, 19th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
-    time: "10 am Onwards",
+    time: "9 am Onwards",
     image: "/img/illustrations/Haldi.png",
     illustration1: "/img/illustrations/marigold.png",
     illustration2: "/img/illustrations/haldipowder.png",
@@ -53,7 +53,7 @@ const eventsData = [
     title: "Wedding",
     date: "Thursday, 19th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
-    time: "5 pm Onwards",
+    time: "3 pm Onwards",
     image: "/img/illustrations/shaadi.png",
     mirror: true,
     illustration1: "/img/illustrations/diya.png",
@@ -67,10 +67,10 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "8 pm Onwards",
     image: "/img/illustrations/reception.png",
-    mirror: true,
-    illustration1: "/img/illustrations/glass.png",
-    illustration2: "/img/illustrations/champaign.png",
-    digonalImages : false
+   mirror:true,
+   illustration1:"/img/illustrations/rose.png",
+   illustration2:"/img/illustrations/lotus.png"
+
   },
 ];
 

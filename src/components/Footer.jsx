@@ -38,20 +38,20 @@ export default function Footer() {
       <div className="h-fit w-full flex items-center justify-center relative">
         <div className="flex flex-col space-y-[2vw] max-md:space-y-[5vw] text-[#a20601] font-serif items-center justify-center w-[50%] max-md:w-[90%]">
           <CopyLines>
-            <p className="text40 w-[100%] max-md:w-[100%] font-cormorant-upright leading-[1.2] text-center">
+            <p className="text40 w-[100%] max-md:w-[100%] font-cormorant-upright leading-[1.2] text-center mt-[-5vw]">
               The countdown begins
             </p>
             <DynamicCounter />
           </CopyLines>
           <CopyLines>
-            <p className="text18 leading-[1.2] font-cormorant-upright text-center w-[60%] max-md:w-[90%] font-medium">
-              Mittal family is excited that you are able to join us in
+            <p className="text30 leading-[1.2] font-cormorant-upright text-center w-[80%] max-md:w-[90%] font-medium mt-[5vw]">
+              Rastogi's and Varshney's are excited that you are able to join us in
               celebrating what we hope will be one of the happiest days of our
               lives.
             </p>
           </CopyLines>
 
-          <div className="flex items-center justify-between max-md:justify-center w-[60%] max-md:w-[90%] font-cormorant-upright gap-[2vw] max-md:gap-[10vw] text18 my-[2vw] max-md:my-[5vw]">
+          <div className="flex items-center justify-between max-md:justify-center w-[60%] max-md:w-[90%] font-cormorant-upright gap-[2vw] max-md:gap-[10vw] text30 my-[2vw] max-md:my-[5vw]">
             <div className="text-center space-y-[.5vw] max-md:space-y-[2vw]">
               <CopyLines>
                 <p className="font-bold">Links</p>
@@ -61,9 +61,6 @@ export default function Footer() {
                   </li>
                   <li>
                     <HoverLineComponent text="RSVP" />
-                  </li>
-                  <li>
-                    <HoverLineComponent  text="Instagram" />
                   </li>
                 </ul>
               </CopyLines>
