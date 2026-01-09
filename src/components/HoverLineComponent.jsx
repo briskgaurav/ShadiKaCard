@@ -30,7 +30,7 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
     {text}
     <span 
       ref={lineRef}
-      className={`absolute bottom-0 left-0 w-full h-[2px] bg-${colorTheme}`}
+      className={`absolute bottom-0 left-0 w-full h-[1px] bg-[#a30501]`}
       style={{ transform: 'scaleX(0)' }}
     ></span>
    </Link>

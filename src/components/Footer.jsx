@@ -63,7 +63,7 @@ export default function Footer() {
                     <HoverLineComponent text="RSVP" />
                   </li>
                   <li>
-                    <HoverLineComponent text="Instagram" />
+                    <HoverLineComponent  text="Instagram" />
                   </li>
                 </ul>
               </CopyLines>
