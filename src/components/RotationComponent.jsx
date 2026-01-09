@@ -11,8 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function RotationComponent({
   scale = "scale-100",
   isScale = false,
-  wheelImage = "https://framerusercontent.com/images/j8rC7lVmTCtjwjX0xagtMTxz38.png?scale-down-to=2048&width=2168&height=2168",
-  centerImage = "https://framerusercontent.com/images/gpuyLKzQFz8PbRrE1RR3LfnRWw.png?width=1814&height=1814",
+  wheelImage = "/img/webp/wheel1/yellowwheel-1.png",
+  centerImage = "/img/webp/wheel1/red-cover.png",
   iconImage = "https://framerusercontent.com/images/FMx33N0QNZEN9o98413jFSazlw.png?width=585&height=586",
   textColor = "text-primary",
   title = "See the",

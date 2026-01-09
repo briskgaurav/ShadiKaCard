@@ -10,7 +10,7 @@ export default function SeeTheRoute() {
     <div className="min-h-[250vh] w-full h-fit relative max-md:flex max-md:flex-col max-md:justify-end max-md:min-h-[240vh] max-md:w-screen  ">
       <div className="h-full  w-full absolute inset-0">
         <Image
-          src="/img/greenbg.avif"
+          src="/img/webp/greenbg.webp"
           alt="seeTheRoute"
           width={1000}
           height={1000}
@@ -23,7 +23,7 @@ export default function SeeTheRoute() {
 
         <div className="h-auto fadeup w-[7vw] rounded-full aspect-square relative">
           <img
-            src="https://framerusercontent.com/images/NmVSVg1aTrcYbgmRoP9eOE9gpw.png?width=372&height=372"
+            src="/img/webp/wheel1/red-design.png"
             alt="moon"
             width={1000}
             height={1000}
@@ -31,17 +31,17 @@ export default function SeeTheRoute() {
           />
         </div>
         <Copy>
-          <p className="text-secondary text-[3vw] max-md:text-[8vw] font-normal ">
+          <p className="text-[#a20601] text-[3vw] max-md:text-[8vw] font-normal ">
             MEET THE
           </p>
         </Copy>
         <Copy>
-          <p className="text-secondary text60 font-thin max-md:mt-[5vw] leading-[.8] text-center">
+          <p className="text-[#a20601] text60 font-thin max-md:mt-[5vw] leading-[.8] text-center">
             Bride & <br /> Groom
           </p>
         </Copy>
         <CopyLines>
-          <p className="text-secondary w-[45%] mt-[1vw] max-md:mt-[5vw] leading-[1.2]  max-md:w-[80%] font-semibold  text-center text18">
+          <p className="text-[#a20601] w-[45%] mt-[1vw] max-md:mt-[5vw] leading-[1.2]  max-md:w-[80%] font-semibold  text-center text18">
             We are both so delighted that you are able to join us in celebrating
             what we hope will be one of the happiest days of our lives. The
             affection shown to us by so many people since our roka has been

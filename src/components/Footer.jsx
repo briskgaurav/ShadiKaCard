@@ -11,7 +11,7 @@ export default function Footer() {
     <div className="min-h-[160vh] max-md:min-h-[160vh] max-md:justify-end max-md:pb-[15vh] flex flex-col py-[5vw] items-center justify-between w-full relative">
       <div className="h-full w-full absolute inset-0">
         <Image
-          src="/img/yellowbg.avif"
+          src="/img/webp/yellowbg.webp"
           alt="seeTheRoute"
           width={1000}
           height={1000}
@@ -24,10 +24,10 @@ export default function Footer() {
         <RotationComponent
           scale="max-md:scale-200"
           isScale={true}
-          wheelImage="/img/yellowwheel.avif"
-          centerImage="/img/yellowbglayer.avif"
-          iconImage="https://framerusercontent.com/images/BS00HRHT5NWobvzo4WjW9UA763g.png?width=380&height=380"
-          textColor="text-[#dfdac1]"
+          wheelImage="/img/webp/wheel3/yellowwheel.png"
+          centerImage="/img/webp/wheel3/yellowbglayer.png"
+          iconImage="/img/webp/wheel3/yellow-design.png"
+          textColor="text-primary"
           title="The countdown"
           titleLine2="route"
           subtitle="Click to open the map"
@@ -36,7 +36,7 @@ export default function Footer() {
 
       {/* Section 2 - Footer Content */}
       <div className="h-fit w-full flex items-center justify-center relative">
-        <div className="flex flex-col space-y-[2vw] max-md:space-y-[5vw] text-[#451173] font-serif items-center justify-center w-[50%] max-md:w-[90%]">
+        <div className="flex flex-col space-y-[2vw] max-md:space-y-[5vw] text-[#a20601] font-serif items-center justify-center w-[50%] max-md:w-[90%]">
           <CopyLines>
             <p className="text40 w-[100%] max-md:w-[100%] font-cormorant-upright leading-[1.2] text-center">
               The countdown begins

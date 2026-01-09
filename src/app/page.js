@@ -14,7 +14,7 @@ import Decorative from "@/components/Decorative";
 export default function page() {
   return (
     <>
-     <Loader/>
+     {/* <Loader/> */}
       <HeroSection />
       <Decorative/>
       <Sound />

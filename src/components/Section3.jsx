@@ -8,7 +8,7 @@ export default function Section3() {
     <div className="h-[200vh] max-md:h-fit max-md:min-h-[100vh] max-md:py-[10vh] w-full overflow-hidden py-[4vw] relative">
       <div className="h-full w-full absolute inset-0">
         <img
-          src="https://framerusercontent.com/images/SPr0bvMk9Lu3lQOpXzLoknBPaJo.png?width=1596&height=4794"
+          src="/img/webp/bluebg.webp"
           alt=""
           className="w-full h-full object-cover"
         />

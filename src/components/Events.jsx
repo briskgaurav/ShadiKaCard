@@ -62,7 +62,7 @@ export default function Events() {
     <div className="min-h-[100vh]  max-md:pt-[15vh] max-md:mt-[-1vh] h-fit w-full pb-[30vh] max-md:pb-[15vh] overflow-x-hidden overflow-hidden py-[4vw] max-md:py-[8vw] relative">
       <div className="h-full w-full absolute inset-0">
         <Image
-          src="/img/bluebg.avif"
+          src="/img/webp/bluebg.webp"
           width={1000}
           height={1000}
           alt=""
@@ -121,13 +121,13 @@ export function EventCard({ event }) {
       </div>
       <div className="relative fadeup">
         <p className="text40 font-semibold tracking-tight">{event.title}</p>
-        <p className="text12 font-semibold leading-[1.1]">
+        <p className="text18 font-semibold leading-[1.1]">
           {event.date}
         </p>
-        <p className="text12 font-semibold leading-[1.1]">
+        <p className="text18 font-semibold leading-[1.1]">
           {event.venue}
         </p>
-        <p className="text12 font-semibold leading-[1.1]">{event.time}</p>
+        <p className="text18 font-semibold leading-[1.1]">{event.time}</p>
       
       </div>
     </div>

@@ -11,9 +11,10 @@ export default function HeroSection() {
   return (
     <div className="h-[80vh] overflow-hidden max-md:h-[60vh] z-999 w-full relative">
       <img
-        src={isTablet ? "img/blue_Star_Bg2.png" : "img/blue_Star_Bg3.png"}
+        src={isTablet ? "img/webp/blue_Star_Bg2.webp" : "img/webp/blue_Star_Bg3.webp"}
         alt="background"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover brightness-80"
+
       />
 
       <div className="absolute top-[-15%] left-1/2 -translate-x-1/2 h-full w-full flex flex-col items-center justify-center">
