@@ -9,7 +9,7 @@ export default function page() {
     <>
       <Herov2 />
       <Scene />
-      <EventsInfo />
+      {/* <EventsInfo /> */}
       <BrideGroom />
     </>
   );

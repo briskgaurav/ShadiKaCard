@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Scene() {
   return (
-    <div className="h-fit min-h-[300vh] mt-[-13vw] w-full relative overflow-hidden">
+    <div className="h-fit min-h-[300vh] max-md:min-h-[100vh] max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-auto">
         <img
           src="/v2/yellowbg.png"
@@ -11,22 +11,21 @@ export default function Scene() {
         />
       </div>
 
-      <div className="h-auto w-full absolute bottom-0 left-0">
+      <div className="h-auto max-md:w-[150%] w-full absolute max-md:left-1/2 max-md:translate-x-[-50%] bottom-0  max-md:bottom-[-12vw] left-0">
         <img
-          src="/v2/kneedown.png"
+          src="/v2/shivmountain.png"
           alt="scene"
           className="w-full h-full object-contain"
         />
-
       </div>
-      <div className="w-[32%] h-full absolute top-[8vw] left-0">
+      <div className="w-[32%] max-md:w-[50%] max-md:left-[-1vw] h-full absolute top-[8vw] left-0">
         <img
           src="/v2/border.png"
           alt="scene"
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[32%] h-full absolute top-[8vw] right-0">
+      <div className="w-[32%] max-md:w-[50%] max-md:right-[-1vw] h-full absolute top-[8vw] right-0">
         <img
           src="/v2/border.png"
           alt="scene"
@@ -40,21 +39,21 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[20vw] h-auto aspect-square  absolute bottom-0 right-1/2 translate-x-1/2">
+      <div className="w-[18vw] max-md:w-[25vw] h-auto aspect-square  absolute top-[5vw] z-10 right-1/2 translate-x-1/2">
         <img
           src="/v2/om.png"
           alt="scene"
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[28vw] h-auto aspect-square  absolute bottom-0 left-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-2 h-auto aspect-square  absolute bottom-0 left-[-5vw]">
         <img
           src="/v2/ganesh.png"
           alt="scene"
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[28vw] h-auto aspect-square  absolute bottom-0 right-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-2 h-auto aspect-square  absolute bottom-0 right-[-5vw]">
         <img
           src="/v2/ganesh.png"
           alt="scene"
@@ -69,16 +68,9 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[70%] h-auto absolute top-0 left-0">
+      <div className="w-[70%]  h-auto absolute top-0 left-0">
         <img
           src="/v2/flowers.png"
-          alt="scene"
-          className="w-full h-full object-contain"
-        />
-      </div>
-      <div className="w-[25vw] h-auto absolute top-[3vw] left-1/2 translate-x-[-50%]">
-        <img
-          src="/v2/shiv.png"
           alt="scene"
           className="w-full h-full object-contain"
         />

@@ -47,7 +47,7 @@ export default function RotationComponent({
   return (
     <div
       ref={containerRef}
-      className={`h-auto w-[42vw] max-md:w-[100%]  max-md:mt-[-20vh] rounded-full aspect-square relative ${scale}`}
+      className={`h-auto w-[42vw] overflow-hidden max-md:w-[90vw] max-md:mt-0 rounded-full aspect-square relative ${scale}`}
     >
       <div ref={wheelRef} className="h-full w-full relative">
         {/* <img
@@ -79,17 +79,17 @@ export default function RotationComponent({
       <div
         className={`absolute ${
           isScale ? "max-md:scale-50" : "max-md:scale-100"
-        } text-center flex flex-col items-center justify-center gap-y-[.5vw] max-md:gap-y-[1vw] ${textColor} top-[62%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
+        } text-center flex flex-col items-center justify-center gap-y-[.5vw] max-md:gap-y-[2vw] ${textColor} top-[62%] max-md:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
       >
         <Copy>
-          <p className="text40 max-md:!text-[6vw] font-semibold leading-[1.2]">
-            {title} <br /> {titleLine2}
+          <p className="text40 max-md:!text-[6vw] font-georgia leading-[1.2]">
+            {title} {titleLine2}
           </p>
         </Copy>
         <CopyLines>
           <Link
             href={"/"}
-            className="text18 mt-[1vw] hover:brightness-150 duration-300 transition-opacity max-md:mt-[0vw] font-semibold leading-[1.2]"
+            className="text18 max-md:!text-[3.5vw] mt-[1vw] max-md:mt-[2vw] hover:brightness-150 duration-300 transition-opacity leading-[1.2]"
           >
             {subtitle}
           </Link>
