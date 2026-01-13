@@ -1,31 +1,28 @@
-import React from "react";
 import dynamic from "next/dynamic";
-import HeroSection from "../components/HeroSection";
-import Section3 from "@/components/Section3";
-const Events = dynamic(() => import("@/components/Events"));
-const SeeTheRoute = dynamic(() => import("@/components/SeeTheRoute"));
-const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
-const Footer = dynamic(() => import("@/components/Footer"));
-import Sound from "@/components/Sound";
 import Loader from "@/components/Loader";
-import Decorative from "@/components/Decorative";
 import { UseScrollToTopOnReload } from "@/components/ReloadToTop";
+import Sound from "@/components/Sound";
+import Herov2 from "@/components/v2/Herov2";
+import Scene from "@/components/v2/Scene";
+import React from "react";
+
+const EventsInfo = dynamic(() => import("@/components/v2/EventsInfo"));
+const BrideGroom = dynamic(() => import("@/components/v2/Bride&Groom"));
+const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
+const CountDown = dynamic(() => import("@/components/v2/CountDown"));
 
 export default function page() {
   return (
     <>
       <Loader />
       <UseScrollToTopOnReload />
-      <HeroSection />
-      <Decorative />
       <Sound />
-      {/* <DecorativeSection /> */}
-      {/* <DecorativeSection2 /> */}
-      <Section3 />
-      <Events />
-      <SeeTheRoute />
-      <ThingsKnow />
-      <Footer />
+      <Herov2 />
+      <Scene />
+      <EventsInfo />
+      <BrideGroom />
+      <ThingsKnow/>
+      <CountDown />
     </>
   );
 }
