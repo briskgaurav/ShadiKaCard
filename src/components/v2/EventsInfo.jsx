@@ -191,7 +191,7 @@ export function EventCard({ event }) {
         </div>
       </div>
       <div className="relative fadeup">
-        <p className="text-[2.5vw] font-medium font-georgia tracking-tight">{event.title}</p>
+        <p className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[7vw]">{event.title}</p>
         <div className="space-y-[.5vw] mt-[2vw]">
           <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.date}</p>
           <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.venue}</p>
