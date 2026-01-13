@@ -17,7 +17,7 @@ export default function EventsInfo() {
           <p className="text-[1.2vw] max-md:text-[3vw] ">
             || ॐ श्री गणेशाय नमः ||
           </p>
-          <div className="h-auto w-[14vw] aspect-square relative">
+          <div className="h-auto w-[14vw] aspect-square relative ">
             <img
               src="/v2/ganeshstrokes.png"
               alt="events"
@@ -53,7 +53,7 @@ export default function EventsInfo() {
             </div>
           </div>
           <div
-          className={`h-auto w-[25vw] animate-updown pointer-events-none max-md:w-[40vw] absolute top-[10%] right-[3%]`}
+          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] right-[3%] max-md:w-[20vw]`}
         >
           <Image
             src={"/img/illustrations/bouquet.png"}
@@ -64,7 +64,7 @@ export default function EventsInfo() {
           />
         </div>
         <div
-          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:w-[40vw] absolute top-[60%] left-[3%]`}
+          className={`h-auto w-[30vw] animate-updown pointer-events-none  absolute top-[60%] left-[3%] max-md:w-[25vw] max-md:top-[65%]`}
         >
           <Image
             src={"/img/illustrations/gathbandhan.png"}
@@ -75,7 +75,7 @@ export default function EventsInfo() {
           />
         </div>
         <div
-          className={`h-auto w-[20vw] animate-updown pointer-events-none max-md:w-[40vw] absolute top-[70%] right-[3%]`}
+          className={`h-auto w-[20vw] animate-updown pointer-events-none  absolute top-[70%] right-[3%] max-md:w-[20vw]`}
         >
           <Image
             src={"/img/illustrations/moon.png"}
@@ -164,11 +164,11 @@ export function EventCard({ event }) {
         </div>
       </div>
       <div className="relative fadeup">
-        <p className="text-[2.5vw] font-medium font-georgia tracking-tight">{event.title}</p>
+        <p className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[7vw]">{event.title}</p>
         <div className="space-y-[.5vw] mt-[2vw]">
-          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.date}</p>
-          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.venue}</p>
-          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.time}</p>
+          <p className="text18 font-semibold! font-georgia leading-[1.1] max-md:font-normal!">{event.date}</p>
+          <p className="text18 font-semibold! font-georgia leading-[1.1] max-md:font-normal!">{event.venue}</p>
+          <p className="text18 font-semibold! font-georgia leading-[1.1] max-md:font-normal!">{event.time}</p>
         </div>
       </div>
     </div>

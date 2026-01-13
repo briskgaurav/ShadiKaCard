@@ -6,7 +6,7 @@ import CopyLines from "./CopyLines";
 
 export default function ThingsKnow() {
   return (
-    <div className="min-h-[200vh]  w-full h-fit max-md:h-[650vw]  relative">
+    <div className="min-h-[200vh]  w-full h-fit max-md:h-[255vh]  relative">
       <div className="h-full  w-full absolute inset-0">
         <Image
           src="/v2/bg-star.png"
@@ -17,7 +17,7 @@ export default function ThingsKnow() {
         />
       </div>
 
-      <div className="h-full w-full gap-[2vw] overflow-x-hidden max-md:pt-[80vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-4%] left-0 flex items-center justify-center flex-col relative ">
+      <div className="h-full w-full gap-[2vw] overflow-x-hidden max-md:h-[250vh]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[0%] left-0 flex items-center justify-center flex-col relative ">
         <RotationComponent
           wheelImage="/img/webp/wheel2/redwheel-2.png"
           centerImage="/img/webp/wheel2/yellow-cover.png"
@@ -41,19 +41,19 @@ export default function ThingsKnow() {
           MEET THE
         </p> */}
         <Copy>
-          <p className="text-primary text-center text50  font-bizantheum leading-[1.2]">
+          <p className="text-primary text-center text50  font-bizantheum leading-[1.2] max-md:w-[80%]">
             Things To Know
           </p>
         </Copy>
         <CopyLines>
-          <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] tracking-wider leading-normal">
+          <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] max-md:text-[3.5vw] tracking-wider leading-normal">
             To help you feel at ease and enjoy every moment of the celebrations,
             we’ve gathered a few thoughtful details we’d love for you to know
             before the big day.
           </p>
         </CopyLines>
 
-        <div className="w-[80%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[5vw]">
+        <div className="w-[80%] flex items-center gap-[4vw] max-md:gap-[30vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
           {[
             {
               icon: "/img/webp/hastag-2.png",
@@ -82,9 +82,9 @@ export default function ThingsKnow() {
           ].map((item, index) => (
             <div
               key={index}
-              className="w-1/4 text-primary! fadeup text-center flex flex-col items-center justify-center "
+              className="w-1/4 text-primary! fadeup text-center flex flex-col items-center justify-center max-md:w-full "
             >
-              <div className="w-[6vw] h-[8vw] max-md:w-[25vw] ">
+              <div className="w-[6vw] h-[8vw] max-md:w-[20vw] max-md:h-[20vw] ">
                 <Image
                   src={item.icon}
                   alt={item.title}
