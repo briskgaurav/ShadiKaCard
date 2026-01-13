@@ -1,22 +1,48 @@
-import { Cormorant_Upright, Cormorant_Unicase, Manrope } from "next/font/google";
+import {
+  Cormorant_Upright,
+  Cormorant_Unicase,
+  Manrope,
+} from "next/font/google";
 import "./globals.css";
 import LenisSmoothScroll from "@/components/Lenis";
+import localFont from "next/font/local";
 
-const cormorantUpright = Cormorant_Upright({
-  variable: "--font-cormorant-upright",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// const cormorantUpright = Cormorant_Upright({
+//   variable: "--font-cormorant-upright",
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+// });
+
+// const cormorantUnicase = Cormorant_Unicase({
+//   variable: "--font-cormorant-unicase",
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+// });
+
+// const manrope = Manrope({
+//   variable: "--font-manrope",
+//   subsets: ["latin"],
+// });
+
+const Georgia = localFont({
+  src: [
+    {
+      path: "/fonts/georgia.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-georgia",
 });
-
-const cormorantUnicase = Cormorant_Unicase({
-  variable: "--font-cormorant-unicase",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
+const bizantheum = localFont({
+  src: [
+    {
+      path: "/fonts/Bizantheum-2.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-bizantheum",
 });
 
 export const metadata = {
@@ -31,7 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cormorantUpright.variable} ${cormorantUnicase.variable} ${manrope.variable} antialiased`}
+        className={` ${Georgia.variable} ${bizantheum.variable} antialiased`}
       >
         <LenisSmoothScroll />
         {children}

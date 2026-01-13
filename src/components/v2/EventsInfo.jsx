@@ -1,0 +1,214 @@
+import Image from "next/image";
+import React from "react";
+
+export default function EventsInfo() {
+  return (
+    <>
+      <div className="h-fit w-full py-[5vw] relative">
+        <div className="absolute inset-0">
+          <img
+            src="/v2/bgplain.png"
+            alt="events"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="h-full w-full  text-primary font-georgia flex items-center gap-[3vw] flex-col relative z-10">
+          <p className="text-[1.2vw] max-md:text-[3vw] ">
+            || ॐ श्री गणेशाय नमः ||
+          </p>
+          <div className="h-auto w-[18vw] aspect-square relative">
+            <img
+              src="/v2/ganeshstrokes.png"
+              alt="events"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="text-center space-y-[1vw]">
+            <p className="text-[1.8vw] max-md:text-[3vw] ">
+              with the heavenly blessings of almighty
+            </p>
+            <p className="text-[1.8vw] max-md:text-[3vw] ">
+              We invite you to join us in the wedding celebration ofÏ
+            </p>
+          </div>
+
+          <div className="mt-[4vw] text-center ">
+            <p className="text-[8vw] font-bizantheum ">Bhaskar</p>
+            <div className="text-center space-y-[1vw]">
+              <p className="text-[1.8vw] max-md:text-[3vw] ">Son of</p>
+              <p className="text-[1.8vw] max-md:text-[3vw] ">
+                Mrs. Vimlesh Varshney & Mr. Mahesh Varshney
+              </p>
+            </div>
+          </div>
+          <p className="text-[8vw] ">&</p>
+          <div className="mt-[0vw] text-center ">
+            <p className="text-[8vw] font-bizantheum ">Garima</p>
+            <div className="text-center space-y-[1vw]">
+              <p className="text-[1.8vw] max-md:text-[3vw] ">Daughter of</p>
+              <p className="text-[1.8vw] max-md:text-[3vw] ">
+                Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-fit w-full py-[5vw] relative">
+        <div className="absolute h-full w-full inset-0">
+          <img
+            src="/v2/bgplain.png"
+            alt="events"
+            className="w-full h-full bg-repeat-y object-cover"
+          />
+        </div>
+
+        <div className="h-full w-full relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center max-md:px-[5vw]">
+          <p className="text-[6.5vw] font-bizantheum">
+            On the following auspicious day
+          </p>
+          {eventsData.map((event) => (
+            <EventCard key={event.id} event={event} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
+export function EventCard({ event }) {
+  return (
+    <div className="flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
+      <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
+        <div
+          className={`size-full rounded-full ${
+            event.mirror ? "scale-x-[-1] group-hover:scale-x-[-1.1]" : ""
+          } overflow-hidden group`}
+        >
+          <img
+            src={event.image}
+            alt="event"
+            className={`w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 `}
+          />
+        </div>
+        <div
+          className={`h-auto animate-wiggle pointer-events-none w-[12vw] max-md:w-[45vw] absolute ${
+            event.digonalImages
+              ? "left-[-25%] max-md:left-[-35%]"
+              : "right-[-25%] max-md:right-[-35%]"
+          } ${
+            event.digonalImages
+              ? "bottom-[10%] max-md:bottom-[15%]"
+              : "top-[60%] max-md:top-[45%]"
+          }`}
+        >
+          <Image
+            src={event.illustration1}
+            alt="moon"
+            width={1000}
+            height={1000}
+            className="w-full h-full object-contain"
+          />
+        </div>
+        <div
+          className={`h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[40vw] absolute ${
+            event.digonalImages
+              ? "right-[-20%] max-md:right-[-20%]"
+              : "left-[-20%] max-md:left-[-20%]"
+          } ${
+            event.digonalImages
+              ? "top-[-20%] max-md:top-[-8%]"
+              : "top-[-20%] max-md:top-[-1%]"
+          }`}
+        >
+          <Image
+            src={event.illustration2}
+            alt="moon"
+            width={500}
+            height={500}
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+      <div className="relative fadeup">
+        <p className="text40 font-semibold tracking-tight">{event.title}</p>
+        <div className="space-y-[.5vw] mt-[2vw]">
+          <p className="text18 font-georgia leading-[1.1]">{event.date}</p>
+          <p className="text18 font-georgia leading-[1.1]">{event.venue}</p>
+          <p className="text18 font-georgia leading-[1.1]">{event.time}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const eventsData = [
+  {
+    id: 1,
+    title: "Chadath",
+    date: "Tuesday, 17th February 2026",
+    venue: "Meerut",
+    time: "6 pm Onwards",
+    image: "/img/illustrations/chadath.png",
+    illustration1: "/img/illustrations/turban.png",
+    illustration2: "/img/illustrations/shehnai.png",
+    digonalImages: false,
+  },
+  {
+    id: 2,
+    title: "Mehndi",
+    date: "Wednesday, 18th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "12 pm Onwards",
+    image: "/img/illustrations/mehndi.png",
+    illustration1: "/img/illustrations/diya.png",
+    illustration2: "/img/illustrations/kalash.png",
+    digonalImages: true,
+  },
+  {
+    id: 3,
+    title: "Engagement",
+    date: "Wednesday, 18th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "6 pm Onwards",
+    image: "/img/illustrations/Engagment.png",
+    illustration1: "/img/illustrations/ring.png",
+    illustration2: "/img/illustrations/lotus.png",
+    digonalImages: false,
+  },
+  {
+    id: 4,
+    title: "Haldi",
+    date: "Thursday, 19th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "10 am Onwards",
+    image: "/img/illustrations/Haldi.png",
+    illustration1: "/img/illustrations/marigold.png",
+    illustration2: "/img/illustrations/haldipowder.png",
+    digonalImages: false,
+  },
+  {
+    id: 5,
+    title: "Wedding",
+    date: "Thursday, 19th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "5 pm Onwards",
+    image: "/img/illustrations/shaadi.png",
+    mirror: true,
+    illustration1: "/img/illustrations/diya.png",
+    illustration2: "/img/illustrations/kalash.png",
+    digonalImages: true,
+  },
+  {
+    id: 6,
+    title: "Reception",
+    date: "Thursday, 19th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "8 pm Onwards",
+    image: "/img/illustrations/reception.png",
+    mirror: true,
+    illustration1: "/img/illustrations/glass.png",
+    illustration2: "/img/illustrations/champaign.png",
+    digonalImages: false,
+  },
+];

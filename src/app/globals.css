@@ -1,23 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #580e02;
+  --background: #A20601;
   --foreground: #171717;
-  --color-primary: rgb(231, 203, 104);
+  --color-primary: #E7CB68;
   --color-secondary: #0c4860;
-  --font-cormorant-upright: var(--font-cormorant-upright);
-  --font-cormorant-unicase: var(--font-cormorant-unicase);
-  --font-manrope: var(--font-manrope);
+  --font-georgia: var(--font-georgia);
+  --font-bizantheum: var(--font-bizantheum);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--color-primary);
-  --font-cormorant-upright: var(--font-cormorant-upright);
-  --font-cormorant-unicase: var(--font-cormorant-unicase);
-  --font-manrope: var(--font-manrope);
   --color-secondary: var(--color-secondary);
+  --font-georgia: var(--font-georgia);
+  --font-bizantheum: var(--font-bizantheum);
   --breakpoint-md: 1025px;
 
   --animate-wiggle: wiggle 3s ease-in-out infinite;
@@ -64,7 +62,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   padding: 0vw;
-  font-family: var(--font-cormorant-upright);
+  font-family: var(--font-georgia);
   overflow-x: hidden;
   user-select: none;
 }
