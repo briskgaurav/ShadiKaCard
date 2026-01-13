@@ -200,7 +200,7 @@ export default function Decorative() {
           />
         </div>
         {/* BALLOON */}
-        <div className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%] animate-updown2">
+        {/* <div className="h-[60%] max-md:w-[100%] max-md:left-[42%] max-md:top-[45%] w-[60%] absolute left-[30%] -translate-x-1/2 z-0 top-[30%] translate-y-[-50%] animate-updown2">
           <Image
             src={isTablet ? shoeBalloon1 : shoeBalloon2}
             alt="Shoe balloon decoration"
@@ -210,7 +210,7 @@ export default function Decorative() {
             priority
             className="w-full h-full object-contain"
           />
-        </div>
+        </div> */}
 
         <div className="h-[100vh] relative w-full z-2">
           <div className="h-full w-full left-[10%] max-md:left-[5%] max-md:top-[-2%] max-md:w-[80%] top-[-2%] -rotate-60 translate-x-[-50%] absolute z-2 animate-float-y1">

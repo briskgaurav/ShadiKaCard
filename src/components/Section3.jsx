@@ -43,8 +43,8 @@ export default function Section3() {
 
       <div className="h-full w-full relative  text-primary space-y-[2vw] max-md:space-y-[6vw] text-center flex flex-col items-center justify-center relative">
         <CopyLines>
-          <p className="w-[30%] leading-[1] text12 text-center">
-            ॐ श्री गणेशाय नम
+          <p className="w-[30%] leading-[1] text18 text-center">
+            || ॐ श्री गणेशाय नम: ||
           </p>
         </CopyLines>
         <div className="w-[15%] fadeup max-md:w-[35%]  h-auto ">
@@ -78,7 +78,7 @@ export default function Section3() {
         <CopyLines>
           <div className="text30 max-md:w-[80%] font-semibold tracking-tight ">
             <p>Daughter of </p>
-            <p>Mrs. Reena & Mr. Rajiv Kapoor</p>
+            <p>Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi</p>
           </div>
         </CopyLines>
         <Copy>
@@ -91,7 +91,7 @@ export default function Section3() {
         <CopyLines>
           <div className="text30 max-md:w-[80%] font-semibold tracking-tight">
             <p>Son of</p>
-            <p>Mrs. Shalini & Mr. Aakash Mittal,</p>
+            <p>Mrs. Vimlesh Varshney & Mr. Mahesh Varshney,</p>
           </div>
         </CopyLines>
 
