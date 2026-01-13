@@ -41,22 +41,29 @@ export default function Herov2() {
           animation: rotate 20s linear infinite;
         }
       `}</style>
-      <div className="w-full h-auto relative">
+      <div className="w-full h-auto max-md:h-[120vh] relative">
         <img
           src={"/v2/herobg.webp"}
           alt="background"
-          className="w-full h-full object-contain"
+          className="w-full h-full  max-md:hidden object-contain"
         />
+        <div className="w-full hidden max-md:block h-[100%]">
+          <img
+            src={"/v2/mobilehero.png"}
+            alt="background"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute top-0 left-0 w-full  overflow-hidden h-full flex items-center justify-center">
           <div className="w-full h-full relative">
-            <div className="w-[50vw] max-md:w-[100vw] font-bizantheum text-[9vw] max-md:text-[15vw] text-center leading-[1.2] flex items-center max-md:items-start max-md:px-[8vw] justify-between  max-md:justify-end pb-[16vw] pt-[16vw] flex-col text-primary h-full">
-              <div className="max-md:text-left">
+            <div className="w-[50vw] max-md:w-[100vw] font-bizantheum text-[9vw] max-md:text-[18vw] text-center leading-[1.2] flex items-center max-md:items-center max-md:px-[8vw] justify-between  max-md:justify-start max-md:mt-[25vw] pb-[16vw] pt-[16vw] max-md:pt-[5vw] flex-col text-primary h-full">
+              <div className="">
                 <p>Bhaskar</p>
                 <p className="text-[5vw] max-md:text-[10vw]">Weds</p>
                 <p>Garima</p>
               </div>
 
-              <div className="w-[30vw] max-md:absolute max-md:top-[50%] max-md:right-10 max-md:translate-x-0 translate-x-[-15%] h-auto relative">
+              <div className="w-[30vw] max-md:absolute max-md:hidden max-md:right-10 max-md:translate-x-0 translate-x-[-15%] h-auto relative">
                 <img
                   src="/v2/doli.png"
                   alt="background"
@@ -64,7 +71,7 @@ export default function Herov2() {
                 />
               </div>
             </div>
-            <div className="w-[70vw] max-md:w-[80vw] absolute right-[-22%]  max-md:right-[-35%] max-md:top-0 top-1/2 translate-y-[-50%] h-auto aspect-square">
+            <div className="w-[70vw] max-md:w-[140vw] absolute right-[-22%]  max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[60%] top-1/2 translate-y-[-50%] h-auto aspect-square">
               <div className="w-full relative h-full rotate-outer">
                 <img
                   src="/v2/heroflower2.png"

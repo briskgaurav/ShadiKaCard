@@ -5,7 +5,7 @@ import CopyLines from "../CopyLines";
 export default function EventsInfo() {
   return (
     <>
-      <div className="h-fit w-full py-[5vw] relative">
+      <div className="h-fit w-full py-[5vw] max-md:px-[10vw] relative">
         <div className="absolute inset-0">
           <Image
             src="/v2/bgplain.png"
@@ -15,8 +15,8 @@ export default function EventsInfo() {
           />
         </div>
 
-        <div className="h-full w-full  text-primary font-georgia flex items-center gap-[1vw] flex-col relative z-10">
-          <p className="text-[1.2vw] max-md:text-[3vw] ">
+        <div className="h-full w-full  text-primary font-georgia flex items-center gap-[1vw] max-md:gap-[5vw] flex-col relative z-10">
+          <p className="text-[1.2vw] max-md:text-[5vw] ">
             || ॐ श्री गणेशाय नमः ||
           </p>
           <div className="h-auto w-[14vw] aspect-square relative">
@@ -27,14 +27,14 @@ export default function EventsInfo() {
               className="object-contain"
             />
           </div>
-          <div className="text-center space-y-[1vw]">
+          <div className="text-center space-y-[1vw] max-md:space-y-[5vw]">
             <CopyLines>
-              <p className="text-[1.8vw] max-md:text-[3vw]">
+              <p className="text-[1.8vw] max-md:text-[5vw]">
                 with the heavenly blessings of almighty
               </p>
             </CopyLines>
             <CopyLines>
-              <p className="text-[1.8vw] max-md:text-[3vw] ">
+              <p className="text-[1.8vw] max-md:text-[5vw] ">
                 We invite you to join us in the wedding celebration of
               </p>
             </CopyLines>
@@ -42,39 +42,39 @@ export default function EventsInfo() {
 
           <div className="mt-[4vw] text-center ">
             <CopyLines>
-              <p className="text-[8vw] font-bizantheum ">Bhaskar</p>
+              <p className="text-[8vw] max-md:text-[12vw] font-bizantheum ">Bhaskar</p>
             </CopyLines>
             <div className="text-center space-y-[1vw]">
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[3vw] ">Son of</p>
+                <p className="text-[1.8vw] max-md:text-[5vw] ">Son of</p>
               </CopyLines>
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[3vw] ">
+                <p className="text-[1.8vw] max-md:text-[5vw] ">
                   Mrs. Vimlesh Varshney & Mr. Mahesh Varshney
                 </p>
               </CopyLines>
             </div>
           </div>
           <CopyLines>
-            <p className="text-[9vw] font-inria ">&</p>
+            <p className="text-[9vw] max-md:text-[12vw] font-inria ">&</p>
           </CopyLines>
           <div className="-mt-5 text-center ">
             <CopyLines>
-              <p className="text-[8vw] font-bizantheum ">Garima</p>
+              <p className="text-[8vw] max-md:text-[12vw] font-bizantheum ">Garima</p>
             </CopyLines>
             <div className="text-center space-y-[1vw]">
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[3vw] ">Daughter of</p>
+                <p className="text-[1.8vw] max-md:text-[5vw] ">Daughter of</p>
               </CopyLines>
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[3vw] ">
+                <p className="text-[1.8vw] max-md:text-[5vw] ">
                   Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
                 </p>
               </CopyLines>
             </div>
           </div>
           <div
-          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] right-[3%] max-md:w-[20vw]`}
+          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] right-[3%] max-md:w-[20vw]`}
         >
           <Image
             src={"/img/illustrations/bouquet.png"}
@@ -85,7 +85,7 @@ export default function EventsInfo() {
           />
         </div>
         <div
-          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:w-[40vw] absolute top-[60%] left-[3%]`}
+          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:w-[20vw] absolute top-[70%] left-[3%]`}
         >
           <Image
             src={"/v2/BG.png"}
@@ -121,7 +121,7 @@ export default function EventsInfo() {
 
         <div className="h-full w-full max-md:overflow-hidden relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center max-md:px-[5vw]">
           <CopyLines>
-            <p className="text-[6.5vw] font-bizantheum">
+            <p className="text-[6.5vw] max-md:text-[10vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum">
               On the following auspicious day
             </p>
           </CopyLines>
@@ -148,7 +148,7 @@ export function EventCard({ event }) {
             alt="event"
             height={500}
             width={500}
-            className={`object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 `}
+            className={`object-cover  h-full w-full transition-transform duration-500 ease-in-out group-hover:scale-105 `}
           />
         </div>
         <div
@@ -167,7 +167,7 @@ export function EventCard({ event }) {
             alt="moon"
             width={1000}
             height={1000}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contcain"
           />
         </div>
         <div
