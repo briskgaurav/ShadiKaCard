@@ -2,6 +2,7 @@ import {
   Cormorant_Upright,
   Cormorant_Unicase,
   Manrope,
+  Inria_Serif,
 } from "next/font/google";
 import "./globals.css";
 import LenisSmoothScroll from "@/components/Lenis";
@@ -23,6 +24,12 @@ import localFont from "next/font/local";
 //   variable: "--font-manrope",
 //   subsets: ["latin"],
 // });
+
+const inria = Inria_Serif({
+  variable: "--font-inria",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const Georgia = localFont({
   src: [
@@ -57,7 +64,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${Georgia.variable} ${bizantheum.variable} antialiased`}
+        className={` ${Georgia.variable} ${bizantheum.variable} ${inria.variable} antialiased`}
       >
         <LenisSmoothScroll />
         {children}

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useRef } from 'react'
 import gsap from 'gsap'
 
-export default function HoverLineComponent({text="TEXT HERE", colorTheme="primary"}) {
+export default function HoverLineComponent({text="TEXT HERE", colorTheme="primary", href, className ,lineColor, target}) {
   const lineRef = useRef(null)
   const colorThemeClass = `bg-${colorTheme}`
 
@@ -22,15 +22,16 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
 
   return (
    <Link 
-     href={'/'} 
-     className='relative'
+   target={`${target} || _self`}
+     href={href || '/'} 
+     className={`relative ${className}`}
      onMouseEnter={handleMouseEnter}
      onMouseLeave={handleMouseLeave}
    >
     <p className='text-[1.2vw] max-md:text-[5vw] font-georgia'>{text}</p>
     <span 
       ref={lineRef}
-      className={`absolute bottom-0 left-0 w-full h-[1px] bg-[#a30501]`}
+      className={`absolute bottom-0 left-0 w-full h-[1px] bg-[#a30501] ${lineColor}`}
       style={{ transform: 'scaleX(0)' }}
     ></span>
    </Link>

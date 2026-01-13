@@ -16,16 +16,16 @@ export default function BrideGroom() {
         <div className="h-full w-full py-[5vw] max-md:py-[10vw] relative flex items-center justify-center">
           <RotationComponent />
         </div>
-        <div className="w-[10vw] max-md:w-[20vw] h-auto relative">
+        <div className="w-[8vw] max-md:w-[20vw] h-auto relative">
           <img
             src="/v2/hearts.png"
             alt="background"
             className="w-full h-full object-contain"
           />
         </div>
-        <p className="text-[3vw] max-md:text-[5vw] font-semibold">Meet the</p>
+        <p className="text-[2.5vw] max-md:text-[5vw] font-semibold">Meet the</p>
         <p className="text-[8vw] max-md:text-[12vw] font-bizantheum">Bride & Groom</p>
-        <p className="text-[1.8vw] max-md:text-[3.5vw] w-[60%] max-md:w-[85%] text-center mt-[-2vw] max-md:mt-[-4vw]">
+        <p className="text18 font-semibold tracking-wider leading-normal max-md:text-[3.5vw] w-[55%] max-md:w-[85%] text-center mt-[-2vw] max-md:mt-[-4vw]">
           We are both so delighted that you are able to join us in celebrating
           what we hope will be one of the happiest days of our lives. The
           affection shown to us by so many people since our roka has been

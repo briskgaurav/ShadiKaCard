@@ -1,6 +1,7 @@
 import Loader from "@/components/Loader";
 import { UseScrollToTopOnReload } from "@/components/ReloadToTop";
 import Sound from "@/components/Sound";
+import ThingsKnow from "@/components/ThingsKnow";
 import BrideGroom from "@/components/v2/Bride&Groom";
 import CountDown from "@/components/v2/CountDown";
 import EventsInfo from "@/components/v2/EventsInfo";
@@ -17,8 +18,10 @@ export default function page() {
       <Herov2 />
       <Scene />
       <EventsInfo />
+      <EventsInfo />
       <BrideGroom />
       <CountDown />
+      <ThingsKnow/>
     </>
   );
 }

@@ -7,6 +7,7 @@
   --color-secondary: #0c4860;
   --font-georgia: var(--font-georgia);
   --font-bizantheum: var(--font-bizantheum);
+  --font-inria:var(--font-inria);
 }
 
 @theme inline {
@@ -16,6 +17,8 @@
   --color-secondary: var(--color-secondary);
   --font-georgia: var(--font-georgia);
   --font-bizantheum: var(--font-bizantheum);
+  --font-inria:var(--font-inria);
+
   --breakpoint-md: 1025px;
 
   --animate-wiggle: wiggle 3s ease-in-out infinite;

@@ -8,16 +8,16 @@ import "swiper/css/effect-fade";
 
 const images = [
   "/img/illustrations/image-1.png",
-  "/img/illustrations/image-3.png",
-  "/img/illustrations/image-4.png",
   "/img/illustrations/image-2.png",
+  "/img/illustrations/image-4.png",
+  "/img/illustrations/image-3.png",
 ];
 
 export default function FlowerSwiper() {
   const [swiper, setSwiper] = useState(null);
 
   return (
-    <div className="h-[65vw] max-md:h-[100vw] w-auto aspect-square py-[5vw] max-md:py-[10vw] relative">
+    <div className="h-[63vw] max-md:h-[100vw] w-auto aspect-square py-[5vw] max-md:py-[10vw] relative">
       <div className="w-full h-auto aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <img
           src="/v2/flowerframe.png"
@@ -25,7 +25,7 @@ export default function FlowerSwiper() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="h-[30vw] w-auto aspect-square max-md:w-[50vw] max-md:h-auto rounded-full overflow-hidden swiperimages z-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="h-[29.2vw] w-auto aspect-square max-md:w-[50vw] max-md:h-auto rounded-full overflow-hidden swiperimages z-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Swiper
           effect={"fade"}
           spaceBetween={0}
@@ -55,7 +55,7 @@ export default function FlowerSwiper() {
       {/* Custom Navigation Buttons */}
       <button
         onClick={() => swiper?.slidePrev()}
-        className="absolute left-[-10%] max-md:left-[10%] cursor-pointer top-1/2 max-md:top-[90%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
+        className="absolute left-[-15%] max-md:left-[10%] cursor-pointer top-1/2 max-md:top-[90%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
       >
         <img
           src="/img/Unc/arrow.svg"
@@ -65,7 +65,7 @@ export default function FlowerSwiper() {
       </button>
       <button
         onClick={() => swiper?.slideNext()}
-        className="absolute right-[-10%] max-md:right-[10%] cursor-pointer top-1/2 max-md:top-[90%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
+        className="absolute right-[-15%] max-md:right-[10%] cursor-pointer top-1/2 max-md:top-[90%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
       >
         <img
           src="/img/Unc/arrow.svg"
