@@ -89,9 +89,7 @@ export default function RotationComponent({
         </Copy>
         <div className="flex flex-col items-center  gap-y-[1vw]">
         <CopyLines>
-          
-            <HoverLineComponent text={subtitle} className={"text20 max-md:!text-[3.5vw] mt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={"!bg-primary"} target={"_blank"} />
-          
+            <HoverLineComponent text={subtitle} className={"text20 max-md:!text-[3.5vw] mt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={textColor} target={"_blank"} />
         </CopyLines>
         <div className="w-[4vw] fadeup max-md:w-[10vw] h-[4vw] max-md:h-[10vw] flex items-center justify-center">
           <img

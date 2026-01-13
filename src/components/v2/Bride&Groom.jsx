@@ -14,7 +14,7 @@ export default function BrideGroom() {
       </div>
       <div className="h-full w-full font-georgia flex items-center gap-[3vw] max-md:gap-[6vw] flex-col relative z-10">
         <div className="h-full w-full py-[5vw] max-md:py-[10vw] relative flex items-center justify-center">
-          <RotationComponent />
+          <RotationComponent  textColor="text-primary"/>
         </div>
         <div className="w-[8vw] max-md:w-[20vw] h-auto relative">
           <img

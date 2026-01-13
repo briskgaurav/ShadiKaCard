@@ -9,7 +9,7 @@ export default function ThingsKnow() {
     <div className="min-h-[200vh]  w-full h-fit max-md:h-[650vw]  relative">
       <div className="h-full  w-full absolute inset-0">
         <Image
-          src="/img/webp/purpleBg.webp"
+          src="/v2/bg-star.png"
           alt="seeTheRoute"
           width={1000}
           height={1000}
@@ -41,12 +41,12 @@ export default function ThingsKnow() {
           MEET THE
         </p> */}
         <Copy>
-          <p className="text-primary text-center text60  leading-[1.2]">
-            Things to <br /> know
+          <p className="text-primary text-center text50  font-bizantheum leading-[1.2]">
+            Things To Know
           </p>
         </Copy>
         <CopyLines>
-          <p className="text-primary w-[60%] max-md:w-[90%] leading-[1.2] text-center text30">
+          <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] tracking-wider leading-normal">
             To help you feel at ease and enjoy every moment of the celebrations,
             we’ve gathered a few thoughtful details we’d love for you to know
             before the big day.
@@ -82,9 +82,9 @@ export default function ThingsKnow() {
           ].map((item, index) => (
             <div
               key={index}
-              className="w-full !text-primary fadeup text-center flex flex-col items-center justify-center"
+              className="w-1/4 text-primary! fadeup text-center flex flex-col items-center justify-center "
             >
-              <div className="w-[5vw] max-md:w-[25vw] h-auto ">
+              <div className="w-[6vw] h-[8vw] max-md:w-[25vw] ">
                 <Image
                   src={item.icon}
                   alt={item.title}
@@ -93,10 +93,12 @@ export default function ThingsKnow() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="!text-primary text30 mt-[.6vw]">{item.title}</p>
-              <p className="!text-primary max-md:w-[60%] text18 leading-[.9] mt-[.5vw] w-[80%]">
+              <div className="space-y-[1vw] flex items-center justify-start flex-col">
+              <p className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</p>
+              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold">
                 {item.description}
               </p>
+              </div>
             </div>
           ))}
         </div>
