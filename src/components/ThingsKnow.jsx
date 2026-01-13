@@ -6,7 +6,7 @@ import CopyLines from "./CopyLines";
 
 export default function ThingsKnow() {
   return (
-    <div className="min-h-[200vh]  w-full h-fit max-md:h-[600vw]  relative">
+    <div className="min-h-[200vh]  w-full h-fit max-md:h-[550vw] relative">
       <div className="h-full  w-full absolute inset-0">
         <Image
           src="/v2/bg-star.png"
@@ -17,7 +17,7 @@ export default function ThingsKnow() {
         />
       </div>
 
-      <div className="h-full w-full gap-[2vw]  max-md:h-[620vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-5%] left-0 flex items-center justify-center flex-col relative ">
+      <div className="h-full w-full gap-[2vw]  max-md:h-[590vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-5%] left-0 flex items-center justify-center flex-col relative ">
         <RotationComponent
           wheelImage="/img/webp/wheel2/redwheel-2.png"
           centerImage="/img/webp/wheel2/yellow-cover.png"
@@ -46,7 +46,7 @@ export default function ThingsKnow() {
           </p>
         </Copy>
         <CopyLines>
-          <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] max-md:text-[3.5vw] tracking-wider leading-normal">
+          <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] max-md:text-[4.5vw] tracking-wider leading-normal max-md:font-medium">
             To help you feel at ease and enjoy every moment of the celebrations,
             we’ve gathered a few thoughtful details we’d love for you to know
             before the big day.
@@ -95,7 +95,7 @@ export default function ThingsKnow() {
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
               <p className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</p>
-              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold">
+              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium">
                 {item.description}
               </p>
               </div>

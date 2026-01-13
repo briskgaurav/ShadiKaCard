@@ -55,22 +55,22 @@ export default function FlowerSwiper() {
       {/* Custom Navigation Buttons */}
       <button
         onClick={() => swiper?.slidePrev()}
-        className="absolute left-[-15%] max-md:left-[10%] cursor-pointer top-1/2 max-md:top-[90%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
+        className="absolute left-[-15%] max-md:left-[34%] cursor-pointer top-1/2 max-md:top-[110%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[15vw] h-[4vw] max-md:h-[15vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
       >
         <img
           src="/img/Unc/arrow.svg"
           alt="prev arrow"
-          className="w-[2vw] max-md:w-[5vw] h-[2vw] max-md:h-[5vw] object-contain rotate-180"
+          className="w-[2vw] max-md:w-[7vw] h-[2vw] max-md:h-auto object-contain rotate-180"
         />
       </button>
       <button
         onClick={() => swiper?.slideNext()}
-        className="absolute right-[-15%] max-md:right-[10%] cursor-pointer top-1/2 max-md:top-[90%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[10vw] h-[4vw] max-md:h-[10vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
+        className="absolute right-[-15%] max-md:right-[34%] cursor-pointer top-1/2 max-md:top-[110%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[15vw] h-[4vw] max-md:h-[15vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
       >
         <img
           src="/img/Unc/arrow.svg"
           alt="next arrow"
-          className="w-[2vw] max-md:w-[5vw] h-[2vw] max-md:h-[5vw] object-contain"
+          className="w-[2vw] max-md:w-[7vw] h-[2vw] max-md:h-auto object-contain"
         />
       </button>
     </div>

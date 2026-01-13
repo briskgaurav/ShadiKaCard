@@ -5,7 +5,7 @@ import CopyLines from "../CopyLines";
 export default function EventsInfo() {
   return (
     <>
-      <div className="h-fit w-full py-[5vw] max-md:px-[10vw] relative">
+      <div className="h-fit w-full py-[5vw] max-md:px-[10vw] relative max-sm:py-[15vw]">
         <div className="absolute inset-0">
           <Image
             src="/v2/bgplain.png"
@@ -19,11 +19,10 @@ export default function EventsInfo() {
           <p className="text-[1.2vw] max-md:text-[5vw] ">
             || ॐ श्री गणेशाय नमः ||
           </p>
-          <div className="h-auto w-[14vw] aspect-square relative">
+          <div className="h-auto w-[14vw] aspect-square relative max-sm:w-[25vw]">
             <img
               src="/v2/ganeshstrokes.png"
               alt="events"
-              fill
               className="object-contain"
             />
           </div>
@@ -42,7 +41,7 @@ export default function EventsInfo() {
 
           <div className="mt-[4vw] text-center ">
             <CopyLines>
-              <p className="text-[8vw] max-md:text-[12vw] font-bizantheum ">Bhaskar</p>
+              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Bhaskar</p>
             </CopyLines>
             <div className="text-center space-y-[1vw]">
               <CopyLines>
@@ -56,11 +55,11 @@ export default function EventsInfo() {
             </div>
           </div>
           <CopyLines>
-            <p className="text-[9vw] max-md:text-[12vw] font-inria ">&</p>
+            <p className="text-[9vw] max-md:text-[15vw] font-inria ">&</p>
           </CopyLines>
           <div className="-mt-5 text-center ">
             <CopyLines>
-              <p className="text-[8vw] max-md:text-[12vw] font-bizantheum ">Garima</p>
+              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Garima</p>
             </CopyLines>
             <div className="text-center space-y-[1vw]">
               <CopyLines>
@@ -74,7 +73,7 @@ export default function EventsInfo() {
             </div>
           </div>
           <div
-          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] right-[3%] max-md:w-[20vw]`}
+          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] right-[3%] max-md:hidden`}
         >
           <Image
             src={"/img/illustrations/bouquet.png"}
@@ -85,7 +84,7 @@ export default function EventsInfo() {
           />
         </div>
         <div
-          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:w-[20vw] absolute top-[70%] left-[3%]`}
+          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:hidden absolute top-[70%] left-[3%]`}
         >
           <Image
             src={"/v2/BG.png"}
@@ -96,7 +95,7 @@ export default function EventsInfo() {
           />
         </div>
         <div
-          className={`h-auto w-[20vw] animate-updown pointer-events-none  absolute top-[70%] right-[3%] max-md:w-[20vw]`}
+          className={`h-auto w-[20vw] animate-updown pointer-events-none  absolute top-[70%] right-[3%] max-md:hidden`}
         >
           <Image
             src={"/img/illustrations/moon.png"}
@@ -108,14 +107,23 @@ export default function EventsInfo() {
         </div>
         </div>
       </div>
-      <div className="h-fit w-full py-[5vw] relative pb-[10vw]">
-        <div className="absolute h-full w-full  inset-0">
+      <div className="h-fit w-full py-[5vw] relative pb-[10vw] ">
+        <div className="absolute h-full w-full max-sm:h-auto  inset-0 max-md:hidden">
           <Image
             src="/v2/bgplain.png"
             alt="events"
             height={1000}
             width={1000}
-            className="bg-repeat-y h-full w-full object-cover"
+            className="bg-repeat-y h-full w-full object-cover max-md:object-contain"
+          />
+        </div>
+        <div className="absolute h-full w-full max-sm:h-full max-md:block  inset-0 hidden">
+          <Image
+            src="/v2/redbg-mobile.png"
+            alt="events"
+            height={1000}
+            width={1000}
+            className="bg-repeat-y h-full w-full object-cover max-md:object-cover"
           />
         </div>
 
@@ -136,8 +144,8 @@ export default function EventsInfo() {
 
 export function EventCard({ event }) {
   return (
-    <div className="flex flex-col items-center  justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
-      <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
+    <div className="flex flex-col items-center  justify-center gap-y-[2vw] max-md:gap-y-[4vw] max-md:mb-[7vw]">
+      <div className="h-[57vh] max-md:h-[90vw] w-[22vw] max-md:w-[60vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
         <div
           className={`size-full rounded-full ${
             event.mirror ? "scale-x-[-1] group-hover:scale-x-[-1.1]" : ""
@@ -174,7 +182,7 @@ export function EventCard({ event }) {
           className={`h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[35vw] absolute ${
             event.digonalImages
               ? "right-[-20%] max-md:right-[-25%]"
-              : "left-[-20%] max-md:left-[-20%]"
+              : "left-[-20%] max-md:left-[-35%]"
           } ${
             event.digonalImages
               ? "top-[-20%] max-md:top-[-8%]"
@@ -191,11 +199,11 @@ export function EventCard({ event }) {
         </div>
       </div>
       <div className="relative fadeup">
-        <p className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[7vw]">{event.title}</p>
+        <p className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[9vw]">{event.title}</p>
         <div className="space-y-[.5vw] mt-[2vw]">
-          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.date}</p>
-          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.venue}</p>
-          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.time}</p>
+          <p className="text18 font-medium font-georgia leading-[1.1]">{event.date}</p>
+          <p className="text18 font-medium font-georgia leading-[1.1]">{event.venue}</p>
+          <p className="text18 font-medium font-georgia leading-[1.1]">{event.time}</p>
         </div>
       </div>
     </div>

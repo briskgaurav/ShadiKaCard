@@ -14,7 +14,7 @@ export default function Scene() {
         />
       </div>
 
-      <div className="h-auto max-md:w-[180%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
+      <div className="h-auto max-md:w-[170%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <Image
           src="/v2/shivmountain.png"
           alt="scene"
@@ -23,7 +23,7 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[32%] max-md:w-[50%] max-md:left-[-1vw] h-full absolute top-[8vw] left-[-1.4vw]">
+      <div className="w-[32%] max-md:w-[50%] max-md:left-[-2vw] h-full absolute top-[8vw] left-[-1.4vw]">
         <Image
           src="/v2/border.png"
           alt="scene"
@@ -32,7 +32,7 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[32%] max-md:w-[50%] max-md:right-[-1vw] h-full absolute top-[8vw] right-[-1.4vw]">
+      <div className="w-[32%] max-md:w-[50%] max-md:right-[-2vw] h-full absolute top-[8vw] right-[-1.4vw]">
         <Image
           src="/v2/border.png"
           alt="scene"
@@ -41,7 +41,7 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-full h-auto absolute bottom-0 left-0">
+      {/* <div className="w-full h-auto absolute bottom-0 left-0">
         <Image
           src="/v2/border-b.png"
           alt="scene"
@@ -49,7 +49,7 @@ export default function Scene() {
           height={1080}
           className="w-full h-full scale-x-[-1] object-contain"
         />
-      </div>
+      </div> */}
       <div className="w-[18vw] max-md:w-[55vw] max-md:top-[-2vw] max-md:z-999 h-auto aspect-square  absolute top-[5vw] z-10 right-1/2 translate-x-1/2">
         <Image
           src="/v2/om.png"
@@ -59,7 +59,7 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-2 h-auto aspect-square  absolute bottom-0 left-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-0 left-[-5vw]">
         <Image
           src="/v2/ganesh.png"
           alt="scene"
@@ -68,7 +68,7 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-2 h-auto aspect-square  absolute bottom-0 right-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-0 right-[-5vw]">
         <Image
           src="/v2/ganesh.png"
           alt="scene"
@@ -78,7 +78,7 @@ export default function Scene() {
         />
       </div>
 
-      <div className="w-[70%] h-auto absolute top-0 right-0">
+      <div className="w-[70%] h-auto absolute top-0 right-0 ">
         <Image
           src="/v2/flowers.png"
           alt="scene"

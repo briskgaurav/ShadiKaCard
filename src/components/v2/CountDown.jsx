@@ -10,7 +10,7 @@ export default function CountDown() {
   return (
     <div
       data-dark-nav
-      className="min-h-[200vh] max-md:min-h-[150vh] flex  flex-col items-center justify-between w-full relative"
+      className="min-h-[200vh] max-md:min-h-auto flex  flex-col items-center justify-between w-full relative"
     >
       <div className="h-full w-full absolute inset-0">
         <Image
@@ -38,7 +38,7 @@ export default function CountDown() {
       </div>
 
       {/* Section 2 - Countdown Content */}
-      <div className="h-screen w-full flex items-center justify-center relative py-[10vw] max-md:py-[20vw]">
+      <div className="h-screen w-full flex items-center justify-center relative py-[10vw] max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
         <div className="flex flex-col space-y-[1vw] max-md:space-y-[6vw] text-[#a20601] font-serif items-center justify-center w-[50%] max-md:w-[95%]">
           <CopyLines>
             <p className="text-[3vw] max-md:text-[7vw] w-full font-georgia leading-[1.2] text-center">
@@ -47,14 +47,14 @@ export default function CountDown() {
             <DynamicCounter />
           </CopyLines>
           <CopyLines>
-            <p className="text-[1.8vw] max-md:text-[4vw] leading-[1.2] max-md:leading-[1.4] font-georgia text-center w-[80%] max-md:w-full font-medium mt-[2vw] max-md:mt-[6vw]">
+            <p className="text-[1.8vw] max-md:text-[4.5vw] leading-[1.2] max-md:leading-[1.4] font-georgia text-center w-[80%] max-md:w-full font-medium mt-[2vw] max-md:mt-[6vw]">
               Rastogi's and Varshney's are excited that you are able to join us
               in celebrating what we hope will be one of the happiest days of
               our lives.
             </p>
           </CopyLines>
 
-          <div className="flex items-start justify-between max-md:flex-col max-md:items-center max-md:justify-center w-[60%] max-md:w-full font-georgia gap-[2vw] max-md:gap-[8vw] text-[1.2vw] max-md:text-[4vw] my-[2vw] max-md:my-[8vw]">
+          <div className="flex items-start justify-between max-md:flex-col max-md:items-center max-md:justify-center w-[60%] max-md:w-full font-georgia gap-[2vw] max-md:gap-[8vw] text-[1.2vw] max-md:text-[4.5vw] my-[2vw] max-md:my-[8vw]">
             <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
               <p className="font-bold text-[1.2vw] max-md:text-[5vw]">Links</p>
               <ul className="mt-[1vw] max-md:mt-[3vw] space-y-[.3vw] flex flex-col max-md:space-y-[2vw]">
@@ -98,11 +98,11 @@ export default function CountDown() {
               </ul>
             </div>
           </div>
-          <CopyLines>
+          {/* <CopyLines> */}
             <p className="text-[1vw] max-md:text-[3.5vw] font-georgia text-center w-[60%] max-md:w-full font-medium mt-[2vw] max-md:mt-[8vw]">
               © Copyright 2026. All rights reserved.
             </p>
-          </CopyLines>
+          {/* </CopyLines> */}
         </div>
       </div>
     </div>

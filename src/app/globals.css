@@ -254,3 +254,8 @@ body {
     font-size: 20vw;
   }
 }
+
+
+.events-bg{
+  background-image: url(/v2/bgplain.png);
+}

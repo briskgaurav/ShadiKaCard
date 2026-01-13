@@ -56,20 +56,23 @@ export default function Herov2() {
         </div>
         <div className="absolute top-0 left-0 w-full  overflow-hidden h-full flex items-center justify-center">
           <div className="w-full h-full relative">
-            <div className="w-[50vw] max-md:w-[100vw] font-bizantheum text-[9vw] max-md:text-[18vw] text-center leading-[1.2] flex items-center max-md:items-center max-md:px-[8vw] justify-between  max-md:justify-start max-md:mt-[25vw] pb-[16vw] pt-[16vw] max-md:pt-[5vw] flex-col text-primary h-full">
+            <div className="w-[50vw] max-md:w-[100vw] font-bizantheum text-[9vw] max-md:text-[18vw] text-center leading-[1.2] flex items-center max-md:items-center max-md:px-[8vw] justify-between  max-md:justify-start max-md:mt-[30vw] pb-[16vw] pt-[16vw] max-md:pt-[5vw] flex-col text-primary h-full">
+              <CopyLines delay={4.5}>
               <div className="">
                 <p>Bhaskar</p>
                 <p className="text-[5vw] max-md:text-[10vw]">Weds</p>
-                <p>Garima</p>
+                <p className="max-md:mt-[-3vw]">Garima</p>
               </div>
 
-              <div className="w-[30vw] max-md:absolute max-md:hidden max-md:right-10 max-md:translate-x-0 translate-x-[-15%] h-auto relative">
+              </CopyLines>
+
+              {/* <div className="w-[30vw] max-md:absolute max-md:hidden max-md:right-10 max-md:translate-x-0 translate-x-[-15%] h-auto relative">
                 <img
                   src="/v2/doli.png"
                   alt="background"
                   className="w-full h-full object-contain"
                 />
-              </div>
+              </div> */}
             </div>
             <div className="w-[70vw] max-md:w-[140vw] absolute right-[-22%]  max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[70%] top-1/2 translate-y-[-50%] h-auto aspect-square">
               <div className="w-full relative h-full rotate-outer">
