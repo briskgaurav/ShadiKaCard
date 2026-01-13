@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Scene() {
   return (
-    <div className="h-fit min-h-[240vh] max-md:min-h-[100vh] max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
+    <div className="h-fit min-h-[240vh] max-md:mt-[30vw] max-md:min-h-[100vh] max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-auto">
         <Image
           src="/v2/yellowbg.png"
@@ -14,7 +14,7 @@ export default function Scene() {
         />
       </div>
 
-      <div className="h-auto max-md:w-[150%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
+      <div className="h-auto max-md:w-[180%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <Image
           src="/v2/shivmountain.png"
           alt="scene"
@@ -50,7 +50,7 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[18vw] max-md:w-[25vw] h-auto aspect-square  absolute top-[5vw] z-10 right-1/2 translate-x-1/2">
+      <div className="w-[18vw] max-md:w-[55vw] max-md:top-[-2vw] max-md:z-999 h-auto aspect-square  absolute top-[5vw] z-10 right-1/2 translate-x-1/2">
         <Image
           src="/v2/om.png"
           alt="scene"

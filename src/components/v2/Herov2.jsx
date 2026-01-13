@@ -47,11 +47,11 @@ export default function Herov2() {
           alt="background"
           className="w-full h-full  max-md:hidden object-contain"
         />
-        <div className="w-full hidden max-md:block h-[100%]">
+        <div className="w-full hidden translate-y-[-40vw] max-md:block h-[100%]">
           <img
-            src={"/v2/mobilehero.png"}
+            src={"/v2/mobilebgg.png"}
             alt="background"
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="absolute top-0 left-0 w-full  overflow-hidden h-full flex items-center justify-center">
@@ -71,7 +71,7 @@ export default function Herov2() {
                 />
               </div>
             </div>
-            <div className="w-[70vw] max-md:w-[140vw] absolute right-[-22%]  max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[60%] top-1/2 translate-y-[-50%] h-auto aspect-square">
+            <div className="w-[70vw] max-md:w-[140vw] absolute right-[-22%]  max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[70%] top-1/2 translate-y-[-50%] h-auto aspect-square">
               <div className="w-full relative h-full rotate-outer">
                 <img
                   src="/v2/heroflower2.png"
