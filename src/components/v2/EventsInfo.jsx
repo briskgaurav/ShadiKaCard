@@ -152,14 +152,14 @@ export function EventCard({ event }) {
           />
         </div>
         <div
-          className={`h-auto animate-wiggle pointer-events-none w-[12vw] max-md:w-[45vw] absolute ${
+          className={`h-auto animate-wiggle pointer-events-none w-[12vw] max-md:w-[35vw] absolute ${
             event.digonalImages
-              ? "left-[-25%] max-md:left-[-35%]"
-              : "right-[-25%] max-md:right-[-35%]"
+              ? "left-[-25%] max-md:left-[-25%]"
+              : "right-[-25%] max-md:right-[-25%]"
           } ${
             event.digonalImages
               ? "bottom-[10%] max-md:bottom-[15%]"
-              : "top-[60%] max-md:top-[45%]"
+              : "top-[60%] max-md:top-[65%]"
           }`}
         >
           <Image
@@ -167,13 +167,13 @@ export function EventCard({ event }) {
             alt="moon"
             width={1000}
             height={1000}
-            className="w-full h-full object-contcain"
+            className="w-full h-full object-contain"
           />
         </div>
         <div
-          className={`h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[40vw] absolute ${
+          className={`h-auto w-[12vw] animate-updown pointer-events-none max-md:w-[35vw] absolute ${
             event.digonalImages
-              ? "right-[-20%] max-md:right-[-20%]"
+              ? "right-[-20%] max-md:right-[-25%]"
               : "left-[-20%] max-md:left-[-20%]"
           } ${
             event.digonalImages
