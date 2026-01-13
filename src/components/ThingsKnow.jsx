@@ -6,7 +6,7 @@ import CopyLines from "./CopyLines";
 
 export default function ThingsKnow() {
   return (
-    <div className="min-h-[200vh]  w-full h-fit max-md:h-[255vh]  relative">
+    <div className="min-h-[200vh]  w-full h-fit max-md:h-[600vw]  relative">
       <div className="h-full  w-full absolute inset-0">
         <Image
           src="/v2/bg-star.png"
@@ -17,7 +17,7 @@ export default function ThingsKnow() {
         />
       </div>
 
-      <div className="h-full w-full gap-[2vw]  max-md:h-[250vh]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[0%] left-0 flex items-center justify-center flex-col relative ">
+      <div className="h-full w-full gap-[2vw]  max-md:h-[620vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-5%] left-0 flex items-center justify-center flex-col relative ">
         <RotationComponent
           wheelImage="/img/webp/wheel2/redwheel-2.png"
           centerImage="/img/webp/wheel2/yellow-cover.png"
