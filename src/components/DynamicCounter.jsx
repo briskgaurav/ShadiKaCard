@@ -97,7 +97,7 @@ export default function DynamicCounter() {
   const seconds = String(timeLeft.seconds).padStart(2, '0');
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center w-full">
       <style jsx>{`
         .digit-wrapper {
           height: 1.2em;
@@ -114,67 +114,67 @@ export default function DynamicCounter() {
           display: block;
         }
       `}</style>
-      <div className="text40 flex items-end justify-center max-md:gap-[2vw] gap-[.8vw] max-md:!text-5xl">
+      <div className="text-[3vw] max-md:text-[7vw] flex items-end mt-[2vw] max-md:mt-[6vw] justify-center gap-[.8vw] max-md:gap-[2vw]">
         
-        <div className='text40 flex items-end max-md:!text-5xl'>
-          <div className="digit-wrapper w-[1.8vw] max-md:w-[7vw]">
+        <div className='flex items-end'>
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('d1')}>
               <span>{days[0]}</span>
               <span>{days[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[1.vw] max-md:w-[7vw]">
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('d2')}>
               <span>{days[1]}</span>
               <span>{days[1]}</span>
             </div>
           </div>
-          <span className=" mb-[-.2vw] max-md:mb-[-2vw]">D</span>
+          <span className="mb-[-.2vw] max-md:mb-[-1vw]">D</span>
         </div>
-        <div className='text40 flex items-end max-md:!text-5xl'>
-          <div className="digit-wrapper w-[1.8vw] max-md:w-[7vw]">
+        <div className='flex items-end'>
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('h1')}>
               <span>{hours[0]}</span>
               <span>{hours[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[1.8vw] max-md:w-[7vw]">
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('h2')}>
               <span>{hours[1]}</span>
               <span>{hours[1]}</span>
             </div>
           </div>
-          <span className=" mb-[-.2vw] max-md:mb-[-2vw] ">H</span>
+          <span className="mb-[-.2vw] max-md:mb-[-1vw]">H</span>
         </div>
-        <div className='text40 flex items-end max-md:!text-5xl'>
-          <div className="digit-wrapper">
+        <div className='flex items-end'>
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('m1')}>
               <span>{minutes[0]}</span>
               <span>{minutes[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[1.8vw] max-md:w-[7vw]">
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('m2')}>
               <span>{minutes[1]}</span>
               <span>{minutes[1]}</span>
             </div>
           </div>
-          <span className=" mb-[-.2vw] max-md:mb-[-2vw] ">M</span>
+          <span className="mb-[-.2vw] max-md:mb-[-1vw]">M</span>
         </div>
-        <div className='text40 flex items-end max-md:!text-5xl'>
-          <div className="digit-wrapper w-[1.8vw] max-md:w-[7vw]">
+        <div className='flex items-end'>
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('s1')}>
               <span>{seconds[0]}</span>
               <span>{seconds[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[1.8vw] max-md:w-[7vw]">
+          <div className="digit-wrapper w-[1.8vw] max-md:w-[4vw]">
             <div className="digit-inner" ref={setRef('s2')}>
               <span>{seconds[1]}</span>
               <span>{seconds[1]}</span>
             </div>
           </div>
-          <span className=" mb-[-.2vw] max-md:mb-[-2vw]  ">S</span>
+          <span className="mb-[-.2vw] max-md:mb-[-1vw]">S</span>
         </div>
         
       </div>

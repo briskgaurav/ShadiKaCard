@@ -61,7 +61,7 @@ export default function Herov2() {
                 />
               </div>
             </div>
-            <div className="w-[60vw] max-md:w-[80vw] absolute right-[-15%] max-md:right-[-35%] max-md:top-0 top-1/2 translate-y-[-50%] h-auto aspect-square">
+            <div className="w-[70vw] max-md:w-[80vw] absolute right-[-22%]  max-md:right-[-35%] max-md:top-0 top-1/2 translate-y-[-50%] h-auto aspect-square">
               <div className="w-full relative h-full rotate-outer">
                 <img
                   src="/v2/heroflower2.png"

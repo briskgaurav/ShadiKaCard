@@ -27,7 +27,7 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
      onMouseEnter={handleMouseEnter}
      onMouseLeave={handleMouseLeave}
    >
-    {text}
+    <p className='text-[1.2vw] max-md:text-[5vw] font-georgia'>{text}</p>
     <span 
       ref={lineRef}
       className={`absolute bottom-0 left-0 w-full h-[1px] bg-[#a30501]`}

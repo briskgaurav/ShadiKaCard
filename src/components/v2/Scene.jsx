@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Scene() {
   return (
-    <div className="h-fit min-h-[300vh] max-md:min-h-[100vh] max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
+    <div className="h-fit min-h-[240vh] max-md:min-h-[100vh] max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-auto">
         <img
           src="/v2/yellowbg.png"
@@ -11,21 +11,21 @@ export default function Scene() {
         />
       </div>
 
-      <div className="h-auto max-md:w-[150%] w-full absolute max-md:left-1/2 max-md:translate-x-[-50%] bottom-0  max-md:bottom-[-12vw] left-0">
+      <div className="h-auto max-md:w-[150%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <img
           src="/v2/shivmountain.png"
           alt="scene"
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[32%] max-md:w-[50%] max-md:left-[-1vw] h-full absolute top-[8vw] left-0">
+      <div className="w-[32%] max-md:w-[50%] max-md:left-[-1vw] h-full absolute top-[8vw] left-[-1.4vw]">
         <img
           src="/v2/border.png"
           alt="scene"
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[32%] max-md:w-[50%] max-md:right-[-1vw] h-full absolute top-[8vw] right-0">
+      <div className="w-[32%] max-md:w-[50%] max-md:right-[-1vw] h-full absolute top-[8vw] right-[-1.4vw]">
         <img
           src="/v2/border.png"
           alt="scene"

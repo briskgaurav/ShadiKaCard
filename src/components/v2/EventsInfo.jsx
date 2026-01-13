@@ -78,7 +78,7 @@ export default function EventsInfo() {
 
 export function EventCard({ event }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
+    <div className="flex flex-col items-center overflow-hidden justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
       <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
         <div
           className={`size-full rounded-full ${
