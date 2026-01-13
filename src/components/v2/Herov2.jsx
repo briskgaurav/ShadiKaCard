@@ -4,9 +4,12 @@ import useTablet from "../IsTablet";
 import Copy from "../Copy";
 import { useFadeUpAnim, useLineAnim } from "../Animation";
 import Image from "next/image";
+import CopyLines from "../CopyLines";
+import { useLoading } from "@/contexts/LoadingProvider";
 
 export default function Herov2() {
   const isTablet = useTablet();
+  const { isLoading } = useLoading();
   useFadeUpAnim();
   useLineAnim();
   return (

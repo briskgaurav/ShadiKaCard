@@ -1,15 +1,17 @@
 import React from "react";
+import Image from "next/image";
 import FlowerSwiper from "./FlowerSwiper";
 import RotationComponent from "../RotationComponent";
 
 export default function BrideGroom() {
   return (
-    <div className="h-fit w-full py-[5vw] max-md:py-[10vw] text-[#A20601] relative">
+    <div data-dark-nav className="h-fit w-full py-[5vw] max-md:py-[10vw] text-[#A20601] relative">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/v2/yellowbg.png"
           alt="background"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
       <div className="h-full w-full font-georgia flex items-center gap-[3vw] max-md:gap-[6vw] flex-col relative z-10">
@@ -17,9 +19,11 @@ export default function BrideGroom() {
           <RotationComponent  textColor="text-primary"/>
         </div>
         <div className="w-[8vw] max-md:w-[20vw] h-auto relative">
-          <img
+          <Image
             src="/v2/hearts.png"
             alt="background"
+            width={500}
+            height={500}
             className="w-full h-full object-contain"
           />
         </div>
@@ -34,9 +38,11 @@ export default function BrideGroom() {
           kindness. We are looking forward to see you at the wedding functions.
         </p>
         <div className="w-[40vw] max-md:w-[70vw] flex items-center justify-center h-auto relative">
-          <img
+          <Image
             src="/v2/handshold.png"
             alt="background"
+            width={1000}
+            height={1000}
             className="w-full h-full translate-x-[-5%] max-md:translate-x-0 object-contain"
           />
         </div>

@@ -7,6 +7,7 @@ import {
 import "./globals.css";
 import LenisSmoothScroll from "@/components/Lenis";
 import localFont from "next/font/local";
+import { LoadingProvider } from "@/contexts/LoadingProvider";
 
 // const cormorantUpright = Cormorant_Upright({
 //   variable: "--font-cormorant-upright",
@@ -66,8 +67,10 @@ export default function RootLayout({ children }) {
       <body
         className={` ${Georgia.variable} ${bizantheum.variable} ${inria.variable} antialiased`}
       >
-        <LenisSmoothScroll />
-        {children}
+        <LoadingProvider>
+          <LenisSmoothScroll />
+          {children}
+        </LoadingProvider>
       </body>
     </html>
   );

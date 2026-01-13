@@ -6,9 +6,11 @@ import { DrawSVGPlugin } from "gsap/dist/DrawSVGPlugin";
 import imagesLoaded from "imagesloaded";
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 import { useLenis } from "lenis/react";
+import { useLoading } from "@/contexts/LoadingProvider";
 
 export default function Loader() {
   const lenis = useLenis();
+  const { setLoading } = useLoading();
   const linePath = useRef();
   const logoRef = useRef();
   const alphabetsRef = useRef([]);
@@ -92,11 +94,12 @@ export default function Loader() {
         ease: "power2.inOut",
         onComplete: () => {
           lenis.start();
+          setLoading(false); // Set loading to false when loader finishes
         },
       },
       "<+.5"
     );
-  }, [isImagesLoaded, lenis]);
+  }, [isImagesLoaded, lenis, setLoading]);
 
   useEffect(() => {
     gsap.set("#logo", {

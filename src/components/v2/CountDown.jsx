@@ -8,7 +8,10 @@ import DynamicCounter from "../DynamicCounter";
 
 export default function CountDown() {
   return (
-    <div className="min-h-[200vh] max-md:min-h-[150vh] flex  flex-col items-center justify-between w-full relative">
+    <div
+      data-dark-nav
+      className="min-h-[200vh] max-md:min-h-[150vh] flex  flex-col items-center justify-between w-full relative"
+    >
       <div className="h-full w-full absolute inset-0">
         <Image
           src="/v2/yellowbg.png"
@@ -45,41 +48,54 @@ export default function CountDown() {
           </CopyLines>
           <CopyLines>
             <p className="text-[1.8vw] max-md:text-[4vw] leading-[1.2] max-md:leading-[1.4] font-georgia text-center w-[80%] max-md:w-full font-medium mt-[2vw] max-md:mt-[6vw]">
-              Rastogi's and Varshney's are excited that you are able to join us in
-              celebrating what we hope will be one of the happiest days of our
-              lives.
+              Rastogi's and Varshney's are excited that you are able to join us
+              in celebrating what we hope will be one of the happiest days of
+              our lives.
             </p>
           </CopyLines>
 
           <div className="flex items-start justify-between max-md:flex-col max-md:items-center max-md:justify-center w-[60%] max-md:w-full font-georgia gap-[2vw] max-md:gap-[8vw] text-[1.2vw] max-md:text-[4vw] my-[2vw] max-md:my-[8vw]">
             <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
-              <CopyLines>
-                <p className="font-bold text-[1.2vw] max-md:text-[5vw]">Links</p>
-                <ul className="mt-[1vw] max-md:mt-[3vw] space-y-[.3vw] max-md:space-y-[2vw]">
-                  <li>
-                    <HoverLineComponent text="Venue location" />
-                  </li>
-                  <li>
-                    <HoverLineComponent text="RSVP" />
-                  </li>
-                </ul>
-              </CopyLines>
+              <p className="font-bold text-[1.2vw] max-md:text-[5vw]">Links</p>
+              <ul className="mt-[1vw] max-md:mt-[3vw] space-y-[.3vw] flex flex-col max-md:space-y-[2vw]">
+                <li className="cursor-pointer group relative inline-block">
+                  <span className="relative">
+                    Venue location
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
+                  </span>
+                </li>
+                <li className="cursor-pointer group relative inline-block">
+                  <span className="relative">
+                    RSP
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
+                  </span>
+                </li>
+              </ul>
             </div>
             <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
-              <CopyLines>
-                <p className="font-bold text-[1.2vw] max-md:text-[5vw]">Navigation</p>
-                <ul className="mt-[1vw] max-md:mt-[3vw] space-y-[.3vw] max-md:space-y-[2vw]">
-                  <li>
-                    <HoverLineComponent text="The invite" />
-                  </li>
-                  <li>
-                    <HoverLineComponent text="Bride and Groom" />
-                  </li>
-                  <li>
-                    <HoverLineComponent text="Things to know" />
-                  </li>
-                </ul>
-              </CopyLines>
+              <p className="font-bold text-[1.2vw] max-md:text-[5vw]">
+                Navigation
+              </p>
+              <ul className="mt-[1vw] w-full max-md:mt-[3vw] space-y-[.3vw] flex flex-col max-md:space-y-[2vw]">
+                <li className="cursor-pointer group relative inline-block">
+                  <span className="relative">
+                    The invite
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
+                  </span>
+                </li>
+                <li className="cursor-pointer group relative inline-block">
+                  <span className="relative">
+                    Bride and Groom
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
+                  </span>
+                </li>
+                <li className="cursor-pointer group relative inline-block">
+                  <span className="relative">
+                    Things to know
+                    <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
           <CopyLines>

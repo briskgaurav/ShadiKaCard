@@ -1,15 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import CopyLines from "../CopyLines";
 
 export default function EventsInfo() {
   return (
     <>
       <div className="h-fit w-full py-[5vw] relative">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/v2/bgplain.png"
             alt="events"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
 
@@ -17,39 +19,58 @@ export default function EventsInfo() {
           <p className="text-[1.2vw] max-md:text-[3vw] ">
             || ॐ श्री गणेशाय नमः ||
           </p>
-          <div className="h-auto w-[14vw] aspect-square relative ">
+          <div className="h-auto w-[14vw] aspect-square relative">
             <img
               src="/v2/ganeshstrokes.png"
               alt="events"
-              className="w-full h-full object-contain"
+              fill
+              className="object-contain"
             />
           </div>
           <div className="text-center space-y-[1vw]">
-            <p className="text-[1.8vw] max-md:text-[3vw]">
-              with the heavenly blessings of almighty
-            </p>
-            <p className="text-[1.8vw] max-md:text-[3vw] ">
-              We invite you to join us in the wedding celebration of
-            </p>
+            <CopyLines>
+              <p className="text-[1.8vw] max-md:text-[3vw]">
+                with the heavenly blessings of almighty
+              </p>
+            </CopyLines>
+            <CopyLines>
+              <p className="text-[1.8vw] max-md:text-[3vw] ">
+                We invite you to join us in the wedding celebration of
+              </p>
+            </CopyLines>
           </div>
 
           <div className="mt-[4vw] text-center ">
-            <p className="text-[8vw] font-bizantheum ">Bhaskar</p>
+            <CopyLines>
+              <p className="text-[8vw] font-bizantheum ">Bhaskar</p>
+            </CopyLines>
             <div className="text-center space-y-[1vw]">
-              <p className="text-[1.8vw] max-md:text-[3vw] ">Son of</p>
-              <p className="text-[1.8vw] max-md:text-[3vw] ">
-                Mrs. Vimlesh Varshney & Mr. Mahesh Varshney
-              </p>
+              <CopyLines>
+                <p className="text-[1.8vw] max-md:text-[3vw] ">Son of</p>
+              </CopyLines>
+              <CopyLines>
+                <p className="text-[1.8vw] max-md:text-[3vw] ">
+                  Mrs. Vimlesh Varshney & Mr. Mahesh Varshney
+                </p>
+              </CopyLines>
             </div>
           </div>
-          <p className="text-[9vw] font-inria ">&</p>
+          <CopyLines>
+            <p className="text-[9vw] font-inria ">&</p>
+          </CopyLines>
           <div className="-mt-5 text-center ">
-            <p className="text-[8vw] font-bizantheum ">Garima</p>
+            <CopyLines>
+              <p className="text-[8vw] font-bizantheum ">Garima</p>
+            </CopyLines>
             <div className="text-center space-y-[1vw]">
-              <p className="text-[1.8vw] max-md:text-[3vw] ">Daughter of</p>
-              <p className="text-[1.8vw] max-md:text-[3vw] ">
-                Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
-              </p>
+              <CopyLines>
+                <p className="text-[1.8vw] max-md:text-[3vw] ">Daughter of</p>
+              </CopyLines>
+              <CopyLines>
+                <p className="text-[1.8vw] max-md:text-[3vw] ">
+                  Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
+                </p>
+              </CopyLines>
             </div>
           </div>
           <div
@@ -64,10 +85,10 @@ export default function EventsInfo() {
           />
         </div>
         <div
-          className={`h-auto w-[30vw] animate-updown pointer-events-none  absolute top-[60%] left-[3%] max-md:w-[25vw] max-md:top-[65%]`}
+          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:w-[40vw] absolute top-[60%] left-[3%]`}
         >
           <Image
-            src={"/img/illustrations/gathbandhan.png"}
+            src={"/v2/BG.png"}
             alt="moon"
             width={500}
             height={500}
@@ -88,18 +109,22 @@ export default function EventsInfo() {
         </div>
       </div>
       <div className="h-fit w-full py-[5vw] relative pb-[10vw]">
-        <div className="absolute h-full w-full inset-0">
-          <img
+        <div className="absolute h-full w-full  inset-0">
+          <Image
             src="/v2/bgplain.png"
             alt="events"
-            className="w-full h-full bg-repeat-y object-cover"
+            height={1000}
+            width={1000}
+            className="bg-repeat-y h-full w-full object-cover"
           />
         </div>
 
-        <div className="h-full w-full relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center max-md:px-[5vw]">
-          <p className="text-[6.5vw] font-bizantheum">
-            On the following auspicious day
-          </p>
+        <div className="h-full w-full max-md:overflow-hidden relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center max-md:px-[5vw]">
+          <CopyLines>
+            <p className="text-[6.5vw] font-bizantheum">
+              On the following auspicious day
+            </p>
+          </CopyLines>
           {eventsData.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
@@ -111,17 +136,19 @@ export default function EventsInfo() {
 
 export function EventCard({ event }) {
   return (
-    <div className="flex flex-col items-center overflow-hidden justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
+    <div className="flex flex-col items-center  justify-center gap-y-[2vw] max-md:gap-y-[4vw]">
       <div className="h-[57vh] max-md:h-[50vh] w-[22vw] max-md:w-[70vw] p-[1vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-5 fadeup max-md:border-4 border-primary">
         <div
           className={`size-full rounded-full ${
             event.mirror ? "scale-x-[-1] group-hover:scale-x-[-1.1]" : ""
           } overflow-hidden group`}
         >
-          <img
+          <Image
             src={event.image}
             alt="event"
-            className={`w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 `}
+            height={500}
+            width={500}
+            className={`object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 `}
           />
         </div>
         <div
@@ -164,11 +191,11 @@ export function EventCard({ event }) {
         </div>
       </div>
       <div className="relative fadeup">
-        <p className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[7vw]">{event.title}</p>
+        <p className="text-[2.5vw] font-medium font-georgia tracking-tight">{event.title}</p>
         <div className="space-y-[.5vw] mt-[2vw]">
-          <p className="text18 font-semibold! font-georgia leading-[1.1] max-md:font-normal!">{event.date}</p>
-          <p className="text18 font-semibold! font-georgia leading-[1.1] max-md:font-normal!">{event.venue}</p>
-          <p className="text18 font-semibold! font-georgia leading-[1.1] max-md:font-normal!">{event.time}</p>
+          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.date}</p>
+          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.venue}</p>
+          <p className="text18 font-semibold! font-georgia leading-[1.1]">{event.time}</p>
         </div>
       </div>
     </div>
