@@ -24,14 +24,14 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
    <Link 
    target={target || '_self'}
      href={href || '/'} 
-     className={`relative ${className}`}
+     className={`relative cursor-pointer ${className}`}
      onMouseEnter={handleMouseEnter}
      onMouseLeave={handleMouseLeave}
    >
     <p className='text-[1.2vw] max-md:text-[5vw] font-georgia'>{text}</p>
     <span 
       ref={lineRef}
-      className={`absolute bottom-0 left-0 w-full h-px bg-[#a30501] ${lineColor}`}
+      className={`absolute bottom-0 left-0 w-full h-px bg-current ${lineColor}`}
       style={{ transform: 'scaleX(0)' }}
     ></span>
    </Link>

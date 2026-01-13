@@ -66,7 +66,7 @@ export default function CountDown() {
                 </li>
                 <li className="cursor-pointer group relative inline-block">
                   <span className="relative">
-                    RSP
+                    RSVP
                     <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
                   </span>
                 </li>

@@ -243,8 +243,8 @@ const eventsData = [
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "10 am Onwards",
     image: "/img/illustrations/Haldi.png",
-    illustration1: "/img/illustrations/marigold.png",
-    illustration2: "/img/illustrations/haldipowder.png",
+    illustration1: "/img/illustrations/haldi-bride.png",
+    illustration2: "/img/illustrations/haldi-groom.png",
     digonalImages: false,
   },
   {
@@ -267,8 +267,8 @@ const eventsData = [
     time: "8 pm Onwards",
     image: "/img/illustrations/reception.png",
     mirror: true,
-    illustration1: "/img/illustrations/glass.png",
-    illustration2: "/img/illustrations/champaign.png",
+    illustration1: "/img/illustrations/reception-heart.png",
+    illustration2: "/img/illustrations/reception-bg.png",
     digonalImages: false,
   },
 ];
