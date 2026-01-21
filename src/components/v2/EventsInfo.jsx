@@ -74,7 +74,7 @@ export default function EventsInfo() {
             </div>
           </div>
           <div
-          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] right-[3%] max-md:hidden`}
+          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] left-[3%] max-md:hidden`}
         >
           <Image
             src={"/img/illustrations/bouquet.png"}
@@ -84,7 +84,7 @@ export default function EventsInfo() {
             className="w-full h-full object-contain"
           />
         </div>
-        <div
+        {/* <div
           className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:hidden absolute top-[70%] left-[3%]`}
         >
           <Image
@@ -94,7 +94,7 @@ export default function EventsInfo() {
             height={500}
             className="w-full h-full object-contain"
           />
-        </div>
+        </div> */}
         <div
           className={`h-auto w-[20vw] animate-updown pointer-events-none  absolute top-[70%] right-[3%] max-md:hidden`}
         >
