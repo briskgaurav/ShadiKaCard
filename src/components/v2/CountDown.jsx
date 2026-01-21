@@ -38,7 +38,7 @@ export default function CountDown() {
       </div>
 
       {/* Section 2 - Countdown Content */}
-      <div className="h-screen w-full flex items-center justify-center relative py-[10vw] max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
+      <div className="h-screen w-full flex items-center justify-center relative py-[10vw] pt-[3vw] max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
         <div className="flex flex-col space-y-[1vw] max-md:space-y-[6vw] text-[#a20601] font-serif items-center justify-center w-[50%] max-md:w-[95%]">
           <CopyLines>
             <p className="text-[3vw] max-md:text-[7vw] w-full font-georgia leading-[1.2] text-center">
@@ -55,24 +55,24 @@ export default function CountDown() {
           </CopyLines>
 
           <div className="flex items-start justify-between max-md:flex-col max-md:items-center max-md:justify-center w-[60%] max-md:w-full font-georgia gap-[2vw] max-md:gap-[8vw] text-[1.2vw] max-md:text-[4.5vw] my-[2vw] max-md:my-[8vw]">
-            <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
-              <p className="font-bold text-[1.2vw] max-md:text-[5vw]">Links</p>
-              <ul className="mt-[1vw] max-md:mt-[3vw] space-y-[.3vw] flex flex-col max-md:space-y-[2vw]">
+            {/* <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
+              <p className="font-bold text-[1.2vw] max-md:text-[5vw]">Links</p> */}
+              {/* <ul className="mt-[1vw] max-md:mt-[3vw] space-y-[.3vw] flex flex-col max-md:space-y-[2vw]">
                 <li className="cursor-pointer group relative inline-block">
                   <span className="relative">
                     Venue location
                     <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
                   </span>
-                </li>
-                <li className="cursor-pointer group relative inline-block">
+                </li> */}
+                {/* <li className="cursor-pointer group relative inline-block">
                   <span className="relative">
                     RSVP
                     <span className="absolute bottom-0 left-0 w-full h-px bg-[#a20601] scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 "></span>
                   </span>
-                </li>
-              </ul>
-            </div>
-            <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
+                </li> */}
+              {/* </ul> */}
+            {/* </div> */}
+            {/* <div className="text-center space-y-[.5vw] max-md:space-y-[3vw]">
               <p className="font-bold text-[1.2vw] max-md:text-[5vw]">
                 Navigation
               </p>
@@ -96,7 +96,7 @@ export default function CountDown() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           {/* <CopyLines> */}
             <p className="text-[1vw] max-md:text-[3.5vw] font-georgia text-center w-[60%] max-md:w-full font-medium mt-[2vw] max-md:mt-[8vw]">

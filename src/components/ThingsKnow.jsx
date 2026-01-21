@@ -59,25 +59,25 @@ export default function ThingsKnow() {
               icon: "/img/webp/hastag-2.png",
               title: "Hashtag",
               description:
-                "Use #thebestmarathon to share your journey runners.",
+                "Use #BhaskarKiGarima to share your journey runners.",
             },
             {
               icon: "/img/webp/sun-2.png",
               title: "Weather",
               description:
-                "It will be mostly cloudy with temperature reaching up to 22 degrees at the venue",
+                "It will be mostly cloudy with temperature reaching up to 22 degrees at the venue.",
             },
             {
               icon: "/img/webp/card-2.png",
               title: "Staff",
               description:
-                "We recommend the nearby lodge called Amba Valley near the venue for the staff members",
+                "Feel free to reach out to our event staff for any assistance during the events.",
             },
             {
               icon: "/img/webp/parking-2.png",
               title: "Parking",
               description:
-                "Valet parking for all our guests will be available at the venue",
+                "Valet parking for all our guests will be available at the venue.",
             },
           ].map((item, index) => (
             <div

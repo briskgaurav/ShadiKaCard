@@ -54,8 +54,8 @@ const bizantheum = localFont({
 });
 
 export const metadata = {
-  title: "Bhaskar Weds Garima",
-  description: "Bhaskar Weds Garima",
+  title: "Garima Weds Bhaskar",
+  description: "Garima Weds Bhaskar",
   icons: {
     icon: "/3.ico",
   },

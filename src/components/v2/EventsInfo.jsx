@@ -41,15 +41,16 @@ export default function EventsInfo() {
 
           <div className="mt-[4vw] text-center ">
             <CopyLines>
-              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Bhaskar</p>
+              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Garima</p>
             </CopyLines>
             <div className="text-center space-y-[1vw]">
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">Son of</p>
+                <p className="text-[1.8vw] max-md:text-[5vw] ">Daughter of</p>
               </CopyLines>
               <CopyLines>
                 <p className="text-[1.8vw] max-md:text-[5vw] ">
-                  Mrs. Vimlesh Varshney & Mr. Mahesh Varshney
+                   Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
+                 
                 </p>
               </CopyLines>
             </div>
@@ -59,15 +60,15 @@ export default function EventsInfo() {
           </CopyLines>
           <div className="-mt-5 text-center ">
             <CopyLines>
-              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Garima</p>
+              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Bhaskar</p>
             </CopyLines>
             <div className="text-center space-y-[1vw]">
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">Daughter of</p>
+                <p className="text-[1.8vw] max-md:text-[5vw] ">Son of</p>
               </CopyLines>
               <CopyLines>
                 <p className="text-[1.8vw] max-md:text-[5vw] ">
-                  Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
+                  Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney
                 </p>
               </CopyLines>
             </div>
@@ -215,8 +216,8 @@ const eventsData = [
     id: 1,
     title: "Chadath",
     date: "Tuesday, 17th February 2026",
-    venue: "Meerut",
-    time: "6 pm Onwards",
+    venue: "Ganganagar, Meerut",
+    time: "5 pm Onwards",
     image: "/img/illustrations/chadath.png",
     illustration1: "/img/illustrations/turban.png",
     illustration2: "/img/illustrations/shehnai.png",
@@ -224,7 +225,7 @@ const eventsData = [
   },
   {
     id: 2,
-    title: "Mehndi",
+    title: "Mehendi",
     date: "Wednesday, 18th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "12 pm Onwards",
@@ -238,7 +239,7 @@ const eventsData = [
     title: "Engagement",
     date: "Wednesday, 18th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
-    time: "6 pm Onwards",
+    time: "7 pm Onwards",
     image: "/img/illustrations/Engagment.png",
     illustration1: "/img/illustrations/ring.png",
     illustration2: "/img/illustrations/lotus.png",
@@ -249,7 +250,7 @@ const eventsData = [
     title: "Haldi",
     date: "Thursday, 19th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
-    time: "10 am Onwards",
+    time: "9 am Onwards",
     image: "/img/illustrations/Haldi.png",
     illustration1: "/img/illustrations/haldi-bride.png",
     illustration2: "/img/illustrations/haldi-groom.png",
@@ -260,7 +261,7 @@ const eventsData = [
     title: "Wedding",
     date: "Thursday, 19th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
-    time: "5 pm Onwards",
+    time: "4 pm Onwards",
     image: "/img/illustrations/shaadi.png",
     mirror: true,
     illustration1: "/img/illustrations/diya.png",

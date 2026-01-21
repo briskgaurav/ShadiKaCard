@@ -59,9 +59,9 @@ export default function Herov2() {
             <div className="w-[50vw] max-md:w-[100vw] font-bizantheum text-[9vw] max-md:text-[18vw] text-center leading-[1.2] flex items-center max-md:items-center max-md:px-[8vw] justify-between  max-md:justify-start max-md:mt-[30vw] pb-[16vw] pt-[16vw] max-md:pt-[5vw] flex-col text-primary h-full">
               <CopyLines delay={4.5}>
               <div className="">
-                <p>Bhaskar</p>
+                <p>Garima</p>
                 <p className="text-[5vw] max-md:text-[10vw]">Weds</p>
-                <p className="max-md:mt-[-3vw]">Garima</p>
+                <p className="max-md:mt-[-3vw]">Bhaskar</p>
               </div>
 
               </CopyLines>
