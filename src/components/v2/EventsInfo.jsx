@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import CopyLines from "../CopyLines";
 
-export default function EventsInfo() {
+export default function EventsInfo({eventsInfo}) {
   return (
     <>
       <div className="h-fit w-full py-[5vw] max-md:px-[10vw] relative max-sm:py-[15vw]">
@@ -39,40 +39,47 @@ export default function EventsInfo() {
             </CopyLines>
           </div>
 
-          <div className="mt-[4vw] text-center ">
-            <CopyLines>
-              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Garima</p>
-            </CopyLines>
-            <div className="text-center space-y-[1vw]">
-              <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">Daughter of</p>
-              </CopyLines>
-              <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">
-                   Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi
-                 
-                </p>
-              </CopyLines>
-            </div>
-          </div>
-          <CopyLines>
-            <p className="text-[9vw] max-md:text-[15vw] font-inria ">&</p>
-          </CopyLines>
-          <div className="-mt-5 text-center ">
-            <CopyLines>
-              <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">Bhaskar</p>
-            </CopyLines>
-            <div className="text-center space-y-[1vw]">
-              <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">Son of</p>
-              </CopyLines>
-              <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">
-                  Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney
-                </p>
-              </CopyLines>
-            </div>
-          </div>
+         <div className="mt-[4vw] text-center ">
+  <CopyLines>
+    <p className="text-[8vw] max-md:text-[15vw] font-bizantheum">
+      {eventsInfo.bride ? eventsInfo.name1 : eventsInfo.name2}
+    </p>
+  </CopyLines>
+  <div className="text-center space-y-[1vw]">
+    <CopyLines>
+      <p className="text-[1.8vw] max-md:text-[5vw] ">
+        {eventsInfo.bride ? "Daughter of" : "Son of"}
+      </p>
+    </CopyLines>
+    <CopyLines>
+      <p className="text-[1.8vw] max-md:text-[5vw] ">
+        {eventsInfo.bride ? eventsInfo.daughterOf : eventsInfo.sonOf}
+      </p>
+    </CopyLines>
+  </div>
+</div>
+<CopyLines>
+  <p className="text-[9vw] max-md:text-[15vw] font-inria ">&</p>
+</CopyLines>
+<div className="-mt-5 text-center ">
+  <CopyLines>
+    <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">
+      {eventsInfo.bride ? eventsInfo.name2 : eventsInfo.name1}
+    </p>
+  </CopyLines>
+  <div className="text-center space-y-[1vw]">
+    <CopyLines>
+      <p className="text-[1.8vw] max-md:text-[5vw] ">
+        {eventsInfo.bride ? "Son of" : "Daughter of"}
+      </p>
+    </CopyLines>
+    <CopyLines>
+      <p className="text-[1.8vw] max-md:text-[5vw] ">
+        {eventsInfo.bride ? eventsInfo.sonOf : eventsInfo.daughterOf}
+      </p>
+    </CopyLines>
+  </div>
+</div>
           <div
           className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] left-[3%] max-md:hidden`}
         >

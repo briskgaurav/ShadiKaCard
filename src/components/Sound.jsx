@@ -129,7 +129,7 @@ export default function Sound() {
         </div>
       
       </button>
-      <audio ref={audioRef} src="/sound/wedding.mp3" />
+      <audio ref={audioRef} src="/sound/wedding-2.mp3" />
     </div>
   );
 }

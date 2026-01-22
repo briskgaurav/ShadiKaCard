@@ -53,7 +53,7 @@ export default function ThingsKnow() {
           </p>
         </CopyLines>
 
-        <div className="w-[80%] flex items-center gap-[4vw] max-md:gap-[30vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
+        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[30vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
           {[
             {
               icon: "/img/webp/hastag-2.png",
@@ -64,8 +64,7 @@ export default function ThingsKnow() {
             {
               icon: "/img/webp/sun-2.png",
               title: "Weather",
-              description:
-                "It will be mostly cloudy with temperature reaching up to 22 degrees at the venue.",
+              description: "Expect pleasant weather with sunny skies and mild, comfortable conditions throughout the day."
             },
             {
               icon: "/img/webp/card-2.png",

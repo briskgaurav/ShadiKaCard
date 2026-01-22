@@ -3,7 +3,7 @@ import Image from "next/image";
 import FlowerSwiper from "./FlowerSwiper";
 import RotationComponent from "../RotationComponent";
 
-export default function BrideGroom() {
+export default function BrideGroom({bride}) {
   return (
     <div data-dark-nav className="h-fit w-full py-[5vw] max-md:py-[10vw] text-[#A20601] relative max-md:pb-[30vw]">
       <div className="absolute inset-0">
@@ -28,8 +28,10 @@ export default function BrideGroom() {
           />
         </div>
         <p className="text-[2.5vw] max-md:text-[7vw] font-semibold">Meet the</p>
-        <p className="text-[8vw] max-md:text-[12vw] font-bizantheum">Bride & Groom</p>
-        <p className="text18 font-semibold tracking-wider leading-normal max-md:!text-[4.5vw] w-[55%] max-md:w-[85%] text-center mt-[-2vw] max-md:mt-[-4vw] ">
+        <p className="text-[8vw] max-md:text-[12vw] font-bizantheum">
+          {bride ? "Bride & Groom" : "Groom & Bride"}
+          </p>
+        <p className="text18 font-semibold tracking-wider leading-normal max-md:text-[4.5vw]! w-[55%] max-md:w-[85%] text-center mt-[-2vw] max-md:mt-[-4vw] ">
           We are both so delighted that you are able to join us in celebrating
           what we hope will be one of the happiest days of our lives. The
           affection shown to us by so many people since our roka has been

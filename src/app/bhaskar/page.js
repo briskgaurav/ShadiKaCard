@@ -17,12 +17,19 @@ export default function page() {
       <Loader />
       <UseScrollToTopOnReload />
       <Sound />
-      <Herov2 />
+      <Herov2 name1={"Bhaskar"} name2={"Garima"} />
       <Scene />
-      <EventsInfo />
-      <BrideGroom />
+      <EventsInfo eventsInfo={eventsInfo}/>
+      <BrideGroom bride={false}/>
       <ThingsKnow/>
       <CountDown />
     </>
   );
+}
+const eventsInfo={
+  name1:"Garima",
+  daughterOf:" Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi",
+  bride:false,
+  name2:"Bhaskar",
+  sonOf:" Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney"
 }
