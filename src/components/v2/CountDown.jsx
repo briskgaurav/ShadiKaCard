@@ -10,7 +10,7 @@ export default function CountDown() {
   return (
     <div
       data-dark-nav
-      className="min-h-[200vh] max-md:min-h-auto flex  flex-col items-center justify-between w-full relative"
+      className="min-h-[160vh] max-md:min-h-auto flex  flex-col items-center justify-between w-full relative"
     >
       <div className="h-full w-full absolute inset-0">
         <Image
@@ -38,7 +38,7 @@ export default function CountDown() {
       </div>
 
       {/* Section 2 - Countdown Content */}
-      <div className="h-screen w-full flex items-center justify-center relative py-[10vw] pt-[3vw] max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
+      <div className="h-[50vh] w-full flex items-center justify-center relative py-[10vw] pt-[3vw] max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
         <div className="flex flex-col space-y-[1vw] max-md:space-y-[6vw] text-[#a20601] font-serif items-center justify-center w-[50%] max-md:w-[95%]">
           <CopyLines>
             <p className="text-[3vw] max-md:text-[7vw] w-full font-georgia leading-[1.2] text-center">

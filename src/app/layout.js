@@ -53,13 +53,7 @@ const bizantheum = localFont({
   variable: "--font-bizantheum",
 });
 
-export const metadata = {
-  title: "Garima Weds Bhaskar",
-  description: "Garima Weds Bhaskar",
-  icons: {
-    icon: "/3.ico",
-  },
-};
+
 
 export default function RootLayout({ children }) {
   return (

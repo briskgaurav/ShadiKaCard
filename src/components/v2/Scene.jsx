@@ -16,7 +16,7 @@ export default function Scene() {
 
       <div className="h-auto max-md:w-[170%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <Image
-          src="/v2/shivmountain.png"
+          src="/v2/shivji_mountain_new.png"
           alt="scene"
           width={1920}
           height={1080}

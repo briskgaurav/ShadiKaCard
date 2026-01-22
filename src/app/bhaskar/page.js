@@ -11,6 +11,14 @@ const BrideGroom = dynamic(() => import("@/components/v2/Bride&Groom"));
 const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
 const CountDown = dynamic(() => import("@/components/v2/CountDown"));
 
+export const metadata = {
+  title: "Bhaskar Weds Garima",
+  description: "Bhaskar Weds Garima",
+  icons: {
+    icon: "/3.ico",
+  },
+};
+
 export default function page() {
   return (
     <>
