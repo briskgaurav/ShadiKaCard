@@ -2,14 +2,14 @@ import dynamic from "next/dynamic";
 import Loader from "@/components/Loader";
 import { UseScrollToTopOnReload } from "@/components/ReloadToTop";
 import Sound from "@/components/Sound";
-import Herov2 from "@/components/v2/Herov2";
-import Scene from "@/components/v2/Scene";
+import Herov2 from "@/components/Herov2";
+import Scene from "@/components/Scene";
 import React from "react";
 
-const EventsInfo = dynamic(() => import("@/components/v2/EventsInfo"));
-const BrideGroom = dynamic(() => import("@/components/v2/Bride&Groom"));
+const EventsInfo = dynamic(() => import("@/components/EventsInfo"));
+const BrideGroom = dynamic(() => import("@/components/Bride&Groom"));
 const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
-const CountDown = dynamic(() => import("@/components/v2/CountDown"));
+const CountDown = dynamic(() => import("@/components/CountDown"));
 
 export const metadata = {
   title: "Bhaskar Weds Garima",
@@ -30,7 +30,7 @@ export default function page() {
       <EventsInfo eventsInfo={eventsInfo}/>
       <BrideGroom bride={false}/>
       <ThingsKnow/>
-      <CountDown />
+      <CountDown bride={false}/>
     </>
   );
 }

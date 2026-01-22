@@ -12,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 export default function RotationComponent({
   scale = "scale-100",
   isScale = false,
-  wheelImage = "/img/webp/wheel1/yellowwheel-1.png",
-  centerImage = "/img/webp/wheel1/red-cover.png",
-  iconImage = "/img/webp/wheel3/yellow-route.png",
+  wheelImage = "/img/final/wheel1/yellowwheel-1.png",
+  centerImage = "/img/final/wheel1/red-cover.png",
+  iconImage = "/img/final/wheel3/yellow-route.png",
   textColor = "text-primary",
   title = "See the",
   titleLine2 = "Route",

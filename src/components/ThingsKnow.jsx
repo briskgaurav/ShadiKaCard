@@ -9,7 +9,7 @@ export default function ThingsKnow() {
     <div className="min-h-[200vh]  w-full h-fit max-md:h-[550vw] relative">
       <div className="h-full  w-full absolute inset-0">
         <Image
-          src="/v2/bg-star.png"
+          src="/img/final/bg-star.png"
           alt="seeTheRoute"
           width={1000}
           height={1000}
@@ -19,9 +19,9 @@ export default function ThingsKnow() {
 
       <div className="h-full w-full gap-[2vw]  max-md:h-[590vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-5%] left-0 flex items-center justify-center flex-col relative ">
         <RotationComponent
-          wheelImage="/img/webp/wheel2/redwheel-2.png"
-          centerImage="/img/webp/wheel2/yellow-cover.png"
-          iconImage="/img/webp/wheel2/red-design.png"
+          wheelImage="/img/final/wheel2/redwheel-2.png"
+          centerImage="/img/final/wheel2/yellow-cover.png"
+          iconImage="/img/final/wheel2/red-design.png"
           textColor="text-[#a20601]"
           title="Things to"
           titleLine2="know"
@@ -30,7 +30,7 @@ export default function ThingsKnow() {
 
         <div className="h-auto fadeup w-[7vw] max-md:w-[20vw] rounded-full aspect-square relative">
           <img
-            src="/img/webp/wheel3/yellow-design.png"
+            src="/img/final/wheel3/yellow-design.png"
             alt="moon"
             width={1000}
             height={1000}
@@ -56,24 +56,24 @@ export default function ThingsKnow() {
         <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[30vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
           {[
             {
-              icon: "/img/webp/hastag-2.png",
+              icon: "/img/final/hastag.png",
               title: "Hashtag",
               description:
                 "Use #BhaskarKiGarima to share your journey runners.",
             },
             {
-              icon: "/img/webp/sun-2.png",
+              icon: "/img/final/sun.png",
               title: "Weather",
               description: "Expect pleasant weather with sunny skies and mild, comfortable conditions throughout the day."
             },
             {
-              icon: "/img/webp/card-2.png",
+              icon: "/img/final/card.png",
               title: "Staff",
               description:
                 "Feel free to reach out to our event staff for any assistance during the events.",
             },
             {
-              icon: "/img/webp/parking-2.png",
+              icon: "/img/final/parking.png",
               title: "Parking",
               description:
                 "Valet parking for all our guests will be available at the venue.",
