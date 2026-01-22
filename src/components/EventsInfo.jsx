@@ -16,10 +16,10 @@ export default function EventsInfo({eventsInfo}) {
         </div>
 
         <div className="h-full w-full  text-primary font-georgia flex items-center gap-[1vw] max-md:gap-[5vw] flex-col relative z-10">
-          <p className="text-[1.2vw] max-md:text-[5vw] ">
+          <p className="text-[1.2vw] max-md:text-[5vw] fadeup">
             || ॐ श्री गणेशाय नमः ||
           </p>
-          <div className="h-auto w-[14vw] aspect-square relative max-sm:w-[25vw]">
+          <div className="h-auto w-[14vw] aspect-square relative max-sm:w-[25vw] fadeup">
             <img
               src="/img/final/ganeshstrokes.png"
               alt="events"
@@ -41,9 +41,9 @@ export default function EventsInfo({eventsInfo}) {
 
          <div className="mt-[4vw] text-center ">
   <CopyLines>
-    <p className="text-[8vw] max-md:text-[15vw] font-bizantheum">
+    <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum">
       {eventsInfo.bride ? eventsInfo.name1 : eventsInfo.name2}
-    </p>
+    </h2>
   </CopyLines>
   <div className="text-center space-y-[1vw]">
     <CopyLines>
@@ -63,9 +63,9 @@ export default function EventsInfo({eventsInfo}) {
 </CopyLines>
 <div className="-mt-5 text-center ">
   <CopyLines>
-    <p className="text-[8vw] max-md:text-[15vw] font-bizantheum ">
+    <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum ">
       {eventsInfo.bride ? eventsInfo.name2 : eventsInfo.name1}
-    </p>
+    </h2>
   </CopyLines>
   <div className="text-center space-y-[1vw]">
     <CopyLines>
@@ -81,7 +81,7 @@ export default function EventsInfo({eventsInfo}) {
   </div>
 </div>
           <div
-          className={`h-auto w-[25vw] animate-updown pointer-events-none  absolute top-[10%] max-md:top-[5%] left-[3%] max-md:hidden`}
+          className={`h-auto w-[25vw] animate-updown fadeup pointer-events-none  absolute top-[10%] max-md:top-[5%] left-[3%] max-md:hidden`}
         >
           <Image
             src={"/img/illustrations/bouquet.png"}
@@ -91,19 +91,9 @@ export default function EventsInfo({eventsInfo}) {
             className="w-full h-full object-contain"
           />
         </div>
-        {/* <div
-          className={`h-auto w-[30vw] animate-updown pointer-events-none max-md:hidden absolute top-[70%] left-[3%]`}
-        >
-          <Image
-            src={"/img/final/BG.png"}
-            alt="moon"
-            width={500}
-            height={500}
-            className="w-full h-full object-contain"
-          />
-        </div> */}
+       
         <div
-          className={`h-auto w-[20vw] animate-updown pointer-events-none  absolute top-[70%] right-[3%] max-md:hidden`}
+          className={`h-auto w-[20vw] animate-updown fadeup pointer-events-none  absolute top-[70%] right-[3%] max-md:hidden`}
         >
           <Image
             src={"/img/illustrations/moon-2.png"}
@@ -137,9 +127,9 @@ export default function EventsInfo({eventsInfo}) {
 
         <div className="h-full w-full max-md:overflow-hidden relative gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] text-primary text-center flex flex-wrap items-center justify-center max-md:px-[5vw]">
           <CopyLines>
-            <p className="text-[6.5vw] max-md:text-[10vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum">
+            <h2 className="text-[6.5vw] max-md:text-[10vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum">
               On the following auspicious day
-            </p>
+            </h2>
           </CopyLines>
           {eventsData.map((event) => (
             <EventCard key={event.id} event={event} />
@@ -207,7 +197,7 @@ export function EventCard({ event }) {
         </div>
       </div>
       <div className="relative fadeup">
-        <p className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[9vw]">{event.title}</p>
+        <h3 className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[9vw]">{event.title}</h3>
         <div className="space-y-[.5vw] mt-[2vw]">
           <p className="text18 font-medium font-georgia leading-[1.1]">{event.date}</p>
           <p className="text18 font-medium font-georgia leading-[1.1]">{event.venue}</p>

@@ -83,9 +83,9 @@ export default function RotationComponent({
         } text-center flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[2vw] ${textColor} top-[62%] max-md:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
       >
         <Copy>
-          <p className="text40 max-md:!text-[5vw] font-georgia font-semibold  leading-[1.2]">
+          <h4 className="text-[2.8vw] max-md:text-[5vw]! font-georgia font-semibold  leading-[1.2]">
             {title} {titleLine2}
-          </p>
+          </h4>
         </Copy>
         <div className="flex flex-col items-center  gap-y-[1vw]">
         <CopyLines>

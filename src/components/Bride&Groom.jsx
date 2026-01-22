@@ -28,9 +28,9 @@ export default function BrideGroom({bride}) {
           />
         </div>
         <p className="text-[2.5vw] max-md:text-[7vw] font-semibold">Meet the</p>
-        <p className="text-[8vw] max-md:text-[12vw] font-bizantheum">
+        <h2 className="text-[8vw] max-md:text-[12vw] font-bizantheum">
           {bride ? "Bride & Groom" : "Groom & Bride"}
-          </p>
+          </h2>
         <p className="text18 font-semibold tracking-wider leading-normal max-md:text-[4.5vw]! w-[55%] max-md:w-[85%] text-center mt-[-2vw] max-md:mt-[-4vw] ">
           We are both so delighted that you are able to join us in celebrating
           what we hope will be one of the happiest days of our lives. The

@@ -37,13 +37,10 @@ export default function ThingsKnow() {
             className="w-full h-full object-contain"
           />
         </div>
-        {/* <p className="text-[#f6e1ba] text-[3vw] font-normal font-serif">
-          MEET THE
-        </p> */}
         <Copy>
-          <p className="text-primary text-center text50  font-bizantheum leading-[1.2] max-md:w-[80%]">
+          <h2 className="text-primary text-center text50  font-bizantheum leading-[1.2] max-md:w-[80%]">
             Things To Know
-          </p>
+          </h2>
         </Copy>
         <CopyLines>
           <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] max-md:text-[4.5vw] tracking-wider leading-normal max-md:font-medium">
@@ -54,7 +51,35 @@ export default function ThingsKnow() {
         </CopyLines>
 
         <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[30vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
-          {[
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="w-1/4 text-primary! fadeup text-center flex flex-col items-center justify-center max-md:w-full "
+            >
+              <div className="w-[6vw] h-[8vw] max-md:w-[20vw] max-md:h-[20vw] ">
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="space-y-[1vw] flex items-center justify-start flex-col">
+              <h5 className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</h5>
+              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium">
+                {item.description}
+              </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const data = [
             {
               icon: "/img/final/hastag.png",
               title: "Hashtag",
@@ -78,30 +103,4 @@ export default function ThingsKnow() {
               description:
                 "Valet parking for all our guests will be available at the venue.",
             },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="w-1/4 text-primary! fadeup text-center flex flex-col items-center justify-center max-md:w-full "
-            >
-              <div className="w-[6vw] h-[8vw] max-md:w-[20vw] max-md:h-[20vw] ">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={1000}
-                  height={1000}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="space-y-[1vw] flex items-center justify-start flex-col">
-              <p className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</p>
-              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium">
-                {item.description}
-              </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+          ]
