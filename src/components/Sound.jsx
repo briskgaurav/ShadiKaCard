@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useLoading } from "@/contexts/LoadingProvider";
 
-export default function Sound() {
+export default function Sound({src}) {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const { isLoading } = useLoading();
@@ -129,7 +129,7 @@ export default function Sound() {
         </div>
       
       </button>
-      <audio ref={audioRef} src="/sound/wedding-2.mp3" />
+      <audio ref={audioRef} src={src} />
     </div>
   );
 }

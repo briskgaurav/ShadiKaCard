@@ -24,7 +24,7 @@ export default function page() {
     <>
       <Loader />
       <UseScrollToTopOnReload />
-      <Sound />
+      <Sound src={"/sound/bhaskar-audio.mp3"}/>
       <Herov2 name1={"Bhaskar"} name2={"Garima"} />
       <Scene />
       <EventsInfo eventsInfo={eventsInfo}/>

@@ -106,7 +106,7 @@ export default function EventsInfo({eventsInfo}) {
           className={`h-auto w-[20vw] animate-updown pointer-events-none  absolute top-[70%] right-[3%] max-md:hidden`}
         >
           <Image
-            src={"/img/illustrations/moon.png"}
+            src={"/img/illustrations/moon-2.png"}
             alt="moon"
             width={500}
             height={500}
