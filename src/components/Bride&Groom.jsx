@@ -2,13 +2,15 @@ import React from "react";
 import Image from "next/image";
 import FlowerSwiper from "./FlowerSwiper";
 import RotationComponent from "./RotationComponent";
+import Copy from "./Copy";
+import CopyLines from "./CopyLines";
 
 export default function BrideGroom({bride}) {
   return (
     <div data-dark-nav className="h-fit w-full py-[5vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[30vw] ">
       <div className="absolute inset-0">
         <Image
-          src="/img/final/yellowbg.png"
+          src="/img/final/webp/yellowbg.webp"
           alt="background"
           fill
           className="object-cover"
@@ -20,17 +22,22 @@ export default function BrideGroom({bride}) {
         </div>
         <div className="w-[8vw] max-md:w-[20vw] h-auto relative">
           <Image
-            src="/img/final/hearts.png"
+            src="/img/final/webp/hearts.webp"
             alt="background"
             width={500}
             height={500}
             className="w-full h-full object-contain"
           />
         </div>
+        <CopyLines>
         <p className="text-[2.5vw] max-md:text-[7vw] font-semibold">Meet the</p>
+        </CopyLines>
+        <CopyLines>
         <h2 className="text-[8vw] max-md:text-[12vw] font-bizantheum">
           {bride ? "Bride & Groom" : "Groom & Bride"}
           </h2>
+          </CopyLines>
+          <CopyLines>
         <p className="text18 font-semibold tracking-wider leading-normal max-md:text-[4.5vw]! w-[55%] max-md:w-[85%] text-center mt-[-2vw] max-md:mt-[-4vw] ">
           We are both so delighted that you are able to join us in celebrating
           what we hope will be one of the happiest days of our lives. The
@@ -39,16 +46,17 @@ export default function BrideGroom({bride}) {
           take this opportunity to thank everyone most sincerely for their
           kindness. We are looking forward to see you at the wedding functions.
         </p>
-        <div className="w-[40vw] max-md:w-[70vw] flex items-center justify-center h-auto relative">
+        </CopyLines>
+        <div className="w-[40vw] max-md:w-[70vw] flex items-center justify-center h-auto relative fadeup">
           <Image
-            src="/img/final/handshold.png"
+            src="/img/final/webp/handshold.webp"
             alt="background"
             width={1000}
             height={1000}
             className="w-full h-full translate-x-[-5%] max-md:translate-x-0 object-contain"
           />
         </div>
-        <div className="h-full w-full relative flex items-center justify-center">
+        <div className="h-full w-full relative flex items-center justify-center fadeup">
           <FlowerSwiper />
         </div>
       </div>

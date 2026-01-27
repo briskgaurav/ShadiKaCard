@@ -7,10 +7,10 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 const images = [
-  "/img/illustrations/image-1.png",
-  "/img/illustrations/image-2.png",
-  "/img/illustrations/image-4.png",
-  "/img/illustrations/image-3.png",
+  "/img/illustrations/image-1.webp",
+  "/img/illustrations/image-2.webp",
+  "/img/illustrations/image-4.webp",
+  "/img/illustrations/image-3.webp",
 ];
 
 export default function FlowerSwiper() {
@@ -20,7 +20,7 @@ export default function FlowerSwiper() {
     <div className="h-[63vw] max-md:h-[100vw] w-auto aspect-square py-[5vw] max-md:py-[10vw] relative">
       <div className="w-full h-auto aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <img
-          src="/img/final/flowerframe.png"
+          src="/img/final/webp/flowerframe.webp"
           alt="background"
           className="w-full h-full object-contain"
         />

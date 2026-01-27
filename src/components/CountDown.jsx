@@ -12,7 +12,7 @@ export default function CountDown({bride}) {
     >
       <div className="h-full w-full absolute inset-0">
         <Image
-          src="/img/final/yellowbg.png"
+          src="/img/final/webp/yellowbg.webp"
           alt="seeTheRoute"
           width={1000}
           height={1000}
@@ -25,9 +25,9 @@ export default function CountDown({bride}) {
         <RotationComponent
           scale="max-md:scale-100"
           isScale={false}
-          wheelImage="/img/final/wheel3/yellowwheel.png"
-          centerImage="/img/final/wheel3/yellowbglayer.png"
-          iconImage="/img/final/wheel3/yellow-design.png"
+          wheelImage="/img/final/webp/yellowwheel.webp"
+          centerImage="/img/final/webp/yellowbglayer.webp"
+          iconImage="/img/final/webp/yellow-design.webp"
           textColor="text-primary"
           title="The countdown"
           titleLine2="route"

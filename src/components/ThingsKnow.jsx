@@ -9,7 +9,7 @@ export default function ThingsKnow() {
     <div className="min-h-[200vh]  w-full h-fit max-md:h-[580vw] relative">
       <div className="h-full  w-full absolute inset-0">
         <Image
-          src="/img/final/bg-star.png"
+          src="/img/final/webp/bg-star.webp"
           alt="seeTheRoute"
           width={1000}
           height={1000}
@@ -19,9 +19,9 @@ export default function ThingsKnow() {
 
       <div className="h-full w-full gap-[2vw]  max-md:h-[610vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-5%] left-0 flex items-center justify-center flex-col relative ">
         <RotationComponent
-          wheelImage="/img/final/wheel2/redwheel-2.png"
-          centerImage="/img/final/wheel2/yellow-cover.png"
-          iconImage="/img/final/wheel2/red-design.png"
+          wheelImage="/img/final/webp/redwheel-2.webp"
+          centerImage="/img/final/webp/yellow-cover.webp"
+          iconImage="/img/final/webp/red-design.webp"
           textColor="text-[#a20601]"
           title="Things to"
           titleLine2="know"
@@ -30,7 +30,7 @@ export default function ThingsKnow() {
 
         <div className="h-auto fadeup w-[7vw] max-md:w-[20vw] rounded-full aspect-square relative">
           <img
-            src="/img/final/wheel3/yellow-design.png"
+            src="/img/final/webp/yellow-design.webp"
             alt="moon"
             width={1000}
             height={1000}
@@ -38,7 +38,7 @@ export default function ThingsKnow() {
           />
         </div>
         <Copy>
-          <h2 className="text-primary text-center text50  font-bizantheum leading-[1.2] max-md:w-[80%]">
+          <h2 className="text-primary text-center text50 max-md:text-[11vw]! font-bizantheum leading-[1.2] max-md:w-[80%]">
             Things To Know
           </h2>
         </Copy>
@@ -81,24 +81,24 @@ export default function ThingsKnow() {
 
 const data = [
             {
-              icon: "/img/final/hastag.png",
+              icon: "/img/final/webp/hastag.webp",
               title: "Hashtag",
               description:
                 "Use #BhaskarKiGarima to share your journey runners.",
             },
             {
-              icon: "/img/final/sun.png",
+              icon: "/img/final/webp/sun.webp",
               title: "Weather",
               description: "Expect pleasant weather with sunny skies and mild, comfortable conditions throughout the day."
             },
             {
-              icon: "/img/final/card.png",
+              icon: "/img/final/webp/card.webp",
               title: "Staff",
               description:
                 "Feel free to reach out to our event staff for any assistance during the events.",
             },
             {
-              icon: "/img/final/parking.png",
+              icon: "/img/final/webp/parking.webp",
               title: "Parking",
               description:
                 "Valet parking for all our guests will be available at the venue.",

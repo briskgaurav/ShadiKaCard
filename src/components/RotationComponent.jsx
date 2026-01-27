@@ -12,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 export default function RotationComponent({
   scale = "scale-100",
   isScale = false,
-  wheelImage = "/img/final/wheel1/yellowwheel-1.png",
-  centerImage = "/img/final/wheel1/red-cover.png",
-  iconImage = "/img/final/wheel3/yellow-route.png",
+  wheelImage = "/img/final/webp/yellowwheel-1.webp",
+  centerImage = "/img/final/webp/red-cover.webp",
+  iconImage = "/img/final/webp/yellow-route.webp",
   textColor = "text-primary",
   title = "See the",
   titleLine2 = "Route",
@@ -88,9 +88,9 @@ export default function RotationComponent({
           </h4>
         </Copy>
         <div className="flex flex-col items-center  gap-y-[1vw]">
-        <CopyLines>
-            <HoverLineComponent text={subtitle} className={"text20 max-md:text-[2vw]! mt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={textColor} target={"_blank"} />
-        </CopyLines>
+       
+            <HoverLineComponent text={subtitle} className={"text20 max-md:text-[4vw]! mt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={textColor} target={"_blank"} />
+       
         <div className="w-[4vw] fadeup max-md:w-[10vw] h-[4vw] max-md:h-[10vw] flex items-center justify-center">
           <img
             src={iconImage}

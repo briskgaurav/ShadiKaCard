@@ -6,7 +6,7 @@ export default function Scene() {
     <div className="h-fit min-h-[240vh] max-md:mt-[30vw] max-md:min-h-screen max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-auto">
         <Image
-          src="/img/final/yellowbg.png"
+          src="/img/final/webp/yellowbg.webp"
           alt="scene"
           width={1920}
           height={1080}
@@ -16,7 +16,7 @@ export default function Scene() {
 
       <div className="h-auto max-md:w-[170%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <Image
-          src="/img/final/shivji_mountain_new.png"
+          src="/img/final/webp/shivji_mountain_new.webp"
           alt="scene"
           width={1920}
           height={1080}
@@ -25,7 +25,7 @@ export default function Scene() {
       </div>
       <div className="w-[32%] max-md:w-[50%] max-md:left-[-2vw] h-full absolute top-[8vw] left-[-1.4vw]">
         <Image
-          src="/img/final/border.png"
+          src="/img/final/webp/border.webp"
           alt="scene"
           width={1000}
           height={1000}
@@ -34,25 +34,16 @@ export default function Scene() {
       </div>
       <div className="w-[32%] max-md:w-[50%] max-md:right-[-2vw] h-full absolute top-[8vw] right-[-1.4vw]">
         <Image
-          src="/img/final/border.png"
+          src="/img/final/webp/border.webp"
           alt="scene"
           width={1000}
           height={1000}
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      {/* <div className="w-full h-auto absolute bottom-0 left-0">
-        <Image
-          src="/img/final/border-b.png"
-          alt="scene"
-          width={1920}
-          height={1080}
-          className="w-full h-full scale-x-[-1] object-contain"
-        />
-      </div> */}
       <div className="w-[18vw] max-md:w-[55vw] max-md:top-[-2vw] max-md:z-999 h-auto aspect-square  absolute top-[5vw] z-10 right-1/2 translate-x-1/2">
         <Image
-          src="/img/final/om.png"
+          src="/img/final/webp/om.webp"
           alt="scene"
           width={1000}
           height={1000}
@@ -61,7 +52,7 @@ export default function Scene() {
       </div>
       <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-0 left-[-5vw]">
         <Image
-          src="/img/final/ganesh.png"
+          src="/img/final/webp/ganesh.webp"
           alt="scene"
           width={1000}
           height={1000}
@@ -70,7 +61,7 @@ export default function Scene() {
       </div>
       <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-0 right-[-5vw]">
         <Image
-          src="/img/final/ganesh.png"
+          src="/img/final/webp/ganesh.webp"
           alt="scene"
           width={1000}
           height={1000}
@@ -80,7 +71,7 @@ export default function Scene() {
 
       <div className="w-[70%] h-auto absolute top-0 right-0 ">
         <Image
-          src="/img/final/flowers.png"
+          src="/img/final/webp/flowers.webp"
           alt="scene"
           width={1920}
           height={1080}
@@ -89,7 +80,7 @@ export default function Scene() {
       </div>
       <div className="w-[70%]  h-auto absolute top-0 left-0">
         <Image
-          src="/img/final/flowers.png"
+          src="/img/final/webp/flowers.webp"
           alt="scene"
           width={1920}
           height={1080}

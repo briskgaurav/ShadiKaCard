@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { useRef } from 'react'
 import gsap from 'gsap'
+import CopyLines from './CopyLines'
 
 export default function HoverLineComponent({text="TEXT HERE", colorTheme="primary", href, className ,lineColor, target}) {
   const lineRef = useRef(null)
@@ -28,7 +29,9 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
      onMouseEnter={handleMouseEnter}
      onMouseLeave={handleMouseLeave}
    >
-    <p className='text-[1.2vw] max-md:text-[5vw] font-georgia'>{text}</p>
+    <CopyLines>
+    <p className='text-[1.2vw] max-md:text-[4vw] font-georgia'>{text}</p>
+    </CopyLines>
     <span 
       ref={lineRef}
       className={`absolute bottom-0 left-0 w-full h-px bg-current ${lineColor}`}

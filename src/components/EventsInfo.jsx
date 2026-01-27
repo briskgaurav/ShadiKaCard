@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import CopyLines from "./CopyLines";
+import Copy from "./Copy";
 
 export default function EventsInfo({eventsInfo}) {
   return (
@@ -9,7 +10,7 @@ export default function EventsInfo({eventsInfo}) {
         {/* Desktop background */}
         <div className="absolute inset-0 max-md:hidden">
           <Image
-            src="/img/final/red-bg-web.png"
+            src="/img/final/webp/red-bg-web.webp"
             alt="events"
             fill
             className="object-cover"
@@ -19,7 +20,7 @@ export default function EventsInfo({eventsInfo}) {
         {/* Mobile background */}
         <div className="absolute inset-0 hidden max-md:block">
           <Image
-            src="/img/final/red-bg-mobile-2.png"
+            src="/img/final/webp/red-bg-mobile-2.webp"
             alt="events"
             fill
             className="object-cover"
@@ -32,7 +33,7 @@ export default function EventsInfo({eventsInfo}) {
           </p>
           <div className="h-auto w-[14vw] aspect-square relative max-sm:w-[25vw] fadeup">
             <img
-              src="/img/final/ganeshstrokes.png"
+              src="/img/final/webp/ganeshstrokes.webp"
               alt="events"
               className="object-contain"
             />
@@ -96,7 +97,7 @@ export default function EventsInfo({eventsInfo}) {
           
           <div className="h-auto w-[25vw] animate-updown fadeup pointer-events-none absolute top-[10%] max-md:top-[5%] left-[3%] max-md:hidden">
             <Image
-              src={"/img/illustrations/bouquet.png"}
+              src={"/img/illustrations/bouquet.webp"}
               alt="moon"
               width={500}
               height={500}
@@ -106,7 +107,7 @@ export default function EventsInfo({eventsInfo}) {
          
           <div className="h-auto w-[20vw] animate-updown fadeup pointer-events-none absolute top-[70%] right-[3%] max-md:hidden">
             <Image
-              src={"/img/illustrations/moon-2.png"}
+              src={"/img/illustrations/moon-2.webp"}
               alt="moon"
               width={500}
               height={500}
@@ -168,12 +169,20 @@ export function EventCard({ event }) {
           />
         </div>
       </div>
-      <div className="relative fadeup">
+      <div className="relative w-full max-md:w-[80vw]">
+        <Copy>
         <h3 className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[9vw]">{event.title}</h3>
+        </Copy>
         <div className="space-y-[.5vw] mt-[2vw]">
+          <CopyLines>
           <p className="text18 font-medium font-georgia leading-[1.1]">{event.date}</p>
+          </CopyLines>
+          <CopyLines>
           <p className="text18 font-medium font-georgia leading-[1.1]">{event.venue}</p>
+          </CopyLines>
+          <CopyLines>
           <p className="text18 font-medium font-georgia leading-[1.1]">{event.time}</p>
+          </CopyLines>
         </div>
       </div>
     </div>
