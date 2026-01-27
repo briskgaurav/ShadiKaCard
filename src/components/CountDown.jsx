@@ -46,7 +46,7 @@ export default function CountDown({bride}) {
           </CopyLines>
           
             <p className="text-[1.8vw] max-md:text-[4.5vw] leading-[1.2] max-md:leading-[1.4] font-georgia text-center w-[80%] max-md:w-full font-medium mt-[2vw] max-md:mt-[6vw]">
-              {bride ? " Rastogi's and Varshney's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives.":"Varshney's and Rastogi's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives."}
+              {bride ? " Rastogi's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives.":"Varshney's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives."}
             </p>
             
             
