@@ -76,6 +76,7 @@ export default function Herov2({name1, name2}) {
                   src="/img/final/webp/heroflower2.webp"
                   alt="background"
                   className="w-full h-full object-contain"
+                  loading="eager"
                 />
               </div>
               <div className="w-[65%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[65%] rotate-middle">
@@ -83,6 +84,7 @@ export default function Herov2({name1, name2}) {
                   src="/img/final/webp/heroflower1.webp"
                   alt="background"
                   className="w-full h-full object-contain"
+                  loading="eager"
                 />
               </div>
               <div className="w-[35%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[35%] rotate-inner">
@@ -90,6 +92,7 @@ export default function Herov2({name1, name2}) {
                   src="/img/final/webp/heroflower.webp"
                   alt="background"
                   className="w-full h-full object-contain"
+                  loading="eager"
                 />
               </div>
               <div className="w-[30%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[35%] rotate-inner">
@@ -97,6 +100,7 @@ export default function Herov2({name1, name2}) {
                   src="/img/final/webp/smallflower.webp"
                   alt="background"
                   className="w-full h-full object-contain"
+                  loading="eager"
                 />
               </div>
             </div>
