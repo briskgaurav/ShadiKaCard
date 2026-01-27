@@ -41,7 +41,7 @@ export default function EventsInfo({eventsInfo}) {
           <div className="text-center space-y-[1vw] max-md:space-y-[5vw]">
             <CopyLines>
               <p className="text-[1.8vw] max-md:text-[5vw]">
-                with the heavenly blessings of {eventsInfo.bride ? "her" :"his"} grandparents <br/> {eventsInfo.bride ? eventsInfo.grandDaughterOf : eventsInfo.grandSonOf}
+                With the blessings of {eventsInfo.bride ? "her" :"his"} grandparents <br/> {eventsInfo.bride ? eventsInfo.grandDaughterOf : eventsInfo.grandSonOf}
               </p>
             </CopyLines>
             <CopyLines>
