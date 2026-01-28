@@ -4,109 +4,38 @@ import gsap from "gsap";
 import { useLoading } from "@/contexts/LoadingProvider";
 
 export default function Sound({src}) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const { isLoading } = useLoading();
+  const { registerAudio } = useLoading();
   const audioRef = useRef(null);
   const barsRef = useRef([]);
   const wasPlayingBeforeBlur = useRef(false);
 
+  // Register audio element with context and initialize settings
   useEffect(() => {
-    // Wait for loading to finish before initializing audio
-    if (isLoading) return;
-    
-    // Initialize audio settings
     if (audioRef.current) {
       audioRef.current.loop = true;
-      audioRef.current.volume = 0.5; // Set volume to 50%
+      audioRef.current.volume = 0.5;
+      registerAudio(audioRef.current);
     }
+  }, [registerAudio]);
 
-    let hasStarted = false;
+  // Sync isPlaying state with actual audio play/pause events
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
 
-    // Add mousemove listener for desktop
-    const handleMouseMove = (e) => {
-      if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
-      
-      hasStarted = true;
-      
-      audioRef.current.play().then(() => {
-        setIsPlaying(true);
-        // Remove all listeners after successful play
-        removeAllListeners();
-      }).catch((error) => {
-        // console.error('Failed to start audio:', error);
-        hasStarted = false; // Reset so it can try again
-      });
-    };
+    const onPlay = () => setIsPlaying(true);
+    const onPause = () => setIsPlaying(false);
 
-    // Add touchmove listener for mobile drag
-    const handleTouchMove = (e) => {
-      if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
-      
-      hasStarted = true;
-      
-      audioRef.current.play().then(() => {
-        setIsPlaying(true);
-        // Remove all listeners after successful play
-        removeAllListeners();
-      }).catch((error) => {
-        // console.error('Failed to start audio:', error);
-        hasStarted = false; // Reset so it can try again
-      });
-    };
-
-    // Fallback interaction handlers
-    const handleFirstInteraction = (e) => {
-      if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
-      
-      hasStarted = true;
-      
-      audioRef.current.play().then(() => {
-        setIsPlaying(true);
-        // Remove all listeners after successful play
-        removeAllListeners();
-      }).catch((error) => {
-        // console.error('Failed to start audio:', error);
-        hasStarted = false; // Reset so it can try again
-      });
-    };
-
-    const removeAllListeners = () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('touchmove', handleTouchMove);
-      document.removeEventListener('click', handleFirstInteraction);
-      document.removeEventListener('touchstart', handleFirstInteraction);
-      document.removeEventListener('keydown', handleFirstInteraction);
-      document.removeEventListener('mousedown', handleFirstInteraction);
-      window.removeEventListener('scroll', handleFirstInteraction);
-    };
-
-    // Try autoplay first
-    if (audioRef.current) {
-      audioRef.current.play().then(() => {
-        setIsPlaying(true);
-        hasStarted = true;
-      }).catch(() => {
-        // Autoplay blocked - add listeners for user interaction
-        setIsPlaying(false);
-        
-        // Primary triggers: mousemove for desktop, touchmove for mobile
-        window.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('touchmove', handleTouchMove, { passive: true });
-        
-        // Fallback triggers
-        document.addEventListener('click', handleFirstInteraction);
-        document.addEventListener('touchstart', handleFirstInteraction, { passive: true });
-        document.addEventListener('keydown', handleFirstInteraction);
-        document.addEventListener('mousedown', handleFirstInteraction);
-        window.addEventListener('scroll', handleFirstInteraction, { passive: true });
-      });
-    }
+    audio.addEventListener("play", onPlay);
+    audio.addEventListener("pause", onPause);
 
     return () => {
-      removeAllListeners();
+      audio.removeEventListener("play", onPlay);
+      audio.removeEventListener("pause", onPause);
     };
-  }, [isLoading]);
+  }, []);
 
   // Handle window visibility change
   useEffect(() => {
@@ -239,7 +168,7 @@ export default function Sound({src}) {
         </div>
       
       </button>
-      <audio ref={audioRef} src={src} />
+      <audio ref={audioRef} src={src} preload="none" />
     </div>
   );
 }

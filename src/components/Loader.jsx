@@ -3,19 +3,19 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DrawSVGPlugin } from "gsap/dist/DrawSVGPlugin";
-import imagesLoaded from "imagesloaded";
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 import { useLenis } from "lenis/react";
 import { useLoading } from "@/contexts/LoadingProvider";
 
 export default function Loader() {
   const lenis = useLenis();
-  const { setLoading } = useLoading();
+  const { setLoading, playAudio } = useLoading();
   const linePath = useRef();
   const logoRef = useRef();
   const alphabetsRef = useRef([]);
 
   const [isImagesLoaded, setIsImagesLoaded] = useState(false);
+  const [showEnterButton, setShowEnterButton] = useState(false);
 
   const minLoaderTime = () =>
     new Promise((resolve) => setTimeout(resolve, 3000));
@@ -25,8 +25,18 @@ export default function Loader() {
 
     lenis.stop();
 
+    // Only wait for the hero image + a minimum loader time
+    // instead of waiting for ALL 75+ images on the page
+    const heroImageLoaded = new Promise((resolve) => {
+      const heroImg = document.querySelector('img[alt="hero-background"]');
+      if (!heroImg) return resolve();
+      if (heroImg.complete) return resolve();
+      heroImg.addEventListener("load", resolve, { once: true });
+      heroImg.addEventListener("error", resolve, { once: true });
+    });
+
     Promise.all([
-      new Promise((resolve) => imagesLoaded(document.body, resolve)),
+      heroImageLoaded,
       minLoaderTime(),
     ]).then(() => {
       setIsImagesLoaded(true);
@@ -73,17 +83,29 @@ export default function Loader() {
   useEffect(() => {
     if (!isImagesLoaded || !lenis) return;
 
+    // Show the enter button instead of auto-dismissing
+    gsap.to("#logotext", {
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2.inOut",
+      onComplete: () => setShowEnterButton(true),
+    });
+  }, [isImagesLoaded, lenis]);
+
+  const handleEnter = () => {
+    playAudio();
+
+    gsap.to("#enter-btn", {
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2.inOut",
+    });
+
     gsap.to("#logo", {
       opacity: 0,
       duration: 1,
       ease: "power2.inOut",
     });
-    
-    gsap.to("#logotext", {
-      opacity: 0,
-      duration: 1,
-      ease: "power2.inOut",
-    },"<");
 
     gsap.to(
       "#loader",
@@ -94,12 +116,11 @@ export default function Loader() {
         ease: "power2.inOut",
         onComplete: () => {
           lenis.start();
-          setLoading(false); // Set loading to false when loader finishes
+          setLoading(false);
         },
-      },
-      "<+.5"
+      }
     );
-  }, [isImagesLoaded, lenis, setLoading]);
+  };
 
   useEffect(() => {
     gsap.set("#logo", {
@@ -114,33 +135,43 @@ export default function Loader() {
   return (
     <div
       id="loader"
-      className="h-[100dvh] bg-[#580e02] pointer-events-none fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
+      className="h-dvh bg-[#580e02] fixed z-99999 top-0 left-0 flex items-center justify-center w-full"
     >
-      <div className="absolute max-md:left-1/2 max-md:w-fit max-md:-translate-x-1/2 max-md:bottom-[35%] max-md:translate-y-1/2 text-[#E7CB68] right-4 bottom-3">
-        <p
-          id="logotext"
-          className="flex  opacity-0 items-center gap-[.5vw] max-md:gap-4 max-md:text-lg"
-        >
-          Loading{" "}
-          <span className="h-[1vw] block relative w-[1vw] max-md:h-4 max-md:w-4">
-            <svg
-              className="h-full w-full animate-spin"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeDasharray="31.4 31.4"
-              />
-            </svg>
-          </span>{" "}
-        </p>
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-[30%] translate-y-1/2 text-[#E7CB68]">
+        {showEnterButton ? (
+          <button
+            id="enter-btn"
+            onClick={handleEnter}
+            className="cursor-pointer font-sans text-[#E7CB68] border-b border-[#E7CB68] px-6 py-2 max-md:px-5 max-md:py-2 text-sm max-md:text-base tracking-widest uppercase transition-all duration-300 hover:bg-[#E7CB68]/10"
+          >
+            Click to Enter
+          </button>
+        ) : (
+          <p
+            id="logotext"
+            className="flex opacity-0 items-center gap-[.5vw] max-md:gap-4 max-md:text-lg"
+          >
+            Loading{" "}
+            <span className="h-[1vw] block relative w-[1vw] max-md:h-4 max-md:w-4">
+              <svg
+                className="h-full w-full animate-spin"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeDasharray="31.4 31.4"
+                />
+              </svg>
+            </span>{" "}
+          </p>
+        )}
       </div>
       <div
         id="logo"

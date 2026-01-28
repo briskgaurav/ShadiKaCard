@@ -13,7 +13,7 @@ const inria = Inria_Serif({
 const Georgia = localFont({
   src: [
     {
-      path: "/fonts/georgia.ttf",
+      path: "/fonts/georgia.woff2",
       weight: "400",
       style: "normal",
     },
@@ -23,7 +23,7 @@ const Georgia = localFont({
 const bizantheum = localFont({
   src: [
     {
-      path: "/fonts/Bizantheum-2.otf",
+      path: "/fonts/Bizantheum-2.woff2",
       weight: "400",
       style: "normal",
     },

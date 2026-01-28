@@ -64,6 +64,7 @@ export default function RotationComponent({
           alt="wheel"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full object-contain animate-spin"
           style={{ animationDuration: "20s" }}
           id="ROTATEONSCRROLL"
@@ -74,6 +75,7 @@ export default function RotationComponent({
         alt="center"
         width={1000}
         height={1000}
+        loading="lazy"
         className="w-[76%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-auto object-contain"
       />
 
@@ -97,6 +99,7 @@ export default function RotationComponent({
             alt="icon"
             width={1000}
             height={1000}
+            loading="lazy"
             className="w-full h-full object-contain"
           />
         </div>

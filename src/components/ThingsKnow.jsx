@@ -13,6 +13,7 @@ export default function ThingsKnow() {
           alt="seeTheRoute"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>
@@ -32,6 +33,7 @@ export default function ThingsKnow() {
           <img
             src="/img/final/webp/yellow-design.webp"
             alt="moon"
+            loading="lazy"
             width={1000}
             height={1000}
             className="w-full h-full object-contain"

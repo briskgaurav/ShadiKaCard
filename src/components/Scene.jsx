@@ -10,6 +10,7 @@ export default function Scene() {
           alt="scene"
           width={1920}
           height={1080}
+          loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>
@@ -20,6 +21,7 @@ export default function Scene() {
           alt="scene"
           width={1920}
           height={1080}
+          loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>
@@ -29,6 +31,7 @@ export default function Scene() {
           alt="scene"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>
@@ -38,6 +41,7 @@ export default function Scene() {
           alt="scene"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
@@ -47,6 +51,7 @@ export default function Scene() {
           alt="scene"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>
@@ -56,6 +61,7 @@ export default function Scene() {
           alt="scene"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
@@ -65,6 +71,7 @@ export default function Scene() {
           alt="scene"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>
@@ -75,6 +82,7 @@ export default function Scene() {
           alt="scene"
           width={1920}
           height={1080}
+          loading="lazy"
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
@@ -84,6 +92,7 @@ export default function Scene() {
           alt="scene"
           width={1920}
           height={1080}
+          loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>

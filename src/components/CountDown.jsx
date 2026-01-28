@@ -16,6 +16,7 @@ export default function CountDown({bride}) {
           alt="seeTheRoute"
           width={1000}
           height={1000}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

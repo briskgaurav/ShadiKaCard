@@ -13,6 +13,7 @@ export default function BrideGroom({bride}) {
           src="/img/final/webp/yellowbg.webp"
           alt="background"
           fill
+          loading="lazy"
           className="object-cover"
         />
       </div>
@@ -26,6 +27,7 @@ export default function BrideGroom({bride}) {
             alt="background"
             width={500}
             height={500}
+            loading="lazy"
             className="w-full h-full object-contain"
           />
         </div>
@@ -53,6 +55,7 @@ export default function BrideGroom({bride}) {
             alt="background"
             width={1000}
             height={1000}
+            loading="lazy"
             className="w-full h-full translate-x-[-5%] max-md:translate-x-0 object-contain"
           />
         </div>

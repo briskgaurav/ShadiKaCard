@@ -13,16 +13,18 @@ export default function EventsInfo({eventsInfo}) {
             src="/img/final/webp/red-bg-web.webp"
             alt="events"
             fill
+            loading="lazy"
             className="object-cover"
           />
         </div>
-        
+
         {/* Mobile background */}
         <div className="absolute inset-0 hidden max-md:block">
           <Image
             src="/img/final/webp/red-bg-mobile-2.webp"
             alt="events"
             fill
+            loading="lazy"
             className="object-cover"
           />
         </div>
@@ -35,6 +37,7 @@ export default function EventsInfo({eventsInfo}) {
             <img
               src="/img/final/webp/ganeshstrokes.webp"
               alt="events"
+              loading="lazy"
               className="object-contain"
             />
           </div>
@@ -147,6 +150,7 @@ export function EventCard({ event }) {
             alt="event"
             height={500}
             width={500}
+            loading="lazy"
             className={`object-cover h-full w-full transition-transform duration-500 ease-in-out group-hover:scale-105 `}
           />
         </div>
