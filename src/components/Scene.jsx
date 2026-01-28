@@ -14,7 +14,7 @@ export default function Scene() {
         />
       </div>
 
-      <div className="h-auto max-md:w-[170%] w-[120%] absolute translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-1/2">
+      <div className="h-auto max-md:w-[170%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <Image
           src="/img/final/webp/shivji_mountain_new.webp"
           alt="scene"

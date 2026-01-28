@@ -16,6 +16,9 @@ const CountDown = dynamic(() => import("@/components/CountDown"));
 export const metadata = {
   title: "Garima Weds Bhaskar",
   description: "Garima Weds Bhaskar",
+  openGraph: {
+    images: '/og-image.png',
+  },
   icons: {
     icon: "/3.ico",
   },

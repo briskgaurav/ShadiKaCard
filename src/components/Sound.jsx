@@ -23,7 +23,39 @@ export default function Sound({src}) {
 
     let hasStarted = false;
 
-    // Add multiple listeners to start audio on first user interaction
+    // Add mousemove listener for desktop
+    const handleMouseMove = (e) => {
+      if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
+      
+      hasStarted = true;
+      
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+        // Remove all listeners after successful play
+        removeAllListeners();
+      }).catch((error) => {
+        // console.error('Failed to start audio:', error);
+        hasStarted = false; // Reset so it can try again
+      });
+    };
+
+    // Add touchmove listener for mobile drag
+    const handleTouchMove = (e) => {
+      if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
+      
+      hasStarted = true;
+      
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+        // Remove all listeners after successful play
+        removeAllListeners();
+      }).catch((error) => {
+        // console.error('Failed to start audio:', error);
+        hasStarted = false; // Reset so it can try again
+      });
+    };
+
+    // Fallback interaction handlers
     const handleFirstInteraction = (e) => {
       if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
       
@@ -40,6 +72,8 @@ export default function Sound({src}) {
     };
 
     const removeAllListeners = () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('touchmove', handleTouchMove);
       document.removeEventListener('click', handleFirstInteraction);
       document.removeEventListener('touchstart', handleFirstInteraction);
       document.removeEventListener('keydown', handleFirstInteraction);
@@ -56,7 +90,11 @@ export default function Sound({src}) {
         // Autoplay blocked - add listeners for user interaction
         setIsPlaying(false);
         
-        // Use document for click/touch events to catch any interaction
+        // Primary triggers: mousemove for desktop, touchmove for mobile
+        window.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('touchmove', handleTouchMove, { passive: true });
+        
+        // Fallback triggers
         document.addEventListener('click', handleFirstInteraction);
         document.addEventListener('touchstart', handleFirstInteraction, { passive: true });
         document.addEventListener('keydown', handleFirstInteraction);
