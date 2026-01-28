@@ -34,11 +34,13 @@ export default function EventsInfo({eventsInfo}) {
             || ॐ श्री गणेशाय नमः ||
           </p>
           <div className="h-auto w-[14vw] aspect-square relative max-sm:w-[25vw] fadeup">
-            <img
+            <Image
               src="/img/final/webp/ganeshstrokes.webp"
               alt="events"
+              width={500}
+              height={500}
               loading="lazy"
-              className="object-contain"
+              className="w-full h-full object-contain"
             />
           </div>
           <div className="text-center space-y-[1vw] max-md:space-y-[5vw]">

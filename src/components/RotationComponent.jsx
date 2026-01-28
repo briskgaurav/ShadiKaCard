@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import Copy from "./Copy";
 import HoverLineComponent from "./HoverLineComponent";
 
@@ -49,15 +50,7 @@ export default function RotationComponent({
       className={`h-auto w-[42vw] overflow-hidden max-md:w-[95vw] max-md:mt-0 rounded-full aspect-square relative ${scale}`}
     >
       <div ref={wheelRef} className="h-full w-full relative">
-        {/* <img
-          src={wheelImage}
-          alt="wheel"
-          width={1000}
-          height={1000}
-          className="w-full h-full object-contain"
-          id="ROTATEONSCRROLL"
-        /> */}
-        <img
+        <Image
           src={wheelImage}
           alt="wheel"
           width={1000}
@@ -68,7 +61,7 @@ export default function RotationComponent({
           id="ROTATEONSCRROLL"
         />
       </div>
-      <img
+      <Image
         src={centerImage}
         alt="center"
         width={1000}
@@ -92,7 +85,7 @@ export default function RotationComponent({
             <HoverLineComponent text={subtitle} className={"text20 max-md:text-[4vw]! mt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={textColor} target={"_blank"} />
        
         <div className="w-[4vw] fadeup max-md:w-[10vw] h-[4vw] max-md:h-[10vw] flex items-center justify-center">
-          <img
+          <Image
             src={iconImage}
             alt="icon"
             width={1000}

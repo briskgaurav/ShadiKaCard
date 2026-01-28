@@ -30,7 +30,7 @@ export default function ThingsKnow() {
         />
 
         <div className="h-auto fadeup w-[7vw] max-md:w-[20vw] rounded-full aspect-square relative">
-          <img
+          <Image
             src="/img/final/webp/yellow-design.webp"
             alt="moon"
             loading="lazy"
