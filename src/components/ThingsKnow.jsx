@@ -52,7 +52,7 @@ export default function ThingsKnow() {
           </p>
         </CopyLines>
 
-        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[30vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
+        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[20vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
           {data.map((item, index) => (
             <div
               key={index}
@@ -69,7 +69,7 @@ export default function ThingsKnow() {
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
               <h3 className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</h3>
-              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium">
+              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium max-md:h-auto">
                 {item.description}
               </p>
               </div>

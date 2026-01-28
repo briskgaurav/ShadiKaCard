@@ -7,7 +7,7 @@ import CopyLines from "./CopyLines";
 
 export default function BrideGroom({bride}) {
   return (
-    <div data-dark-nav className="h-fit w-full py-[5vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[30vw] ">
+    <div data-dark-nav className="h-fit w-full py-[5vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[50vw] ">
       <div className="absolute inset-0">
         <Image
           src="/img/final/webp/yellowbg.webp"
