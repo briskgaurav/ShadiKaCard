@@ -86,7 +86,7 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[70%]  h-auto absolute top-0 left-0">
+      <div className="w-[70%]  h-auto absolute top-0 left-0 ">
         <Image
           src="/img/final/webp/flowers.webp"
           alt="scene"

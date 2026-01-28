@@ -75,7 +75,7 @@ export default function Herov2({name1, name2}) {
               </div>
 
             </div>
-            <div className="w-[70vw] max-md:w-[120vw] absolute right-[-22%] max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[85dvh] top-1/2 translate-y-[-50%] h-auto aspect-square max-md:block">
+            <div className="w-[70vw] max-md:w-[120vw] absolute right-[-22%] max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[85vh] top-1/2 translate-y-[-50%] h-auto aspect-square max-md:block">
               <div className="w-full relative h-full rotate-outer">
                 <Image
                   src="/img/final/webp/heroflower2.webp"
