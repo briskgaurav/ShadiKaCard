@@ -9,21 +9,93 @@ export default function Sound({src}) {
   const { isLoading } = useLoading();
   const audioRef = useRef(null);
   const barsRef = useRef([]);
+  const wasPlayingBeforeBlur = useRef(false);
 
   useEffect(() => {
     // Wait for loading to finish before initializing audio
     if (isLoading) return;
     
-    // Initialize audio and autoplay
+    // Initialize audio settings
     if (audioRef.current) {
       audioRef.current.loop = true;
       audioRef.current.volume = 0.5; // Set volume to 50%
-      audioRef.current.play().catch(() => {
-        // Autoplay was prevented, set isPlaying to false
+    }
+
+    let hasStarted = false;
+
+    // Add multiple listeners to start audio on first user interaction
+    const handleFirstInteraction = (e) => {
+      if (hasStarted || !audioRef.current || !audioRef.current.paused) return;
+      
+      hasStarted = true;
+      
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+        // Remove all listeners after successful play
+        removeAllListeners();
+      }).catch((error) => {
+        // console.error('Failed to start audio:', error);
+        hasStarted = false; // Reset so it can try again
+      });
+    };
+
+    const removeAllListeners = () => {
+      document.removeEventListener('click', handleFirstInteraction);
+      document.removeEventListener('touchstart', handleFirstInteraction);
+      document.removeEventListener('keydown', handleFirstInteraction);
+      document.removeEventListener('mousedown', handleFirstInteraction);
+      window.removeEventListener('scroll', handleFirstInteraction);
+    };
+
+    // Try autoplay first
+    if (audioRef.current) {
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+        hasStarted = true;
+      }).catch(() => {
+        // Autoplay blocked - add listeners for user interaction
         setIsPlaying(false);
+        
+        // Use document for click/touch events to catch any interaction
+        document.addEventListener('click', handleFirstInteraction);
+        document.addEventListener('touchstart', handleFirstInteraction, { passive: true });
+        document.addEventListener('keydown', handleFirstInteraction);
+        document.addEventListener('mousedown', handleFirstInteraction);
+        window.addEventListener('scroll', handleFirstInteraction, { passive: true });
       });
     }
+
+    return () => {
+      removeAllListeners();
+    };
   }, [isLoading]);
+
+  // Handle window visibility change
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        // Window/tab is now hidden
+        if (audioRef.current && !audioRef.current.paused) {
+          wasPlayingBeforeBlur.current = true;
+          audioRef.current.pause();
+          setIsPlaying(false);
+        }
+      } else {
+        // Window/tab is now visible
+        if (audioRef.current && wasPlayingBeforeBlur.current) {
+          audioRef.current.play();
+          setIsPlaying(true);
+          wasPlayingBeforeBlur.current = false;
+        }
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {

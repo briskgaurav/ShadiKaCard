@@ -12,8 +12,8 @@ const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
 const CountDown = dynamic(() => import("@/components/CountDown"));
 
 export const metadata = {
-  title: "Garima Weds Bhaskar",
-  description: "Garima Weds Bhaskar",
+  title: "Bhaskar Weds Garima",
+  description: "Bhaskar Weds Garima",
   icons: {
     icon: "/3.ico",
   },
@@ -24,48 +24,47 @@ export default function page() {
     <>
       <Loader />
       <UseScrollToTopOnReload />
-      <Sound src={"/sound/garima-audio.mp3"}/>
-      <Herov2 name1={"Garima"} name2={"Bhaskar"} />
+      <Sound src={"/sound/bhaskar-audio.mp3"}/>
+      <Herov2 name1={"Bhaskar"} name2={"Garima"} />
       <Scene />
       <EventsInfo eventsInfo={eventsInfo}/>
-      <BrideGroom bride={true}/>
+      <BrideGroom bride={false}/>
       <ThingsKnow/>
-      <CountDown bride={true}/>
+      <CountDown bride={false}/>
     </>
   );
 }
-
 const eventsInfo={
   name1:"Garima",
   daughterOf:" Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi",
-  bride:true,
+  bride:false,
   name2:"Bhaskar",
   sonOf:" Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney",
   grandSonOf:" Lt. Smt. Jaidevi & Lt. Shri Madan Lal Gupta",
   grandDaughterOf:" Lt. Smt. Premlata Rastogi &  Shri Vinay Kumar Rastogi",
   eventsData: [
-  // {
-  //   id: 1,
-  //   title: "Chadath",
-  //   date: "Tuesday, 17th February 2026",
-  //   venue: "Ganganagar, Meerut",
-  //   time: "5 pm Onwards",
-  //   image: "/img/illustrations/chadath.webp",
-  //   illustration1: "/img/illustrations/turban.webp",
-  //   illustration2: "/img/illustrations/shehnai.webp",
-  //   digonalImages: false,
-  // },
-  // {
-  //   id: 2,
-  //   title: "Mehendi",
-  //   date: "Wednesday, 18th February 2026",
-  //   venue: "Hotel Bravura gold Resort, Meerut",
-  //   time: "12 pm Onwards",
-  //   image: "/img/illustrations/mehndi.webp",
-  //   illustration1: "/img/illustrations/diya.webp",
-  //   illustration2: "/img/illustrations/kalash.webp",
-  //   digonalImages: true,
-  // },
+  {
+    id: 1,
+    title: "Chadath",
+    date: "Tuesday, 17th February 2026",
+    venue: "Ganganagar, Meerut",
+    time: "5 pm Onwards",
+    image: "/img/illustrations/chadath.webp",
+    illustration1: "/img/illustrations/turban.webp",
+    illustration2: "/img/illustrations/shehnai.webp",
+    digonalImages: false,
+  },
+  {
+    id: 2,
+    title: "Mehendi",
+    date: "Wednesday, 18th February 2026",
+    venue: "Hotel Bravura gold Resort, Meerut",
+    time: "12 pm Onwards",
+    image: "/img/illustrations/mehndi.webp",
+    illustration1: "/img/illustrations/diya.webp",
+    illustration2: "/img/illustrations/kalash.webp",
+    digonalImages: true,
+  },
   {
     id: 3,
     title: "Engagement",
@@ -79,7 +78,7 @@ const eventsInfo={
   },
   {
     id: 4,
-    title: "Haldi/Bhaat",
+    title: "Haldi",
     date: "Thursday, 19th February 2026",
     venue: "Hotel Bravura gold Resort, Meerut",
     time: "9 am Onwards",
@@ -113,5 +112,4 @@ const eventsInfo={
     digonalImages: false,
   },
 ]
-
 }
