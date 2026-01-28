@@ -115,6 +115,7 @@ export default function Loader() {
         delay: 0.5,
         ease: "power2.inOut",
         onComplete: () => {
+          document.getElementById("loader").style.display = "none";
           lenis.start();
           setLoading(false);
         },
