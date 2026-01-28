@@ -68,7 +68,7 @@ export default function ThingsKnow() {
                 />
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
-              <h5 className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</h5>
+              <h3 className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</h3>
               <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium">
                 {item.description}
               </p>

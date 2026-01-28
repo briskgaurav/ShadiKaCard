@@ -3,8 +3,6 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Copy from "./Copy";
-import CopyLines from "./CopyLines";
-import Link from "next/link";
 import HoverLineComponent from "./HoverLineComponent";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -85,9 +83,9 @@ export default function RotationComponent({
         } text-center flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[2vw] ${textColor} top-[62%] max-md:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
       >
         <Copy>
-          <h4 className="text-[2.8vw] max-md:text-[5vw]! font-georgia font-semibold  leading-[1.2]">
+          <p className="text-[2.8vw] max-md:text-[5vw]! font-georgia font-semibold  leading-[1.2]">
             {title} {titleLine2}
-          </h4>
+          </p>
         </Copy>
         <div className="flex flex-col items-center  gap-y-[1vw]">
        

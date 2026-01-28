@@ -28,6 +28,7 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
      className={`relative cursor-pointer ${className}`}
      onMouseEnter={handleMouseEnter}
      onMouseLeave={handleMouseLeave}
+     aria-label='Click this to view location'
    >
     <CopyLines>
     <p className='text-[1.2vw] max-md:text-[4vw] font-georgia'>{text}</p>

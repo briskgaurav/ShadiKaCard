@@ -40,9 +40,9 @@ export default function CountDown({bride}) {
       <div className="h-[50vh] w-full flex items-center justify-center relative py-[10vw] pt-[3vw] max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
         <div className="flex flex-col space-y-[1vw] max-md:space-y-[6vw] text-[#a20601] font-serif items-center justify-center w-[50%] max-md:w-[95%]">
           <CopyLines>
-            <h6 className="text-[3vw] max-md:text-[7vw] w-full font-georgia leading-[1.2] text-center">
+            <h4 className="text-[3vw] max-md:text-[7vw] w-full font-georgia leading-[1.2] text-center">
               The countdown begins
-            </h6>
+            </h4>
             <DynamicCounter />
           </CopyLines>
           
