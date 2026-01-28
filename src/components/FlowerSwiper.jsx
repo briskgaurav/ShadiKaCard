@@ -63,6 +63,7 @@ export default function FlowerSwiper() {
       {/* Custom Navigation Buttons */}
       <button
         onClick={goToPrev}
+        aria-label="Go To Previous"
         className="absolute left-[-15%] max-md:left-[34%] cursor-pointer top-1/2 max-md:top-[110%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[15vw] h-[4vw] max-md:h-[15vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
       >
         <img
@@ -72,6 +73,7 @@ export default function FlowerSwiper() {
         />
       </button>
       <button
+        aria-label="Go To Next"
         onClick={goToNext}
         className="absolute right-[-15%] max-md:right-[34%] cursor-pointer top-1/2 max-md:top-[110%] -translate-y-1/2 z-10 w-[4vw] max-md:w-[15vw] h-[4vw] max-md:h-[15vw] rounded-full bg-[#a20601] !text-primary flex items-center justify-center hover:bg-opacity-80 transition-all duration-300"
       >

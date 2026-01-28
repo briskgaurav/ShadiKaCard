@@ -142,6 +142,7 @@ export default function Loader() {
           <button
             id="enter-btn"
             onClick={handleEnter}
+            aria-label="Click to enter"
             className="cursor-pointer font-sans text-[#E7CB68] border-b border-[#E7CB68] px-6 py-2 max-md:px-5 max-md:py-2 text-sm max-md:text-base tracking-widest uppercase transition-all duration-300 hover:bg-[#E7CB68]/10"
           >
             Click to Enter

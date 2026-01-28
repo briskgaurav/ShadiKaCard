@@ -148,6 +148,7 @@ export default function Sound({src}) {
         </svg>
       </div>
       <button
+      aria-label="Toggle Sound"
         onClick={toggleMusic}
         className={`cursor-pointer border ${borderColor} rounded-full p-2 
           transition-all duration-300 ease-in-out
