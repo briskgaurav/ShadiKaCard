@@ -17,7 +17,7 @@ export const metadata = {
   title: "Garima Weds Bhaskar",
   description: "Garima Weds Bhaskar",
   openGraph: {
-    images: '/og-image.png',
+    images: '/og-image.jpeg',
   },
   icons: {
     icon: "/3.ico",
