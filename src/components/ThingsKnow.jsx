@@ -6,7 +6,7 @@ import CopyLines from "./CopyLines";
 
 export default function ThingsKnow() {
   return (
-    <div className="min-h-[200vh]  w-full h-fit max-md:h-[580vw] relative">
+    <div className=" w-full h-full relative py-[8vw] max-md:py-[15vw]">
       <div className="h-full  w-full absolute inset-0">
         <Image
           src="/img/final/webp/bg-star.webp"
@@ -18,8 +18,8 @@ export default function ThingsKnow() {
         />
       </div>
 
-      <div className="h-full w-full gap-[2vw]  max-md:h-[610vw]  max-md:gap-[10vw] py-[10vw] max-md:absolute max-md:top-[-5%] left-0 flex items-center justify-center flex-col relative ">
-        <RotationComponent
+      <div className="h-full w-full gap-[5vw] flex items-center justify-center flex-col relative ">
+        {/* <RotationComponent
           wheelImage="/img/final/webp/redwheel-2.webp"
           centerImage="/img/final/webp/yellow-cover.webp"
           iconImage="/img/final/webp/red-design.webp"
@@ -27,7 +27,7 @@ export default function ThingsKnow() {
           title="Things to"
           titleLine2="know"
           subtitle="Click to open the map"
-        />
+        /> */}
 
         <div className="h-auto fadeup w-[7vw] max-md:w-[20vw] rounded-full aspect-square relative">
           <Image
@@ -52,7 +52,7 @@ export default function ThingsKnow() {
           </p>
         </CopyLines>
 
-        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[20vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
+        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
           {data.map((item, index) => (
             <div
               key={index}
@@ -69,7 +69,7 @@ export default function ThingsKnow() {
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
               <h3 className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</h3>
-              <p className="text-primary! max-md:w-[60%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium max-md:h-auto">
+              <p className="text-primary! max-md:w-[70%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium max-md:h-auto">
                 {item.description}
               </p>
               </div>

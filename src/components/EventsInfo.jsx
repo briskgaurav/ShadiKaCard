@@ -102,7 +102,7 @@ export default function EventsInfo({eventsInfo}) {
           
           <div className="h-auto w-[25vw] animate-updown fadeup pointer-events-none absolute top-[10%] max-md:top-[5%] left-[3%] max-md:hidden">
             <Image
-              src={"/img/illustrations/bouquet.webp"}
+              src={"/img/final/webp/rose2.webp"}
               alt="moon"
               width={500}
               height={500}
@@ -112,7 +112,7 @@ export default function EventsInfo({eventsInfo}) {
          
           <div className="h-auto w-[20vw] animate-updown fadeup pointer-events-none absolute top-[70%] right-[3%] max-md:hidden">
             <Image
-              src={"/img/illustrations/moon-2.webp"}
+              src={"/img/final/webp/ring.webp"}
               alt="moon"
               width={500}
               height={500}
@@ -124,7 +124,7 @@ export default function EventsInfo({eventsInfo}) {
         <div className="h-full w-full px-[5vw] max-md:overflow-hidden relative text-primary text-center">
           <CopyLines>
             <h2 className="text-[6.5vw] max-md:text-[10vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum">
-              On the following auspicious day
+              On the following auspicious days
             </h2>
           </CopyLines>
           

@@ -55,7 +55,7 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-0 left-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-[-2.5vw] left-[-5vw]">
         <Image
           src="/img/final/webp/ganesh.webp"
           alt="scene"
@@ -65,7 +65,7 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-0 right-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-[-2.5vw] right-[-5vw]">
         <Image
           src="/img/final/webp/ganesh.webp"
           alt="scene"

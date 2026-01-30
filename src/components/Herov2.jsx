@@ -64,9 +64,9 @@ export default function Herov2({name1, name2}) {
           <div className="w-full h-full relative">
             <div className="w-[50vw] max-md:w-screen text-[9vw] font-bizantheum max-md:text-[18vw] text-center  flex items-center max-md:items-center max-md:px-[8vw] justify-between  max-md:justify-start max-md:mt-[10vh] pb-[16vw] pt-[16vw] max-md:pt-[5vw] flex-col text-primary h-full">
               <div className="">
-                <CopyLines delay={4.5}>
+                <CopyLines delay={5}>
                 <h1 className="leading-[1.4]!">
-                  <span className="block ">{name1}</span>
+                <span className="block ">{name1}</span>
                 <span className="text-[5vw] max-md:text-[10vw] block leading-[1.5]!">Weds</span>
                 <span className="max-md:mt-[-2vw] block ">{name2}</span>
                 

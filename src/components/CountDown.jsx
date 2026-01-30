@@ -8,7 +8,7 @@ export default function CountDown({bride}) {
   return (
     <div
       data-dark-nav
-      className="min-h-[160vh] max-md:min-h-auto flex  flex-col items-center justify-between w-full relative"
+      className="min-h-[100vh] max-md:min-h-auto flex  flex-col items-center justify-between w-full relative"
     >
       <div className="h-full w-full absolute inset-0">
         <Image
@@ -22,7 +22,7 @@ export default function CountDown({bride}) {
       </div>
 
       {/* Section 1 - Rotation Component */}
-      <div className="h-screen max-md:h-[50vh] max-md:pt-[12vh] w-full flex items-center justify-center relative ">
+      <div className="h-[90vh] max-md:h-[50vh] max-md:pt-[10vw] w-full flex items-center justify-center relative ">
         <RotationComponent
           scale="max-md:scale-100"
           isScale={false}
@@ -30,9 +30,9 @@ export default function CountDown({bride}) {
           centerImage="/img/final/webp/yellowbglayer.webp"
           iconImage="/img/final/webp/yellow-design.webp"
           textColor="text-primary"
-          title="The countdown"
-          titleLine2="route"
-          subtitle="Click to open the map"
+          title="Let's"
+          titleLine2="Countdown"
+          subtitle=""
         />
       </div>
 
@@ -47,7 +47,7 @@ export default function CountDown({bride}) {
           </CopyLines>
           
             <p className="text-[1.8vw] max-md:text-[4.5vw] leading-[1.2] max-md:leading-[1.4] font-georgia text-center w-[80%] max-md:w-full font-medium mt-[2vw] max-md:mt-[6vw]">
-              {bride ? " Rastogi's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives.":"Varshney's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives."}
+              {bride ? " Rastogi's and Varshney's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives.":"Varshney's and Rastogi's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives."}
             </p>
             
             
