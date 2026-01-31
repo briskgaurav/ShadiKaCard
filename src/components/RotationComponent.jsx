@@ -15,9 +15,9 @@ export default function RotationComponent({
   centerImage = "/img/final/webp/red-cover.webp",
   iconImage = "/img/final/webp/yellow-route.webp",
   textColor = "text-primary",
-  title = "See the",
-  titleLine2 = "Route",
-  subtitle = "Click to open the map",
+  title = "All Roads Lead",
+  titleLine2 = " to Love",
+  subtitle = "Navigate to Venue",
 }) {
   const containerRef = useRef(null);
   const wheelRef = useRef(null);
@@ -77,7 +77,7 @@ export default function RotationComponent({
       >
         <Copy>
           <p className="text-[2.8vw] max-md:text-[5vw]! font-georgia font-semibold  leading-[1.2]">
-            {title} {titleLine2}
+            {title} <br/> {titleLine2}
           </p>
         </Copy>
         <div className="flex flex-col items-center  gap-y-[1vw]">

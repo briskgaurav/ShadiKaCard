@@ -1,46 +1,96 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import useTablet from "./IsTablet";
 import { useFadeUpAnim, useLineAnim } from "./Animation";
 import CopyLines from "./CopyLines";
-import { useLoading } from "@/contexts/LoadingProvider";
-import Copy from "./Copy";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Herov2({name1, name2}) {
-  const isTablet = useTablet();
-  const { isLoading } = useLoading();
   useFadeUpAnim();
   useLineAnim();
+  const containerRef = useRef(null);
+  const outerRef = useRef(null);
+  const middleRef = useRef(null);
+  const innerRef = useRef(null);
+  const smallRef = useRef(null);
+  
+  useEffect(() => {
+    const container = containerRef.current;
+    const outer = outerRef.current;
+    const middle = middleRef.current;
+    const inner = innerRef.current;
+    const small = smallRef.current;
+    if (!container || !outer || !middle || !inner || !small) return;
+
+    // Track scroll direction
+    let lastScrollY = 0;
+    let scrollDirection = 1; // 1 for down, -1 for up
+    
+    // Create continuous GSAP rotations with initial direction
+    const outerTween = gsap.to(outer, {
+      rotation: 360,
+      duration: 30,
+      ease: "none",
+      repeat: -1,
+    });
+    
+    const middleTween = gsap.to(middle, {
+      rotation: -360,
+      duration: 25,
+      ease: "none",
+      repeat: -1,
+    });
+    
+    const innerTween = gsap.to(inner, {
+      rotation: 360,
+      duration: 20,
+      ease: "none",
+      repeat: -1,
+    });
+    
+    const smallTween = gsap.to(small, {
+      rotation: 360,
+      duration: 20,
+      ease: "none",
+      repeat: -1,
+    });
+
+    // Handle scroll direction changes
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const newDirection = currentScrollY > lastScrollY ? 1 : -1;
+      
+      // Only reverse if direction changed
+      if (newDirection !== scrollDirection) {
+        scrollDirection = newDirection;
+        
+        // Reverse all tweens by multiplying timeScale by -1
+        outerTween.timeScale(outerTween.timeScale() * -1);
+        middleTween.timeScale(middleTween.timeScale() * -1);
+        innerTween.timeScale(innerTween.timeScale() * -1);
+        smallTween.timeScale(smallTween.timeScale() * -1);
+      }
+      
+      lastScrollY = currentScrollY;
+    };
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      outerTween.kill();
+      middleTween.kill();
+      innerTween.kill();
+      smallTween.kill();
+    };
+  }, []);
+
   return (
     <div className="h-auto relative z-10 w-full">
-      <style jsx>{`
-        @keyframes rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-        @keyframes rotateReverse {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(-360deg);
-          }
-        }
-        .rotate-outer {
-          animation: rotate 30s linear infinite;
-        }
-        .rotate-middle {
-          animation: rotateReverse 25s linear infinite;
-        }
-        .rotate-inner {
-          animation: rotate 20s linear infinite;
-        }
-      `}</style>
       <div className="w-full h-auto max-md:h-[120vh] relative">
         <Image
           src="/img/final/webp/herobg.webp"
@@ -73,10 +123,9 @@ export default function Herov2({name1, name2}) {
                 </h1>
                 </CopyLines>
               </div>
-
             </div>
-            <div className="w-[70vw] max-md:w-[120vw] absolute right-[-22%] max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[85vh] top-1/2 translate-y-[-50%] h-auto aspect-square max-md:block">
-              <div className="w-full relative h-full rotate-outer">
+            <div ref={containerRef} className="w-[70vw] max-md:w-[120vw] absolute right-[-22%] max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[85vh] top-1/2 translate-y-[-50%] h-auto aspect-square max-md:block">
+              <div ref={outerRef} className="w-full relative h-full">
                 <Image
                   src="/img/final/webp/heroflower2.webp"
                   alt="flower-decoration"
@@ -86,7 +135,7 @@ export default function Herov2({name1, name2}) {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="w-[65%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[65%] rotate-middle">
+              <div ref={middleRef} className="w-[65%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[65%]">
                 <Image
                   src="/img/final/webp/heroflower1.webp"
                   alt="flower-decoration"
@@ -96,7 +145,7 @@ export default function Herov2({name1, name2}) {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="w-[35%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[35%] rotate-inner">
+              <div ref={innerRef} className="w-[35%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[35%]">
                 <Image
                   src="/img/final/webp/heroflower.webp"
                   alt="flower-decoration"
@@ -105,7 +154,7 @@ export default function Herov2({name1, name2}) {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="w-[30%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[35%] rotate-inner">
+              <div ref={smallRef} className="w-[30%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[35%]">
                 <Image
                   src="/img/final/webp/smallflower.webp"
                   alt="flower-decoration"

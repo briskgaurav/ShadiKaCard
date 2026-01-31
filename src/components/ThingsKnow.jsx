@@ -32,7 +32,7 @@ export default function ThingsKnow() {
         </div>
         <Copy>
           <h2 className="text-primary text-center text50 max-md:text-[11vw]! font-bizantheum leading-[1.2] max-md:w-[80%]">
-            Things To Know
+            Guest Essentials
           </h2>
         </Copy>
         <CopyLines>
@@ -43,7 +43,7 @@ export default function ThingsKnow() {
           </p>
         </CopyLines>
 
-        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[2vw] max-md:mt-[4vw] max-md:w-full">
+        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[2vw] max-md:mt-[4vw] max-md:w-full pb-[8vw]">
           {data.map((item, index) => (
             <div
               key={index}
@@ -77,23 +77,23 @@ const data = [
               icon: "/img/final/webp/hastag.webp",
               title: "Hashtag",
               description:
-                "Use #BhaskarKiGarima to share your journey runners.",
+                "Your camera is our second pair of eyes. Capture the candid joy we might miss and tag #BhaskarKiGarima to complete our wedding album.",
             },
             {
               icon: "/img/final/webp/sun.webp",
               title: "Weather",
-              description: "Expect pleasant weather with sunny skies and mild, comfortable conditions throughout the day."
+              description: "Nature has painted a perfect backdrop. Expect bright skies to illuminate your photos and a cool breeze to keep you dancing all night long."
             },
             {
               icon: "/img/final/webp/card.webp",
-              title: "Staff",
+              title: "Sartorial Guide",
               description:
-                "Feel free to reach out to our event staff for any assistance during the events.",
+                "Radiate in the hues of celebration - Emerald, Sapphire, or Marigold. Leave Red for the bride's sacred moment and avoid Black for the rituals.",
             },
             {
               icon: "/img/final/webp/parking.webp",
-              title: "Parking",
+              title: "Parking ",
               description:
-                "Valet parking for all our guests will be available at the venue.",
+                "Leave your keys and your worries at the door. Valet is available at the venue entrance to whisk your car away instantly.",
             },
           ]

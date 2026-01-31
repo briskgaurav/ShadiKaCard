@@ -18,9 +18,7 @@
   --font-georgia: var(--font-georgia);
   --font-bizantheum: var(--font-bizantheum);
   --font-inria:var(--font-inria);
-
   --breakpoint-md: 1025px;
-
   --animate-wiggle: wiggle 3s ease-in-out infinite;
   --animate-updown: updown 3s ease-in-out infinite;
   --animate-updown2: updown 3s ease-in-out infinite;
