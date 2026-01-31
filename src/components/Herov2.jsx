@@ -60,7 +60,7 @@ export default function Herov2({name1, name2}) {
     // Handle scroll direction changes
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const newDirection = currentScrollY > lastScrollY ? 1 : -1;
+      const newDirection = currentScrollY > lastScrollY ? -1 : 1;
       
       // Only reverse if direction changed
       if (newDirection !== scrollDirection) {
