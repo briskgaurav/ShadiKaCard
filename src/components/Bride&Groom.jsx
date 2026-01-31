@@ -39,7 +39,7 @@ export default function BrideGroom({bride}) {
           {bride ? "Bride & Groom" : "Groom & Bride"}
           </h2>
           </CopyLines>
-           <div className="w-[20vw] max-md:w-[70vw] flex items-center justify-center h-auto relative fadeup my-[-5vw] max-md:my-[-10vw]">
+           <div className="w-[20vw] max-md:w-[50vw] flex items-center justify-center h-auto relative fadeup my-[-5vw] max-md:my-[-8vw]">
           <Image
             src="/img/final/webp/handshold.webp"
             alt="background"
