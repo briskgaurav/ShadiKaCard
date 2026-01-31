@@ -25,7 +25,7 @@ export default function CountDown({bride}) {
       <div className=" w-full flex items-center justify-center relative  max-md:py-[20vw] max-md:pb-[10vw] max-md:h-fit">
         <div className="flex flex-col space-y-[1vw] max-md:space-y-[6vw] text-[#a20601] font-serif items-center justify-center w-full">
           <CopyLines>
-            <h4 className="text50  max-md:text-[9vw]! w-full font-bizantheum text-center">
+            <h4 className="text50  max-md:text-[10vw]! w-full font-bizantheum text-center">
               The Countdown Begins
             </h4>
             <DynamicCounter />
