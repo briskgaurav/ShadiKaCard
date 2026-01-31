@@ -35,11 +35,11 @@ export default function BrideGroom({bride}) {
         <p className="text-[2.5vw] max-md:text-[7vw] font-semibold">Meet the</p>
         </CopyLines>
         <CopyLines>
-        <h2 className="text-[8vw] max-md:text-[12vw] font-bizantheum">
+        <h2 className="text-[8vw] max-md:text-[12vw] font-bizantheum leading-[1.2] mt-[-1vw]">
           {bride ? "Bride & Groom" : "Groom & Bride"}
           </h2>
           </CopyLines>
-           <div className="w-[40vw] max-md:w-[70vw] flex items-center justify-center h-auto relative fadeup my-[-5vw] max-md:my-[-10vw]">
+           <div className="w-[20vw] max-md:w-[70vw] flex items-center justify-center h-auto relative fadeup my-[-5vw] max-md:my-[-10vw]">
           <Image
             src="/img/final/webp/handshold.webp"
             alt="background"
@@ -49,7 +49,7 @@ export default function BrideGroom({bride}) {
             className="w-full h-full translate-x-[-5%] max-md:translate-x-0 object-contain"
           />
         </div>
-        <div className="h-full w-full relative flex items-center justify-center fadeup">
+        <div className="h-full w-full relative flex items-center justify-center fadeup py-5">
           <FlowerSwiper />
         </div>
           <CopyLines>

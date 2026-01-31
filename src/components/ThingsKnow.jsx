@@ -18,16 +18,7 @@ export default function ThingsKnow() {
         />
       </div>
 
-      <div className="h-full w-full gap-[5vw] flex items-center justify-center flex-col relative ">
-        {/* <RotationComponent
-          wheelImage="/img/final/webp/redwheel-2.webp"
-          centerImage="/img/final/webp/yellow-cover.webp"
-          iconImage="/img/final/webp/red-design.webp"
-          textColor="text-[#a20601]"
-          title="Things to"
-          titleLine2="know"
-          subtitle="Click to open the map"
-        /> */}
+      <div className="h-full w-full gap-[2vw] flex items-center justify-center flex-col relative max-md:gap-[4vw]">
 
         <div className="h-auto fadeup w-[7vw] max-md:w-[20vw] rounded-full aspect-square relative">
           <Image
@@ -52,7 +43,7 @@ export default function ThingsKnow() {
           </p>
         </CopyLines>
 
-        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[5vw] max-md:w-full">
+        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[2vw] max-md:mt-[4vw] max-md:w-full">
           {data.map((item, index) => (
             <div
               key={index}

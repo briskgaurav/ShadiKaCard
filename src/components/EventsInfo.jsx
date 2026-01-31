@@ -57,12 +57,12 @@ export default function EventsInfo({eventsInfo}) {
           </div>
 
           <div className="mt-[4vw] text-center ">
-            <CopyLines>
-              <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum">
+            <Copy>
+              <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum leading-[1.2]">
                 {eventsInfo.bride ? eventsInfo.name1 : eventsInfo.name2}
               </h2>
-            </CopyLines>
-            <div className="text-center space-y-[1vw]">
+            </Copy>
+            <div className="text-center mt-[-1vw] space-y-2">
               <CopyLines>
                 <p className="text-[1.8vw] max-md:text-[5vw] ">
                   {eventsInfo.bride ? "Daughter of" : "Son of"}
@@ -82,11 +82,11 @@ export default function EventsInfo({eventsInfo}) {
           
           <div className="-mt-5 text-center ">
             <CopyLines>
-              <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum ">
+              <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum leading-[1.2]">
                 {eventsInfo.bride ? eventsInfo.name2 : eventsInfo.name1}
               </h2>
             </CopyLines>
-            <div className="text-center space-y-[1vw]">
+            <div className="text-center mt-[-1vw] space-y-2">
               <CopyLines>
                 <p className="text-[1.8vw] max-md:text-[5vw] ">
                   {eventsInfo.bride ? "Son of" : "Daughter of"}
