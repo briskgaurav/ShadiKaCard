@@ -45,18 +45,18 @@ export default function EventsInfo({eventsInfo}) {
           </div>
           <div className="text-center flex flex-col items-center justify-center space-y-[1vw] max-md:space-y-[5vw]">
             <CopyLines>
-              <p className="text-[1.8vw] max-md:text-[5vw]">
-                Under the heavenly blessings of our revered grandparents <br/> {eventsInfo.bride ? eventsInfo.grandDaughterOf : eventsInfo.grandSonOf}
+              <p className="content max-md:text-[5vw]">
+                Under the heavenly blessings of our revered grandparents <br/> <span className="font-semibold!"> {eventsInfo.bride ? eventsInfo.grandDaughterOf : eventsInfo.grandSonOf} </span>
               </p>
             </CopyLines>
             <CopyLines>
-              <p className="text-[1.8vw] max-md:text-[5vw] mt-5 font-bold!">
+              <p className="text-[3vw] max-md:text-[5vw] mt-5 font-bold!">
                Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney
               </p>
             </CopyLines>
-            <CopyLines>
-              <p className="text-[1.5vw] w-[60%] max-md:text-[5vw] text-center">Solicit your gracious presence and blessings as they celebrate the holy union of their beloved son</p>
-            </CopyLines>
+            
+              <p className="content fadeup w-[60%] max-md:text-[5vw] text-center">Solicit your gracious presence and blessings as they celebrate the holy union of their beloved son</p>
+            
           </div>
 
           <div className="mt-[4vw] text-center ">
@@ -69,7 +69,7 @@ export default function EventsInfo({eventsInfo}) {
           </div>
           
           <CopyLines>
-            <p className="text-[9vw] max-md:text-[15vw] font-inria ">&</p>
+            <p className="heading1 max-md:text-[15vw] !font-georgia leading-[1.5] mt-[-5vw]">&</p>
           </CopyLines>
           
           <div className="-mt-5 text-center ">
@@ -80,15 +80,11 @@ export default function EventsInfo({eventsInfo}) {
             </CopyLines>
             <div className="text-center mt-[-1vw] space-y-2">
               <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">
+                <p className="content max-md:text-[5vw] ">
                   {eventsInfo.bride ? "Son of " : "Daughter of "} {eventsInfo.bride ? eventsInfo.sonOf : eventsInfo.daughterOf}
                 </p>
               </CopyLines>
-              <CopyLines>
-                <p className="text-[1.8vw] max-md:text-[5vw] ">
-                  
-                </p>
-              </CopyLines>
+              
             </div>
           </div>
           
@@ -120,7 +116,7 @@ export default function EventsInfo({eventsInfo}) {
             </h2>
           </CopyLines>
           
-          <div className={`grid ${eventsInfo.bride ? 'grid-cols-2' : 'grid-cols-3'} max-md:grid-cols-1 gap-x-[10vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] place-items-center mt-[8vw] max-md:mt-[10vw]`}>
+          <div className={`grid ${eventsInfo.bride ? 'grid-cols-2' : 'grid-cols-3'} max-md:grid-cols-1 gap-x-[8vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[10vw] place-items-center mt-[8vw] max-md:mt-[10vw]`}>
             {eventsInfo.eventsData.map((event) => (
               <EventCard key={event.id} event={event} />
             ))}
@@ -169,20 +165,20 @@ export function EventCard({ event }) {
       </div>
       <div className="relative w-full max-md:w-[80vw]">
         <Copy>
-        <h3 className="text-[2.5vw] font-medium font-georgia tracking-tight max-md:text-[9vw]">{event.title}</h3>
+        <h3 className="text-[4.5vw] font-medium font-georgia tracking-wide max-md:text-[9vw]">{event.title}</h3>
         </Copy>
          <CopyLines>
-        <p className="text18 font-medium font-georgia tracking-tight px-3 text-center max-md:text-[9vw]">{event.text}</p>
+        <p className="content2 font-medium font-georgia tracking-tight px-3 leading-[1.2] text-center max-md:text-[9vw]">{event.text}</p>
         </CopyLines>
         <div className="space-y-[.5vw] mt-[1vw]">
           <CopyLines>
-          <p className="text18 font-medium font-georgia leading-[1.1]">{event.date}</p>
+          <p className="content2 font-medium font-georgia leading-[1.2]">{event.date}</p>
           </CopyLines>
           <CopyLines>
-          <p className="text18 font-medium font-georgia leading-[1.1]">{event.venue}</p>
+          <p className="content2 font-medium font-georgia leading-[1.2]">{event.venue}</p>
           </CopyLines>
           <CopyLines>
-          <p className="text18 font-medium font-georgia leading-[1.1]">{event.time}</p>
+          <p className="content2 font-medium font-georgia leading-[1.2]">{event.time}</p>
           </CopyLines>
         </div>
       </div>

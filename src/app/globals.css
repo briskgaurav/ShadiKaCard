@@ -73,6 +73,38 @@ body {
   display: none;
 }
 
+.content{
+  font-size:2.5vw;
+}
+.content2{
+  font-size: 2vw;
+}
+.heading1{
+  font-size: 9vw;
+  font-family: var(--font-bizantheum);
+}
+.heading2{
+  font-size: 6vw;
+  font-family: var(--font-bizantheum);
+}
+@media (max-width: 1025px) {
+  .content{
+  font-size:5vw;
+}
+.content2{
+  font-size: 4vw;
+}
+.heading1{
+  font-size: 18vw;
+}
+.heading2{
+  font-size: 12vw;
+}
+}
+
+
+
+
 .text12 {
   font-size: 1vw;
 }

@@ -18,7 +18,7 @@ export default function VenueAndRoute() {
             </div>
             <div className="text-center">
                 <CopyLines>
-                    <h2 className="text-[6.5vw] max-md:text-[10vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum">
+                    <h2 className="heading1 max-md:text-[10vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum">
                         The Venue & Route
                     </h2>
                 </CopyLines>
@@ -31,7 +31,7 @@ export default function VenueAndRoute() {
             </div>
             <div className="w-full flex items-center justify-center">
             <CopyLines>
-                <p className="text18 font-semibold tracking-wider leading-normal max-md:text-[4.5vw]! w-[55%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
+                <p className="content font-semibold tracking-wide leading-normal max-md:text-[4.5vw]! w-[55%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
                     Click the map, follow the route, and drive straight into our hearts
                 </p>
             </CopyLines>

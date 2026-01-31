@@ -13,7 +13,7 @@ const inria = Inria_Serif({
 const Georgia = localFont({
   src: [
     {
-      path: "/fonts/georgia.woff2",
+      path: "/fonts/WorstveldSling.ttf",
       weight: "400",
       style: "normal",
     },

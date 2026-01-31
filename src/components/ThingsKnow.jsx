@@ -31,12 +31,12 @@ export default function ThingsKnow() {
           />
         </div>
         <Copy>
-          <h2 className="text-primary text-center text50 max-md:text-[11vw]! font-bizantheum leading-[1.2] max-md:w-[80%]">
+          <h2 className="text-primary text-center heading1 max-md:text-[11vw]! leading-[1.2] max-md:w-[80%]">
             Guest Essentials
           </h2>
         </Copy>
         <CopyLines>
-          <p className="text-primary w-[50%] font-semibold max-md:w-[90%] text-center text-[1.2vw] max-md:text-[4.5vw] tracking-wider leading-normal max-md:font-medium">
+          <p className="text-primary w-[60%] font-semibold max-md:w-[90%] text-center content2 max-md:text-[4.5vw] tracking-wider leading-[1.2] max-md:font-medium">
             To help you feel at ease and enjoy every moment of the celebrations,
             we’ve gathered a few thoughtful details we’d love for you to know
             before the big day.
@@ -59,8 +59,8 @@ export default function ThingsKnow() {
                 />
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
-              <h3 className="text-primary! font-semibold text30 mt-[.6vw]">{item.title}</h3>
-              <p className="text-primary! max-md:w-[70%] h-15 text18 leading-normal mt-[.5vw] font-semibold max-md:font-medium max-md:h-auto">
+              <h3 className="text-primary! font-semibold content mt-[.6vw]">{item.title}</h3>
+              <p className="text-primary! max-md:w-[70%] h-15 text-[1.7vw] leading-[1.2] mt-[.5vw] font-semibold max-md:font-medium max-md:h-auto">
                 {item.description}
               </p>
               </div>
