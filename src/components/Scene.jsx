@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import CopyLines from "./CopyLines";
 
 export default function Scene() {
   return (
@@ -8,17 +9,24 @@ export default function Scene() {
         <Image
           src="/img/final/webp/yellowbg.webp"
           alt="scene"
+          quality={100}
           width={1920}
           height={1080}
           loading="lazy"
           className="w-full h-full object-contain"
         />
       </div>
+      <div className="z-999 absolute top-[85%] font-semibold leading-[1.2] text-center w-2/5 text-[#A20601] h-full left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw]">
+        <CopyLines>
+          <p className="content">By destiny’s thread, our lives were tied,<br/> With the Almighty’s grace as our eternal guide.</p>
+        </CopyLines>
+      </div>
 
       <div className="h-auto max-md:w-[170%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] left-0">
         <Image
           src="/img/final/webp/shivji_mountain_new.webp"
           alt="scene"
+          quality={100}
           width={1920}
           height={1080}
           loading="lazy"
@@ -29,6 +37,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/border.webp"
           alt="scene"
+          quality={100}
           width={1000}
           height={1000}
           loading="lazy"
@@ -39,6 +48,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/border.webp"
           alt="scene"
+          quality={100}
           width={1000}
           height={1000}
           loading="lazy"
@@ -49,6 +59,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/om.webp"
           alt="scene"
+          quality={100}
           width={1000}
           height={1000}
           loading="lazy"
@@ -59,6 +70,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/ganesh.webp"
           alt="scene"
+          quality={100}
           width={1000}
           height={1000}
           loading="lazy"
@@ -69,6 +81,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/ganesh.webp"
           alt="scene"
+          quality={100}
           width={1000}
           height={1000}
           loading="lazy"
@@ -80,6 +93,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/flowers.webp"
           alt="scene"
+          quality={100}
           width={1920}
           height={1080}
           loading="lazy"
@@ -90,6 +104,7 @@ export default function Scene() {
         <Image
           src="/img/final/webp/flowers.webp"
           alt="scene"
+          quality={100}
           width={1920}
           height={1080}
           loading="lazy"

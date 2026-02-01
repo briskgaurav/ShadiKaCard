@@ -163,22 +163,16 @@ export function EventCard({ event }) {
           />
         </div>
       </div>
-      <div className="relative w-full max-md:w-[80vw]">
+      <div className="relative w-full max-md:w-[80vw] flex flex-col items-center justify-center">
         <Copy>
         <h3 className="text-[4.5vw] font-medium font-georgia tracking-wide max-md:text-[9vw]">{event.title}</h3>
         </Copy>
-         <CopyLines>
-        <p className="content2 font-medium font-georgia tracking-tight px-3 leading-[1.2] text-center max-md:text-[9vw]">{event.text}</p>
-        </CopyLines>
+         
+        <p className="content2 fadeup font-medium font-georgia tracking-tight w-[85%] leading-[1.2] text-center max-md:text-[9vw]">{event.text}</p>
+       
         <div className="space-y-[.5vw] mt-[1vw]">
           <CopyLines>
-          <p className="content2 font-medium font-georgia leading-[1.2]">{event.date}</p>
-          </CopyLines>
-          <CopyLines>
-          <p className="content2 font-medium font-georgia leading-[1.2]">{event.venue}</p>
-          </CopyLines>
-          <CopyLines>
-          <p className="content2 font-medium font-georgia leading-[1.2]">{event.time}</p>
+          <p className="content2 font-medium font-georgia leading-[1.2]">{event.date}, {event.time},{event.venue} </p>
           </CopyLines>
         </div>
       </div>
