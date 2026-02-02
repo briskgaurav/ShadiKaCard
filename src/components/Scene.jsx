@@ -4,7 +4,7 @@ import CopyLines from "./CopyLines";
 
 export default function Scene() {
   return (
-    <div id='scene' className="h-fit min-h-[240vh] max-md:mt-[30vw] max-md:min-h-screen max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden">
+    <div id='scene' className="h-fit min-h-[240vh] max-md:mt-[30vw] max-md:overflow-hidden mt-[-18vw] w-full relative overflow-hidden max-md:min-h-[220vw]">
       <div className="absolute top-0 left-0 w-full h-auto">
         <Image
           src="/img/final/webp/yellowbg.webp"
