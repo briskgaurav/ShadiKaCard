@@ -64,6 +64,61 @@ export default function Sound({src}) {
     };
   }, []);
 
+  // Handle window blur/focus
+  useEffect(() => {
+    const handleWindowBlur = () => {
+      if (audioRef.current && !audioRef.current.paused) {
+        wasPlayingBeforeBlur.current = true;
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
+    };
+
+    const handleWindowFocus = () => {
+      if (audioRef.current && wasPlayingBeforeBlur.current) {
+        audioRef.current.play();
+        setIsPlaying(true);
+        wasPlayingBeforeBlur.current = false;
+      }
+    };
+
+    window.addEventListener("blur", handleWindowBlur);
+    window.addEventListener("focus", handleWindowFocus);
+
+    return () => {
+      window.removeEventListener("blur", handleWindowBlur);
+      window.removeEventListener("focus", handleWindowFocus);
+    };
+  }, []);
+
+  // Handle pagehide/pageshow events (for mobile browsers and bfcache)
+  useEffect(() => {
+    const handlePageHide = () => {
+      if (audioRef.current && !audioRef.current.paused) {
+        wasPlayingBeforeBlur.current = true;
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
+    };
+
+    const handlePageShow = (event) => {
+      // event.persisted is true if the page is restored from bfcache
+      if (audioRef.current && wasPlayingBeforeBlur.current) {
+        audioRef.current.play();
+        setIsPlaying(true);
+        wasPlayingBeforeBlur.current = false;
+      }
+    };
+
+    window.addEventListener("pagehide", handlePageHide);
+    window.addEventListener("pageshow", handlePageShow);
+
+    return () => {
+      window.removeEventListener("pagehide", handlePageHide);
+      window.removeEventListener("pageshow", handlePageShow);
+    };
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       // Find all elements with data-dark-nav attribute
