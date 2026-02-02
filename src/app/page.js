@@ -6,7 +6,7 @@ import Herov2 from "@/components/Herov2";
 import Scene from "@/components/Scene";
 import React from "react";
 import VenueAndRoute from "@/components/VenueAndRoute";
-
+import { RsvpController } from "@/components/RSVPController";
 const EventsInfo = dynamic(() => import("@/components/EventsInfo"));
 const BrideGroom = dynamic(() => import("@/components/Bride&Groom"));
 const ThingsKnow = dynamic(() => import("@/components/ThingsKnow"));
@@ -29,6 +29,7 @@ export default function page() {
       <Loader />
       <UseScrollToTopOnReload />
       <Sound src={"/sound/bhaskar-audio.mp3"}/>
+       <RsvpController />
       <Herov2 name1={"Bhaskar"} name2={"Garima"} />
       <Scene />
       <BrideGroom bride={false}/>
