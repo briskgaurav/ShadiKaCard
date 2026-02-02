@@ -75,8 +75,9 @@ export default function CopyLines({ children, animateOnScroll = true, delay = 0 
             ...animationProps,
             scrollTrigger: {
               trigger: containerRef.current,
-              start: "top 90%",
+              start: "top 95%",
               once: true,
+              // markers: true,
             },
           });
         } else {

@@ -111,7 +111,7 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-full z-0  h-auto absolute bottom-0 left-0 ">
+      {/* <div className="w-full z-0  h-auto absolute bottom-0 left-0 ">
         <Image
           src="/img/final/webp/border-b.webp"
           alt="scene"
@@ -121,7 +121,7 @@ export default function Scene() {
           loading="lazy"
           className="w-full h-full object-contain"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
