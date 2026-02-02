@@ -7,7 +7,7 @@ import CopyLines from "./CopyLines";
 
 export default function BrideGroom({ bride }) {
   return (
-    <div data-dark-nav className="h-fit w-full py-[5vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[30vw] ">
+    <div data-dark-nav className="h-fit w-full py-[5vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[10vw] ">
       <div className="absolute inset-0">
         <Image
           src="/img/final/webp/yellowbg.webp"
@@ -30,14 +30,14 @@ export default function BrideGroom({ bride }) {
           />
         </div>
         <CopyLines>
-          <p className="text-[2.5vw] max-md:text-[7vw] leading-[1.2] italic">Meet the</p>
+          <p className="text-[2.5vw] max-md:text-[6vw] leading-[1.2] italic ">Meet the</p>
         </CopyLines>
         <CopyLines>
-          <h2 className="heading1 max-md:text-[12vw] font-bizantheum leading-[1.2]">
-            {bride ? "Bride & Groom" : "Groom & Bride"}
+          <h2 className="heading1 max-md:!text-[14vw] font-bizantheum leading-[1.2] max-md:-mt-2">
+            {bride ? "Bride":"Groom"}<span className="font-notoserif max-md:text-[12vw]!"> & </span>{bride ? " Groom ":" Bride"}
           </h2>
         </CopyLines>
-        <div className="w-[35vw] max-md:mt-2 max-md:w-[55vw] flex items-center justify-center h-auto relative fadeup my-[-2vw] max-md:my-[-5vw]">
+        <div className="w-[35vw] max-md:mt-2 max-md:w-[65vw] flex items-center justify-center h-auto relative fadeup my-[-2vw] max-md:my-[-5vw]">
           <Image
             src="/img/final/webp/handhold.png"
             alt="background"
@@ -48,7 +48,7 @@ export default function BrideGroom({ bride }) {
           />
         </div>
        
-        <div className="h-full w-full relative flex items-center justify-center fadeup py-5">
+        <div className="h-full w-full relative flex items-center justify-center fadeup py-0">
           <FlowerSwiper />
         </div>
          <CopyLines>
@@ -57,13 +57,13 @@ export default function BrideGroom({ bride }) {
           </p>
         </CopyLines>
         <CopyLines>
-          <p className="content italic text-[1.4vw]! tracking-wide leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[20vw] ">
+          <p className="content text-[1.4vw]! tracking-wide leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[2vw] italic">
             As we prepare to take our vows and begin our 'forever,' your presence is the blessing we cherish most. From the first dhol beat to the final phera, we can't wait to share every laugh, dance, and ritual with you. Thank you for being our biggest cheerleaders!
 
           </p>
         </CopyLines>
         <CopyLines>
-          <p className=" font-notoserif! italic py-7  tracking-wide leading-[1.2] text-[3.5vw]! max-md:text-[4.5vw]! w-full max-md:w-[85%] text-center mt-[2vw] max-md:mt-[15vw] ">
+          <p className="heading2 font-notoserif! italic py-7  tracking-wide leading-[1.2] text-[3.5vw]! max-md:text-[7.5vw]! max-md:leading-[1.3] w-full max-md:w-[85%] text-center mt-[2vw] max-md:mt-[2vw] ">
             Let the celebrations begin...
           </p>
         </CopyLines>

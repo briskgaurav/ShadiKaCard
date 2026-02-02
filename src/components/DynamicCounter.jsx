@@ -114,16 +114,16 @@ export default function DynamicCounter() {
           display: block;
         }
       `}</style>
-      <div className="text-[6.5vw] font-notoserif italic   max-md:text-[7vw] flex items-end gap-[1vw]  max-md:mt-[6vw] justify-center  max-md:gap-[2vw]">
+      <div className="text-[6.5vw] font-notoserif font-semibold  max-md:text-[10vw] flex items-end gap-[1vw]  max-md:mt-[6vw] justify-center  max-md:gap-[2vw]">
         
         <div className='flex items-center'>
-          <div className="digit-wrapper w-[3.2vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.2vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('d1')}>
               <span className='font-normal! '>{days[0]}</span>
               <span className='font-normal! '>{days[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('d2')}>
               <span>{days[1]}</span>
               <span>{days[1]}</span>
@@ -132,13 +132,13 @@ export default function DynamicCounter() {
           <span className=" max-md:mb-[-1vw]">D</span>
         </div>
         <div className='flex items-center'>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('h1')}>
               <span>{hours[0]}</span>
               <span>{hours[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('h2')}>
               <span>{hours[1]}</span>
               <span>{hours[1]}</span>
@@ -147,13 +147,13 @@ export default function DynamicCounter() {
           <span className=" max-md:mb-[-1vw]">H</span>
         </div>
         <div className='flex items-center'>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('m1')}>
               <span>{minutes[0]}</span>
               <span>{minutes[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('m2')}>
               <span>{minutes[1]}</span>
               <span>{minutes[1]}</span>
@@ -162,13 +162,13 @@ export default function DynamicCounter() {
           <span className=" max-md:mb-[-1vw]">M</span>
         </div>
         <div className='flex items-center'>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('s1')}>
               <span>{seconds[0]}</span>
               <span>{seconds[0]}</span>
             </div>
           </div>
-          <div className="digit-wrapper w-[3.5vw] max-md:w-[4vw]">
+          <div className="digit-wrapper w-[3.5vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('s2')}>
               <span>{seconds[1]}</span>
               <span>{seconds[1]}</span>

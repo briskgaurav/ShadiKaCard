@@ -5,6 +5,7 @@ import { useFadeUpAnim, useLineAnim } from "./Animation";
 import CopyLines from "./CopyLines";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Copy from "./Copy";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Herov2({name1, name2}) {
@@ -114,14 +115,13 @@ export default function Herov2({name1, name2}) {
           <div className="w-full h-full relative">
             <div className="w-[50vw] max-md:w-screen heading1 max-md:text-[18vw] text-center  flex items-center max-md:items-center max-md:px-[8vw] justify-between  max-md:justify-start max-md:mt-[10vh] pb-[16vw] pt-[16vw] max-md:pt-[5vw] flex-col text-primary h-full">
               <div className="">
-                <CopyLines delay={5}>
+                <Copy delay={5}>
                 <h1 className="leading-[1.2]">
                 <span className="block ">{name1}</span>
-                <span className="heading2 max-md:text-[10vw] block leading-[1.5]!">Weds</span>
+                <span className="heading2 max-md:text-[10vw]! block leading-[1.5]! text-[4vw]!">Weds</span>
                 <span className="max-md:mt-[-2vw] block ">{name2}</span>
-                
                 </h1>
-                </CopyLines>
+                </Copy>
               </div>
             </div>
             <div ref={containerRef} className="w-[70vw] max-md:w-[120vw] absolute right-[-22%] max-md:left-[50%] max-md:translate-x-[-50%] max-md:top-[85vh] top-1/2 translate-y-[-50%] h-auto aspect-square max-md:block">

@@ -76,7 +76,7 @@ export default function RotationComponent({
         } text-center flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[2vw] ${textColor} top-[62%] max-md:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
       >
         <Copy>
-          <p className="text-[1.9vw] max-md:text-[5vw]! font-notoserif  leading-[1.2]">
+          <p className="text-[1.9vw] max-md:text-[5vw]! font-notoserif-italic  leading-[1.2]">
             {title} <br/> {titleLine2}
           </p>
         </Copy>

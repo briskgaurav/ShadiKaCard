@@ -26,18 +26,18 @@ export default function CountDown({ bride }) {
         <div className="flex flex-col space-y-[1vw] max-md:space-y-[6vw] text-[#a20601] font-serif items-center justify-center w-full">
 
           <CopyLines>
-            <h4 className="heading2 max-md:text-[10vw]! w-full font-bizantheum text-center">
+            <h4 className="heading2 max-md:text-[14vw]! w-full max-md:w-[90%] max-md:leading-[1.2] font-bizantheum text-center">
               The Grand Finale
             </h4>
             </CopyLines>
              <CopyLines>
 
-            <p className="w-[60%] font-notoserif italic text-[1.4vw]!  max-md:w-[90%] text-center content2 max-md:text-[4vw]! tracking-wider leading-[1.6] max-md:font-medium mt-[-1.5vw]">
+            <p className="w-[60%] font-notoserif-italic text-[1.4vw]!  max-md:w-[90%] text-center content2 max-md:text-[4.5vw]! tracking-wider leading-[1.6] max-md:font-medium mt-[-1.5vw] italic">
               The Countdown Begins! The dates are locked, the stars are aligned, and the excitement is building. We are counting down the seconds until we can celebrate this lifetime of love with you.
             </p>
 
              </CopyLines>
-            <div className="py-10">
+            <div className="py-10 max-md:py-2">
 
             <DynamicCounter />
             </div>

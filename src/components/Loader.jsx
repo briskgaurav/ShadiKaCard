@@ -144,7 +144,7 @@ export default function Loader() {
             id="enter-btn"
             onClick={handleEnter}
             aria-label="Click to enter"
-            className="cursor-pointer font-sans text-[#E7CB68] border-b border-[#E7CB68] px-6 py-2 max-md:px-5 max-md:py-2 text-sm max-md:text-base tracking-widest uppercase transition-all duration-300 hover:bg-[#E7CB68]/10"
+            className="cursor-pointer font-sans text-[#E7CB68] border-b border-[#E7CB68] px-6 py-2 max-md:px-1 max-md:py-2 text-sm max-md:text-base tracking-widest uppercase transition-all duration-300 hover:bg-[#E7CB68]/10"
           >
             Click to Enter
           </button>
@@ -154,7 +154,7 @@ export default function Loader() {
             className="flex opacity-0 font-sans items-center gap-[.5vw] max-md:gap-4 max-md:text-lg text-md tracking-wide uppercase"
           >
             Loading{" "}
-            <span className="h-[1vw] block relative w-[1vw] max-md:h-4 max-md:w-4">
+            <span className="h-auto block relative w-[1vw] max-md:h-4 max-md:w-4">
               <svg
                 className="h-full w-full animate-spin"
                 viewBox="0 0 24 24"
