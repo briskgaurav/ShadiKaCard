@@ -116,7 +116,8 @@ export default function DynamicCounter() {
       `}</style>
       <div className="text-[6.5vw] font-notoserif font-semibold  max-md:text-[10vw] flex items-end gap-[1vw]  max-md:mt-[6vw] justify-center  max-md:gap-[2vw]">
         
-        <div className='flex items-center'>
+        <div className='flex flex-col items-center'>
+          <div className='flex items-center'>
           <div className="digit-wrapper w-[3.2vw] max-md:w-[5.5vw]">
             <div className="digit-inner" ref={setRef('d1')}>
               <span className='font-normal! '>{days[0]}</span>
@@ -128,6 +129,7 @@ export default function DynamicCounter() {
               <span>{days[1]}</span>
               <span>{days[1]}</span>
             </div>
+          </div>
           </div>
           <span className=" max-md:mb-[-1vw]">D</span>
         </div>

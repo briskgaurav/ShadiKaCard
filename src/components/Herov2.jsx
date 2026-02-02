@@ -98,7 +98,6 @@ export default function Herov2({name1, name2}) {
           alt="hero-background"
           width={1920}
           height={1080}
-          priority
           className="w-full h-full max-md:hidden object-contain"
         />
         <div className="w-full hidden translate-y-[-40vw] max-md:block h-full">
@@ -107,7 +106,7 @@ export default function Herov2({name1, name2}) {
             alt="hero-background"
             width={750}
             height={1334}
-            priority
+
             className="w-full h-auto object-contain"
           />
         </div>
@@ -118,7 +117,7 @@ export default function Herov2({name1, name2}) {
                 <Copy delay={5}>
                 <h1 className="leading-[1.2]">
                 <span className="block ">{name1}</span>
-                <span className="heading2 max-md:text-[10vw]! block leading-[1.5]! text-[4vw]!">Weds</span>
+                <span className="heading2 max-md:text-[10vw] block leading-[1.5]! text-[4vw]!">Weds</span>
                 <span className="max-md:mt-[-2vw] block ">{name2}</span>
                 </h1>
                 </Copy>
@@ -131,7 +130,7 @@ export default function Herov2({name1, name2}) {
                   alt="flower-decoration"
                   width={800}
                   height={800}
-                  priority
+                  // fetchPriority="high"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -141,7 +140,7 @@ export default function Herov2({name1, name2}) {
                   alt="flower-decoration"
                   width={600}
                   height={600}
-                  priority
+      
                   className="w-full h-full object-contain"
                 />
               </div>

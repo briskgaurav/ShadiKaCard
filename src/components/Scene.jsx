@@ -22,7 +22,7 @@ export default function Scene() {
         </CopyLines>
       </div>
 
-      <div className="h-auto max-md:w-[180%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-20vw] left-0">
+      <div className="h-auto max-md:w-[180%] w-[120%] absolute left-1/2 translate-x-[-50%] bottom-[-14vw]  max-md:bottom-[-20vw] left-0">
         <Image
           src="/img/final/webp/shivji_mountain_new.webp"
           alt="scene"

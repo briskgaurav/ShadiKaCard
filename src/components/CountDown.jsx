@@ -3,6 +3,7 @@ import React from "react";
 import RotationComponent from "./RotationComponent";
 import CopyLines from "./CopyLines";
 import DynamicCounter from "./DynamicCounter";
+import FlipCountdown from "./FlipClock/FlipClock";
 
 export default function CountDown({ bride }) {
   return (
@@ -39,7 +40,8 @@ export default function CountDown({ bride }) {
              </CopyLines>
             <div className="py-10 max-md:py-2">
 
-            <DynamicCounter />
+            {/* <DynamicCounter /> */}
+            <FlipCountdown/>
             </div>
           
 

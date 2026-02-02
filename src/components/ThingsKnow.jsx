@@ -31,7 +31,7 @@ export default function ThingsKnow() {
           />
         </div>
         <CopyLines>
-          <h2 className="text-primary font-[6vw] font-bizantheum! text-center heading1 max-md:text-[14vw]! leading-[1.2] max-md:w-[80%]">
+          <h2 className="text-primary font-[6vw] font-bizantheum! text-center heading1 max-md:text-[14vw]! leading-[1.6] max-md:w-[80%]">
             Guest Essentials
           </h2>
         </CopyLines>

@@ -1,0 +1,132 @@
+
+:root {
+  --perspective-value: 52rem;
+}
+
+.flip-clock {
+  display: flex;
+  position: relative;
+  width: 10vw;
+  height: 10vw;
+  aspect-ratio: 1/1;
+  line-height: 10vw;
+  color: #E7CB68;
+  font-size: 5vw;
+  text-align: center;
+ 
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.flip-clock .digital:before,
+.flip-clock .digital:after {
+  content: "" attr(data-number) "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #781202;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.flip-clock .digital:before {
+  top: 0;
+  bottom: 50%;
+  border-radius: 1.5rem 1.5rem 0 0;
+  border-bottom: solid 0.5px #e7cb686b;
+}
+
+.flip-clock .digital:after {
+  top: 50%;
+  bottom: 0;
+  border-radius: 0 0 1.5rem 1.5rem;
+  line-height: 0;
+  border-top: solid 0.5px #e7cb686b;
+}
+
+.flip-clock.down .back:before,
+.flip-clock.down .front:after {
+  z-index: 1;
+}
+
+.flip-clock.down .back:after {
+  z-index: 2;
+  transform-origin: 50% 0;
+  transform: perspective(var(--perspective-value)) rotate(180deg);
+}
+
+.flip-clock.down .front:before {
+  z-index: 3;
+}
+
+.flip-clock.down.go .front:before,
+.flip-clock.down.go .back:after {
+  will-change: transform;
+}
+
+.flip-clock.down.go .front:before {
+  transform-origin: 50% 100%;
+  animation: frontFlipDown 0.6s ease-in-out both;
+  backface-visibility: hidden;
+}
+
+.flip-clock.down.go .back:after {
+  animation: backFlipDown 0.6s ease-in-out both;
+  backface-visibility: hidden;
+}
+
+@keyframes frontFlipDown {
+  0% {
+    transform: perspective(var(--perspective-value)) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(var(--perspective-value)) rotateX(180deg);
+  }
+}
+
+@keyframes backFlipDown {
+  0% {
+    transform: perspective(var(--perspective-value)) rotateX(180deg);
+  }
+  100% {
+    transform: perspective(var(--perspective-value)) rotateX(0deg);
+  }
+}
+
+.flip-clock:not(.go) .front:before,
+.flip-clock:not(.go) .back:after {
+  will-change: auto;
+}
+
+@media (max-width: 1025px){
+  .flip-clock {
+  display: flex;
+  position: relative;
+  width: 10vw;
+  height: 10vw;
+  aspect-ratio: 1/1;
+  line-height: 10vw;
+  color: #E7CB68;
+  font-size: 5vw;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+  
+}
+@media (max-width: 541px){
+  .flip-clock {
+  display: flex;
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  aspect-ratio: 1/1;
+  line-height: 20vw;
+  color: #E7CB68;
+  font-size: 10vw;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+}

@@ -61,24 +61,24 @@ export default function EventsInfo({eventsInfo}) {
           </div>
 
           <div className="mt-[5vw] text-center  max-md:mt-10">
-            <Copy>
+            <CopyLines>
               <h2 className="text-[8vw] max-md:text-[17vw] font-bizantheum leading-[1.2]">
                 {eventsInfo.bride ? eventsInfo.name1 : eventsInfo.name2}
               </h2>
-            </Copy>
+            </CopyLines>
             
           </div>
           
-          <Copy>
-            <p className="heading1 text-[4vw]! max-md:text-[10vw]! !font-bizantheum leading-[1.5] my-[-2.5vw] max-md:-mt-7 max-md:-mb-6">with</p>
-          </Copy>
+          <CopyLines>
+            <p className="heading1 text-[4vw]! max-md:text-[10vw]! font-bizantheum! leading-[1.5] my-[-2.5vw] max-md:-mt-7 max-md:-mb-6">with</p>
+          </CopyLines>
           
           <div className="-mt-2 text-center ">
-            <Copy>
+            <CopyLines>
               <h2 className="text-[8vw] max-md:text-[17vw] font-bizantheum leading-[1.2]">
                 {eventsInfo.bride ? eventsInfo.name2 : eventsInfo.name1} 
               </h2>
-            </Copy>
+            </CopyLines>
             <div className="text-center mt-[-1vw] max-md:mt-0 space-y-2">
               <CopyLines>
                 <p className=" text-[1.8vw] max-md:text-[4vw] italic ">

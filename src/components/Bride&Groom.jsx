@@ -57,7 +57,7 @@ export default function BrideGroom({ bride }) {
           </p>
         </CopyLines>
         <CopyLines>
-          <p className="content text-[1.4vw]! tracking-wide leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[2vw] italic">
+          <p className="content text-[1.4vw]! tracking-wide leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-0 max-md:mt-[2vw] italic">
             As we prepare to take our vows and begin our 'forever,' your presence is the blessing we cherish most. From the first dhol beat to the final phera, we can't wait to share every laugh, dance, and ritual with you. Thank you for being our biggest cheerleaders!
 
           </p>
