@@ -16,9 +16,9 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="z-999 absolute top-[85%] font-semibold leading-[1.2] text-center w-2/5 text-[#A20601] h-full left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw]">
+      <div className="z-999 absolute top-[85%]   text-center w-2/5 text-[#A20601] h-full left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw]">
         <CopyLines>
-          <p className="content">By destiny’s thread, our lives were tied,<br/> With the Almighty’s grace as our eternal guide.</p>
+          <p className="text-[1.5vw] leading-[1.3] max-md:text-[3vw]  font-notoserif-italic">By destiny’s thread, our lives were tied,<br/> With the Almighty’s grace as our eternal guide.</p>
         </CopyLines>
       </div>
 
@@ -66,7 +66,7 @@ export default function Scene() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="w-[28vw] max-md:w-[40vw] max-md:left-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-[-2.5vw] left-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] z-20 max-md:left-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-[-2.5vw] left-[-5vw]">
         <Image
           src="/img/final/webp/ganesh.webp"
           alt="scene"
@@ -77,7 +77,7 @@ export default function Scene() {
           className="w-full h-full scale-x-[-1] object-contain"
         />
       </div>
-      <div className="w-[28vw] max-md:w-[40vw] max-md:right-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-[-2.5vw] right-[-5vw]">
+      <div className="w-[28vw] max-md:w-[40vw] z-20 max-md:right-[-7vw] max-md:bottom-[-4.2vw] h-auto aspect-square  absolute bottom-[-2.5vw] right-[-5vw]">
         <Image
           src="/img/final/webp/ganesh.webp"
           alt="scene"
@@ -103,6 +103,17 @@ export default function Scene() {
       <div className="w-[70%]  h-auto absolute top-0 left-0 ">
         <Image
           src="/img/final/webp/flowers.webp"
+          alt="scene"
+          quality={100}
+          width={1920}
+          height={1080}
+          loading="lazy"
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div className="w-full z-0  h-auto absolute bottom-0 left-0 ">
+        <Image
+          src="/img/final/webp/border-b.webp"
           alt="scene"
           quality={100}
           width={1920}

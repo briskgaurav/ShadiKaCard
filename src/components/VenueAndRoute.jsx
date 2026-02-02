@@ -6,7 +6,7 @@ import CopyLines from "./CopyLines";
 
 export default function VenueAndRoute() {
     return (
-        <div data-dark-nav className="h-fit w-full py-[5vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[30vw] ">
+        <div data-dark-nav className="h-fit w-full py-[7vw] max-md:pt-[10vw] text-[#A20601] relative max-md:pb-[30vw] ">
             <div className="absolute inset-0">
                 <Image
                     src="/img/final/webp/yellowbg.webp"
@@ -31,7 +31,7 @@ export default function VenueAndRoute() {
             </div>
             <div className="w-full flex items-center justify-center">
             <CopyLines>
-                <p className="content font-semibold tracking-wide leading-normal max-md:text-[4.5vw]! w-[55%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
+                <p className="text-[1.8vw] tracking-wide leading-normal max-md:text-[4.5vw]! w-[60%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
                     Click the map, follow the route, and drive straight into our hearts
                 </p>
             </CopyLines>

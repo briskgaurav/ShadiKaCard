@@ -31,13 +31,35 @@ const bizantheum = localFont({
   variable: "--font-bizantheum",
 });
 
+const NotoSerif = localFont({
+  src: [
+    {
+      path: "/fonts/NotoSerif-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-notoserif",
+});
+
+const NotoSerifItalic = localFont({
+  src: [
+    {
+      path: "/fonts/NotoSerif-Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-notoserif-italic",
+});
+
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${Georgia.variable} ${bizantheum.variable} ${inria.variable} antialiased`}
+        className={` ${Georgia.variable} ${bizantheum.variable} ${inria.variable} ${NotoSerifItalic.variable} ${NotoSerif.variable} antialiased`}
       >
         <LoadingProvider>
           <LenisSmoothScroll />

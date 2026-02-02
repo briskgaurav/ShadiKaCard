@@ -29,11 +29,11 @@ export default function EventsInfo({eventsInfo}) {
           />
         </div>
 
-        <div className="h-full w-full text-primary font-georgia flex items-center gap-[1vw] max-md:gap-[5vw] flex-col relative z-10">
+        <div className="h-full w-full text-primary font-georgia flex items-center gap-[2vw] max-md:gap-[5vw] flex-col relative z-10">
           <p className="text-[1.2vw] max-md:text-[5vw] fadeup">
             || ॐ श्री गणेशाय नमः ||
           </p>
-          <div className="h-auto w-[8vw] aspect-square relative max-sm:w-[25vw] fadeup">
+          <div className="h-auto w-[10vw] aspect-square relative max-sm:w-[25vw] fadeup">
             <Image
               src="/img/final/webp/ganeshstrokes.webp"
               alt="events"
@@ -43,23 +43,23 @@ export default function EventsInfo({eventsInfo}) {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="text-center flex flex-col items-center justify-center space-y-[1vw] max-md:space-y-[5vw]">
+          <div className="text-center pt-20 flex flex-col items-center justify-center space-y-[2vw] max-md:space-y-[5vw]">
             <CopyLines>
-              <p className="content max-md:text-[5vw]">
+              <p className=" max-md:text-[3.5vw] text-[2vw] leading-[1.9]">
                 Under the heavenly blessings of our revered grandparents <br/> <span className="font-semibold!"> {eventsInfo.bride ? eventsInfo.grandDaughterOf : eventsInfo.grandSonOf} </span>
               </p>
             </CopyLines>
             <CopyLines>
-              <p className="text-[3vw] max-md:text-[5vw] mt-5 font-bold!">
+              <p className="text-[2.3vw] max-md:text-[5vw] mt-5 font-bold!">
                Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney
               </p>
             </CopyLines>
             
-              <p className="content fadeup w-[60%] max-md:text-[5vw] text-center">Solicit your gracious presence and blessings as they celebrate the holy union of their beloved son</p>
+              <p className=" text-[1.8vw]  leading-[1.5] fadeup w-[70%] max-md:w-[90%] max-md:text-[3vw] text-center">Solicit your gracious presence and blessings as they celebrate the holy union of their beloved son</p>
             
           </div>
 
-          <div className="mt-[4vw] text-center ">
+          <div className="mt-[5vw] text-center ">
             <Copy>
               <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum leading-[1.2]">
                 {eventsInfo.bride ? eventsInfo.name1 : eventsInfo.name2}
@@ -69,18 +69,18 @@ export default function EventsInfo({eventsInfo}) {
           </div>
           
           <CopyLines>
-            <p className="heading1 max-md:text-[15vw] !font-georgia leading-[1.5] mt-[-5vw]">&</p>
+            <p className="heading1 max-md:text-[15vw] !font-bizantheum leading-[1.5] my-[-2vw]">with</p>
           </CopyLines>
           
-          <div className="-mt-5 text-center ">
+          <div className="-mt-2 text-center ">
             <CopyLines>
               <h2 className="text-[8vw] max-md:text-[15vw] font-bizantheum leading-[1.2]">
                 {eventsInfo.bride ? eventsInfo.name2 : eventsInfo.name1} 
               </h2>
             </CopyLines>
-            <div className="text-center mt-[-1vw] space-y-2">
+            <div className="text-center mt-[-1vw] max-md:mt-[3vw] space-y-2">
               <CopyLines>
-                <p className="content max-md:text-[5vw] ">
+                <p className=" text-[1.8vw] max-md:text-[3vw] ">
                   {eventsInfo.bride ? "Son of " : "Daughter of "} {eventsInfo.bride ? eventsInfo.sonOf : eventsInfo.daughterOf}
                 </p>
               </CopyLines>
@@ -165,14 +165,14 @@ export function EventCard({ event }) {
       </div>
       <div className="relative w-full max-md:w-[80vw] flex flex-col items-center justify-center">
         <Copy>
-        <h3 className="text-[4.5vw] font-medium font-georgia tracking-wide max-md:text-[9vw]">{event.title}</h3>
+        <h3 className="text-[2.2vw] font-medium font-notoserif-italic tracking-wide max-md:text-[8vw]">{event.title}</h3>
         </Copy>
          
-        <p className="content2 fadeup font-medium font-georgia tracking-tight w-[85%] leading-[1.2] text-center max-md:text-[9vw]">{event.text}</p>
+        <p className="text-[1.3vw] fadeup font-medium font-notoserif-italic pt-8 tracking-tight w-[90%] max-md:w-full leading-[1.4] text-center max-md:text-[5vw] ">{event.text}</p>
        
-        <div className="space-y-[.5vw] mt-[1vw]">
+        <div className="space-y-[.5vw] mt-[1vw] max-md:mt-[3vw] w-[90%] max-md:w-full">
           <CopyLines>
-          <p className="content2 font-medium font-georgia leading-[1.2]">{event.date}, {event.time},{event.venue} </p>
+          <p className="text-[1.3vw] font-medium font-notoserif-italic leading-[1.2] max-md:leading-[1.4] max-md:text-[4vw]">{event.date}, {event.time},{event.venue} </p>
           </CopyLines>
         </div>
       </div>

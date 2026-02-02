@@ -76,13 +76,13 @@ export default function RotationComponent({
         } text-center flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[2vw] ${textColor} top-[62%] max-md:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2`}
       >
         <Copy>
-          <p className="text-[2.8vw] max-md:text-[5vw]! font-georgia font-semibold  leading-[1.2]">
+          <p className="text-[1.9vw] max-md:text-[5vw]! font-notoserif  leading-[1.2]">
             {title} <br/> {titleLine2}
           </p>
         </Copy>
         <div className="flex flex-col items-center  gap-y-[1vw] content">
        
-            <HoverLineComponent text={subtitle} className={"contentmt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={textColor} target={"_blank"} />
+            <HoverLineComponent text={subtitle} className={"text-[2vw]! mt-[1vw] max-md:mt-[2vw] leading-[1.2]"} href={"https://maps.app.goo.gl/82WrR8ZVf1K6SAhS6"} lineColor={textColor} target={"_blank"} />
        
         <div className="w-[4vw] fadeup max-md:w-[10vw] h-[4vw] max-md:h-[10vw] flex items-center justify-center">
           <Image

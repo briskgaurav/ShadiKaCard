@@ -31,19 +31,19 @@ export default function ThingsKnow() {
           />
         </div>
         <Copy>
-          <h2 className="text-primary text-center heading1 max-md:text-[11vw]! leading-[1.2] max-md:w-[80%]">
+          <h2 className="text-primary font-[6vw] font-bizantheum! text-center heading1 max-md:text-[11vw]! leading-[1.2] max-md:w-[80%]">
             Guest Essentials
           </h2>
         </Copy>
         <CopyLines>
-          <p className="text-primary w-[60%] font-semibold max-md:w-[90%] text-center content2 max-md:text-[4.5vw] tracking-wider leading-[1.2] max-md:font-medium">
+          <p className="text-primary w-[65%] text-[1.45vw]!  max-md:w-[90%] text-center content2 max-md:text-[2.5vw]! tracking-wider leading-[1.5] max-md:font-medium">
             To help you feel at ease and enjoy every moment of the celebrations,
             we’ve gathered a few thoughtful details we’d love for you to know
             before the big day.
           </p>
         </CopyLines>
 
-        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[2vw] max-md:mt-[4vw] max-md:w-full pb-[8vw]">
+        <div className="w-[90%] flex items-center gap-[4vw] max-md:gap-[15vw] max-md:flex-col justify-center mt-[4vw] max-md:mt-[4vw] max-md:w-full pb-[8vw]">
           {data.map((item, index) => (
             <div
               key={index}
@@ -59,8 +59,8 @@ export default function ThingsKnow() {
                 />
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
-              <h3 className="text-primary! font-semibold content mt-[.6vw]">{item.title}</h3>
-              <p className="text-primary! max-md:w-[70%] h-15 text-[1.7vw] leading-[1.2] mt-[.5vw] font-semibold max-md:font-medium max-md:h-auto">
+              <h3 className="text-primary!  content mt-[.6vw]">{item.title}</h3>
+              <p className="text-primary! max-md:text-[3vw] max-md:w-[70%] h-15 text-[1.3vw] leading-[1.3] mt-[.5vw]  max-md:font-medium max-md:h-auto">
                 {item.description}
               </p>
               </div>

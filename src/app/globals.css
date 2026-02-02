@@ -5,7 +5,9 @@
   --foreground: #171717;
   --color-primary: #E7CB68;
   --color-secondary: #0c4860;
-  --font-georgia: var(--font-georgia);
+  /* --font-georgia: var(--font-georgia); */
+  /* --font-notoserif: var(--font-notoserif); */
+  --font-notoserif-italic: var(--font-notoserif-italic);
   --font-bizantheum: var(--font-bizantheum);
   --font-inria:var(--font-inria);
 }
@@ -15,7 +17,9 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
-  --font-georgia: var(--font-georgia);
+  /* --font-georgia: var(--font-georgia); */
+  --font-notoserif: var(--font-notoserif);
+  --font-notoserif-italic: var(--font-notoserif-italic);
   --font-bizantheum: var(--font-bizantheum);
   --font-inria:var(--font-inria);
   --breakpoint-md: 1025px;
@@ -63,7 +67,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   padding: 0vw;
-  font-family: var(--font-georgia);
+  font-family: var(--font-notoserif-italic);
   overflow-x: hidden;
   user-select: none;
 }
@@ -74,13 +78,13 @@ body {
 }
 
 .content{
-  font-size:2.5vw;
+  font-size:1.8vw;
 }
 .content2{
   font-size: 2vw;
 }
 .heading1{
-  font-size: 9vw;
+  font-size: 7.5vw;
   font-family: var(--font-bizantheum);
 }
 .heading2{
@@ -283,6 +287,10 @@ body {
   .text60 {
     font-size: 20vw;
   }
+}
+
+.line {
+  padding-bottom: 0.15vw;
 }
 
 
