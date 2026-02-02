@@ -37,7 +37,7 @@ export const FloatRsvp = () => {
       href="https://wa.me/+918745044555"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed max-md:scale-70 bottom-1 right-1 max-md:bottom-0 max-md:right-0 z-9999 w-[10vw] h-auto max-md:w-[35vw]"
+      className="fixed  bottom-1 right-1 max-md:bottom-0 max-md:right-2 z-9999 w-[10vw] h-auto max-md:w-[22vw]"
     >
       <div className="relative w-full h-auto">
         {/* Mandala */}
@@ -60,7 +60,7 @@ export const FloatRsvp = () => {
             absolute 
             top-1/2 left-1/2 
             -translate-x-1/2 -translate-y-1/2
-            w-[6vw] max-md:w-[20vw]
+            w-[6vw] max-md:w-[14vw]
           "
         />
          <Image
@@ -72,7 +72,7 @@ export const FloatRsvp = () => {
             absolute invert 
             top-1/2 left-1/2 
             -translate-x-1/2 -translate-y-1/2
-            w-[1.5vw] max-md:w-[6vw]
+            w-[1.5vw] max-md:w-[4.5vw]
           "
         />
       </div>
