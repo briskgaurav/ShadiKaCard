@@ -37,7 +37,7 @@ export const FloatRsvp = () => {
       href="https://wa.me/+918745044555"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-1 right-1 max-md:bottom-0 max-md:right-0 z-9999 w-[10vw] h-auto max-md:w-[35vw]"
+      className="fixed max-md:scale-70 bottom-1 right-1 max-md:bottom-0 max-md:right-0 z-9999 w-[10vw] h-auto max-md:w-[35vw]"
     >
       <div className="relative w-full h-auto">
         {/* Mandala */}
