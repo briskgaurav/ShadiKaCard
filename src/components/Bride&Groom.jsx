@@ -17,7 +17,7 @@ export default function BrideGroom({ bride }) {
           className="object-cover"
         />
       </div>
-      <div className="h-full w-full font-georgia flex items-center gap-[2.5vw] max-md:gap-[6vw] flex-col relative z-10">
+      <div className="h-full w-full  flex items-center gap-[2.5vw] max-md:gap-[6vw] flex-col relative z-10">
 
         <div className="w-[8vw] max-md:w-[20vw] h-auto relative">
           <Image
@@ -30,7 +30,7 @@ export default function BrideGroom({ bride }) {
           />
         </div>
         <CopyLines>
-          <p className="text-[2.5vw] max-md:text-[7vw] leading-[1.2] ">Meet the</p>
+          <p className="text-[2.5vw] max-md:text-[7vw] leading-[1.2] italic">Meet the</p>
         </CopyLines>
         <CopyLines>
           <h2 className="heading1 max-md:text-[12vw] font-bizantheum leading-[1.2]">
@@ -52,18 +52,18 @@ export default function BrideGroom({ bride }) {
           <FlowerSwiper />
         </div>
          <CopyLines>
-          <p className="content  tracking-wide text-[1.4vw]! leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
+          <p className="content italic tracking-wide text-[1.4vw]! leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
             What started as a meeting of families has blossomed into a union of hearts. We have been deeply touched by the kindness and affection shown to us since we first announced our togetherness. The journey that began with our Roka has been nothing short of magical, fueled by the overwhelming love you have all showered upon us.
           </p>
         </CopyLines>
         <CopyLines>
-          <p className="content text-[1.4vw]! tracking-wide leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[20vw] ">
+          <p className="content italic text-[1.4vw]! tracking-wide leading-[1.4] max-md:text-[4.5vw]! w-[65%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[20vw] ">
             As we prepare to take our vows and begin our 'forever,' your presence is the blessing we cherish most. From the first dhol beat to the final phera, we can't wait to share every laugh, dance, and ritual with you. Thank you for being our biggest cheerleaders!
 
           </p>
         </CopyLines>
         <CopyLines>
-          <p className="heading2 font-notoserif-italic! py-7  tracking-wide leading-[1.2] text-[3.5vw]! max-md:text-[4.5vw]! w-full max-md:w-[85%] text-center mt-[2vw] max-md:mt-[15vw] ">
+          <p className=" font-notoserif! italic py-7  tracking-wide leading-[1.2] text-[3.5vw]! max-md:text-[4.5vw]! w-full max-md:w-[85%] text-center mt-[2vw] max-md:mt-[15vw] ">
             Let the celebrations begin...
           </p>
         </CopyLines>

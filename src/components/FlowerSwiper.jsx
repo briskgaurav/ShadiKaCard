@@ -47,7 +47,7 @@ export default function FlowerSwiper() {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="h-[29.2vw] w-auto aspect-square max-md:w-[50vw] max-md:h-auto rounded-full overflow-hidden swiperimages z-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="h-[32.2vw] w-auto aspect-square max-md:w-[50vw] max-md:h-auto rounded-full overflow-hidden swiperimages z-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="relative w-full h-full">
           {images.map((src, index) => (
             <Image

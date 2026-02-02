@@ -23,7 +23,7 @@ export default function VenueAndRoute() {
                     </h2>
                 </CopyLines>
             </div>
-            <div className="h-full w-full font-georgia flex items-center gap-[1vw] max-md:gap-[2vw] flex-col relative z-10">
+            <div className="h-full w-full  flex items-center gap-[1vw] max-md:gap-[2vw] flex-col relative z-10">
                 <div className="h-full w-full max-md:py-[10vw] relative flex items-center justify-center">
                     <RotationComponent textColor="text-primary" />
                 </div>
@@ -31,7 +31,7 @@ export default function VenueAndRoute() {
             </div>
             <div className="w-full flex items-center justify-center">
             <CopyLines>
-                <p className="text-[1.8vw] tracking-wide leading-normal max-md:text-[4.5vw]! w-[60%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
+                <p className="text-[1.8vw] italic tracking-wide leading-normal max-md:text-[4.5vw]! w-[60%] max-md:w-[85%] text-center mt-[2vw] max-md:mt-[25vw] ">
                     Click the map, follow the route, and drive straight into our hearts
                 </p>
             </CopyLines>

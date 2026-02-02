@@ -1,4 +1,4 @@
-import { Inria_Serif} from "next/font/google";
+import { Inria_Serif, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import LenisSmoothScroll from "@/components/Lenis";
 import localFont from "next/font/local";
@@ -10,16 +10,15 @@ const inria = Inria_Serif({
   subsets: ["latin"],
 });
 
-const Georgia = localFont({
-  src: [
-    {
-      path: "/fonts/WorstveldSling.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-georgia",
+const NotoSerif = Noto_Serif({
+  variable: "--font-notoserif",
+  weight: "400",
+  style: ["normal","italic"],
+  subsets: ["latin"],
+   display: 'swap',
 });
+
+
 const bizantheum = localFont({
   src: [
     {
@@ -30,28 +29,30 @@ const bizantheum = localFont({
   ],
   variable: "--font-bizantheum",
 });
+// 
+// const NotoSerif = localFont({
+//   src: [
+//     {
+//       subsets: ["latin"],
+//       path: "/fonts/NotoSerif-Regular.woff2",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+//   variable: "--font-notoserif",
+// });
 
-const NotoSerif = localFont({
-  src: [
-    {
-      path: "/fonts/NotoSerif-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-notoserif",
-});
-
-const NotoSerifItalic = localFont({
-  src: [
-    {
-      path: "/fonts/NotoSerif-Italic.ttf",
-      weight: "400",
-      style: "italic",
-    },
-  ],
-  variable: "--font-notoserif-italic",
-});
+// const NotoSerifItalic = localFont({
+//   src: [
+//     {
+//        subsets: ["latin"],
+//       path: "/fonts/NotoSerif-Italic.woff2",
+//       weight: "400",
+//       style: "italic",
+//     },
+//   ],
+//   variable: "--font-notoserif-italic",
+// });
 
 
 
@@ -59,7 +60,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${Georgia.variable} ${bizantheum.variable} ${inria.variable} ${NotoSerifItalic.variable} ${NotoSerif.variable} antialiased`}
+        className={`  ${bizantheum.variable} ${inria.variable}  ${NotoSerif.variable} antialiased`}
       >
         <LoadingProvider>
           <LenisSmoothScroll />

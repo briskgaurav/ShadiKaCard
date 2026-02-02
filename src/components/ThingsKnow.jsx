@@ -36,7 +36,7 @@ export default function ThingsKnow() {
           </h2>
         </Copy>
         <CopyLines>
-          <p className="text-primary w-[65%] text-[1.45vw]!  max-md:w-[90%] text-center content2 max-md:text-[2.5vw]! tracking-wider leading-[1.5] max-md:font-medium">
+          <p className="text-primary w-[65%] text-[1.45vw]!  max-md:w-[90%] text-center content2 max-md:text-[2.5vw]! tracking-wider leading-[1.5] max-md:font-medium italic">
             To help you feel at ease and enjoy every moment of the celebrations,
             we’ve gathered a few thoughtful details we’d love for you to know
             before the big day.
@@ -59,8 +59,8 @@ export default function ThingsKnow() {
                 />
               </div>
               <div className="space-y-[1vw] flex items-center justify-start flex-col">
-              <h3 className="text-primary!  content mt-[.6vw]">{item.title}</h3>
-              <p className="text-primary! max-md:text-[3vw] max-md:w-[70%] h-15 text-[1.3vw] leading-[1.3] mt-[.5vw]  max-md:font-medium max-md:h-auto">
+              <h3 className="text-primary! italic  content mt-[.6vw]">{item.title}</h3>
+              <p className="text-primary! max-md:text-[3vw] max-md:w-[70%] h-15 text-[1.3vw] italic leading-[1.3] mt-[.5vw]  max-md:font-medium max-md:h-auto">
                 {item.description}
               </p>
               </div>

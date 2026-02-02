@@ -31,7 +31,7 @@ export default function HoverLineComponent({text="TEXT HERE", colorTheme="primar
      aria-label='Click this to view location'
    >
     <CopyLines>
-    <p className='text-[1.1vw] max-md:text-[4vw] font-georgia'>{text}</p>
+    <p className='text-[1.1vw] max-md:text-[4vw] '>{text}</p>
     </CopyLines>
     <span 
       ref={lineRef}

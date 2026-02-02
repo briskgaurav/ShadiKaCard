@@ -32,7 +32,7 @@ export default function CountDown({ bride }) {
             </CopyLines>
              <CopyLines>
 
-            <p className="w-[60%] font-notoserif-italic text-[1.4vw]!  max-md:w-[90%] text-center content2 max-md:text-[4vw]! tracking-wider leading-[1.6] max-md:font-medium mt-[-1.5vw]">
+            <p className="w-[60%] font-notoserif italic text-[1.4vw]!  max-md:w-[90%] text-center content2 max-md:text-[4vw]! tracking-wider leading-[1.6] max-md:font-medium mt-[-1.5vw]">
               The Countdown Begins! The dates are locked, the stars are aligned, and the excitement is building. We are counting down the seconds until we can celebrate this lifetime of love with you.
             </p>
 
@@ -47,13 +47,13 @@ export default function CountDown({ bride }) {
 
        <CopyLines>
 
-          <p className=" font-notoserif-italic text-[1.4vw]!   max-md:text-[4vw]! leading-[1.6] max-md:leading-[1.4] text-center w-[72%] max-md:w-[80%]  mt-[2vw] max-md:mt-[6vw]">
+          <p className=" font-notoserif italic text-[1.4vw]!   max-md:text-[4vw]! leading-[1.6] max-md:leading-[1.4] text-center w-[72%] max-md:w-[80%]  mt-[2vw] max-md:mt-[6vw]">
             {bride ? " Rastogi's and Varshney's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives." : "As our son begins this sacred journey of 'forever,' the Varshney Family welcomes you to share in the joy of this union with hearts full of gratitude. Your presence turns our moments into memories and our joy into a blessing. Thank you for being part of our happiness and adding your warmth to this auspicious occasion."}
           </p>
 
        </CopyLines>
 
-          <p className="text-[1.2vw] max-md:text-[3.5vw] font-notoserif-italic text-center w-[60%] max-md:w-full font-medium mt-[4vw] max-md:mt-[8vw]">
+          <p className="text-[1.2vw] max-md:text-[3.5vw] font-notoserif italic text-center w-[60%] max-md:w-full font-medium mt-[4vw] max-md:mt-[8vw]">
              Copyright 2026. All rights reserved.
           </p>
         </div>

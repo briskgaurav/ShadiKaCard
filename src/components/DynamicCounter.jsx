@@ -114,7 +114,7 @@ export default function DynamicCounter() {
           display: block;
         }
       `}</style>
-      <div className="text-[6.5vw] font-notoserif-italic   max-md:text-[7vw] flex items-end gap-[1vw]  max-md:mt-[6vw] justify-center  max-md:gap-[2vw]">
+      <div className="text-[6.5vw] font-notoserif italic   max-md:text-[7vw] flex items-end gap-[1vw]  max-md:mt-[6vw] justify-center  max-md:gap-[2vw]">
         
         <div className='flex items-center'>
           <div className="digit-wrapper w-[3.2vw] max-md:w-[4vw]">

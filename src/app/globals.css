@@ -5,21 +5,20 @@
   --foreground: #171717;
   --color-primary: #E7CB68;
   --color-secondary: #0c4860;
-  /* --font-georgia: var(--font-georgia); */
-  /* --font-notoserif: var(--font-notoserif); */
-  --font-notoserif-italic: var(--font-notoserif-italic);
+
+  --font-notoserif: var(--font-notoserif);
   --font-bizantheum: var(--font-bizantheum);
-  --font-inria:var(--font-inria);
+  --font-inria: var(--font-inria);
 }
 
+
 @theme inline {
-  --color-background: var(--background);
+   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
-  /* --font-georgia: var(--font-georgia); */
+
   --font-notoserif: var(--font-notoserif);
-  --font-notoserif-italic: var(--font-notoserif-italic);
   --font-bizantheum: var(--font-bizantheum);
   --font-inria:var(--font-inria);
   --breakpoint-md: 1025px;
@@ -66,11 +65,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  padding: 0vw;
-  font-family: var(--font-notoserif-italic);
+  font-family: var(--font-notoserif);
   overflow-x: hidden;
   user-select: none;
+  
 }
+
 
 
 ::-webkit-scrollbar {

@@ -151,7 +151,7 @@ export default function Loader() {
         ) : (
           <p
             id="logotext"
-            className="flex opacity-0 items-center gap-[.5vw] max-md:gap-4 max-md:text-lg content2"
+            className="flex opacity-0 font-sans items-center gap-[.5vw] max-md:gap-4 max-md:text-lg text-md tracking-wide uppercase"
           >
             Loading{" "}
             <span className="h-[1vw] block relative w-[1vw] max-md:h-4 max-md:w-4">
