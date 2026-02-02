@@ -19,7 +19,7 @@ export default function VenueAndRoute() {
             </div>
             <div className="text-center">
                 <CopyLines>
-                    <h2 className="heading1 max-md:!text-[14vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum hidden max-md:block">
+                    <h2 className="heading1 max-md:!text-[14vw] max-md:leading-[1.2] max-md:mt-[10vw] max-md:w-[90%] font-bizantheum hidden max-md:block max-md:ml-4">
                         The Venue <br/> <span className="font-notoserif max-md:text-[12vw]!"> & </span> Route
                     </h2>
                 </CopyLines>

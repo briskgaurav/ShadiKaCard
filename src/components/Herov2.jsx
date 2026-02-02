@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useFadeUpAnim, useLineAnim } from "./Animation";
 import CopyLines from "./CopyLines";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Copy from "./Copy";
+import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Herov2({name1, name2}) {
@@ -16,6 +17,7 @@ export default function Herov2({name1, name2}) {
   const middleRef = useRef(null);
   const innerRef = useRef(null);
   const smallRef = useRef(null);
+  const [isMobile, setMobile] = useState(false);
   
   useEffect(() => {
     const container = containerRef.current;
@@ -90,16 +92,26 @@ export default function Herov2({name1, name2}) {
     };
   }, []);
 
+  useGSAP(()=>{
+    if(globalThis.innerWidth<542){
+      setMobile(true);
+    }
+    else{
+      setMobile(false);
+    }
+  })
+
   return (
     <div className="h-auto relative z-10 w-full">
       <div className="w-full h-auto max-md:h-[120vh] relative">
-        <Image
+        {!isMobile?<Image
           src="/img/final/webp/herobg.webp"
           alt="hero-background"
           width={1920}
           height={1080}
+          // fetchPriority="true"
           className="w-full h-full max-md:hidden object-contain"
-        />
+        />:<></>}
         <div className="w-full hidden translate-y-[-40vw] max-md:block h-full">
           <Image
             src="/img/final/webp/mobilebgg.webp"
@@ -117,7 +129,7 @@ export default function Herov2({name1, name2}) {
                 <Copy delay={5}>
                 <h1 className="leading-[1.2]">
                 <span className="block ">{name1}</span>
-                <span className="heading2 max-md:text-[10vw] block leading-[1.5]! text-[4vw]!">Weds</span>
+                <span className="heading2 max-md:text-[10vw]! block leading-[1.5]! text-[4vw]!">Weds</span>
                 <span className="max-md:mt-[-2vw] block ">{name2}</span>
                 </h1>
                 </Copy>
