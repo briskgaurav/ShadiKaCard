@@ -70,7 +70,7 @@ export default function EventsInfo({eventsInfo}) {
           </div>
           
           <Copy>
-            <p className="heading1 max-md:text-[10vw]! !font-bizantheum leading-[1.5] my-[-2vw] max-md:-mt-7 max-md:-mb-6">with</p>
+            <p className="heading1 text-[4vw]! max-md:text-[10vw]! !font-bizantheum leading-[1.5] my-[-2.5vw] max-md:-mt-7 max-md:-mb-6">with</p>
           </Copy>
           
           <div className="-mt-2 text-center ">
