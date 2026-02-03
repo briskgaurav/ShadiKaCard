@@ -172,9 +172,9 @@ export function EventCard({ event , bride}) {
         <p className="text-[1.3vw] fadeup font-medium font-notoserif-italic pt-8 tracking-tight w-[90%] max-md:w-full leading-[1.4] text-center max-md:text-[4.5vw] max-md:pt-5 italic ">{event.text}</p>
        
         <div className={`space-y-[.5vw] mt-[1vw] max-md:mt-4  max-md:w-full ${bride ?" w-[70%]" :"w-[90%]"}`}>
-          {/* <CopyLines> */}
-          <p className="text-[1.3vw] font-medium font-notoserif-italic leading-[1.2] max-md:leading-[1.4] max-md:text-[4vw] italic">{event.date} {event.time} {event.venue} </p>
-          {/* </CopyLines> */}
+          
+          <p className="text-[1.3vw] font-medium fadeup font-notoserif-italic leading-[1.2] max-md:leading-[1.4] max-md:text-[4vw] italic">{event.date} {event.time} {event.venue} </p>
+         
         </div>
       </div>
     </div>
