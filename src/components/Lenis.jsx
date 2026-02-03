@@ -6,17 +6,17 @@ import { ReactLenis } from 'lenis/react';
 const LenisSmoothScroll = ({ children }) => {
   const lenisRef = useRef(null);
 
-  useEffect(() => {
-    function update(time) {
-      lenisRef.current?.lenis?.raf(time * 500)
-    }
+  // useEffect(() => {
+  //   function update(time) {
+  //     lenisRef.current?.lenis?.raf(time * 500)
+  //   }
 
-    gsap.ticker.add(update)
+  //   gsap.ticker.add(update)
 
-    return () => gsap.ticker.remove(update)
-  }, []);
+  //   return () => gsap.ticker.remove(update)
+  // }, []);
 
-  return <ReactLenis root options={{ autoRaf: false, lerp: 0.04, duration:1.2 }}  ref={lenisRef}>{children}</ReactLenis>
+  return <ReactLenis root options={{ duration: 3 }}  ref={lenisRef}>{children}</ReactLenis>
 }
 
 export default LenisSmoothScroll;

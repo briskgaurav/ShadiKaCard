@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const images = [
   "/img/illustrations/image-1.webp",
-  "/img/illustrations/image-2.webp",
+  // "/img/illustrations/image-2.webp",
   "/img/illustrations/image-4.webp",
   "/img/illustrations/image-3.webp",
 ];
@@ -17,7 +17,7 @@ export default function FlowerSwiper() {
     clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 2000);
+    }, 6000);
   }, []);
 
   useEffect(() => {

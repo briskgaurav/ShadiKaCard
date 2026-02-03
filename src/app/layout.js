@@ -29,32 +29,6 @@ const bizantheum = localFont({
   ],
   variable: "--font-bizantheum",
 });
-// 
-// const NotoSerif = localFont({
-//   src: [
-//     {
-//       subsets: ["latin"],
-//       path: "/fonts/NotoSerif-Regular.woff2",
-//       weight: "400",
-//       style: "normal",
-//     },
-//   ],
-//   variable: "--font-notoserif",
-// });
-
-// const NotoSerifItalic = localFont({
-//   src: [
-//     {
-//        subsets: ["latin"],
-//       path: "/fonts/NotoSerif-Italic.woff2",
-//       weight: "400",
-//       style: "italic",
-//     },
-//   ],
-//   variable: "--font-notoserif-italic",
-// });
-
-
 
 export default function RootLayout({ children }) {
   return (
