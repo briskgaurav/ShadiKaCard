@@ -56,7 +56,7 @@ export default function FlowerSwiper() {
               alt={`image-${index}`}
               fill
               loading="lazy"
-              className={`object-cover object-top transition-opacity duration-700 ease-in-out ${
+              className={`object-cover object-top transition-opacity duration-1000 ease-in ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             />
