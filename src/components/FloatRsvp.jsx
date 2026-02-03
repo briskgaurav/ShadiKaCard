@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export const FloatRsvp = ({number}) => {
+export const FloatRsvp = ({ number }) => {
   const rsvpRef = useRef(null)
 
   useEffect(() => {
@@ -31,11 +31,12 @@ export const FloatRsvp = ({number}) => {
   }, [])
 
   const phone = `91${number}`
-const message = "Hi, I'd like to confirm my availability for the function. Looking forward to it! 😊"
-const href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`
+  const message = `*Hi!* Confirming our presence for *Bhaskar & Garima's* wedding. Super excited to join the celebrations for *#BhaskarKiGarima!*
 
-console.log(phone)
-
+*Name:* {Guest Name}
+*No. of Pax:* {Number}
+*Arrival Date:* {Date}`
+  const href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`
 
   return (
     <Link
@@ -69,7 +70,7 @@ console.log(phone)
             w-[6vw] max-md:w-[14vw]
           "
         />
-         <Image
+        <Image
           src="/img/rsvp/rsvp-wa.png"
           alt="rsvp wa"
           width={900}
