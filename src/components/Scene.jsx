@@ -18,7 +18,7 @@ export default function Scene() {
       </div>
       <div className="z-999 absolute top-[85%]   text-center w-3/5 text-[#A20601] h-full left-1/2 translate-x-[-50%] bottom-[-10vw]  max-md:bottom-[-12vw] max-md:w-2/5">
         <CopyLines>
-          <p className="text-[2.5vw] leading-[1.3] max-md:text-[3.5vw]  font-notoserif max-md:w-full italic">By destiny’s thread, our lives were tied, With the Almighty’s grace as our eternal guide.</p>
+          <p className="text-[2.5vw] leading-[1.3] max-md:text-[3.5vw]  font-notoserif max-md:w-full italic">By destiny’s thread, our lives were tied,<br/> With the Almighty’s grace as our eternal guide.</p>
         </CopyLines>
       </div>
 

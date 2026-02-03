@@ -7,6 +7,7 @@ import Sound from "@/components/Sound";
 import Herov2 from "@/components/Herov2";
 import Scene from "@/components/Scene";
 import React from "react";
+import VenueAndRoute from "@/components/VenueAndRoute";
 
 const EventsInfo = dynamic(() => import("@/components/EventsInfo"));
 const BrideGroom = dynamic(() => import("@/components/Bride&Groom"));
@@ -32,8 +33,9 @@ export default function page() {
       <Sound src={"/sound/garima-audio.mp3"}/>
       <Herov2 name1={"Garima"} name2={"Bhaskar"} />
       <Scene />
+       <BrideGroom bride={true}/>
       <EventsInfo eventsInfo={eventsInfo}/>
-      <BrideGroom bride={true}/>
+       <VenueAndRoute bride={true}/>
       <ThingsKnow/>
       <CountDown bride={true}/>
     </>
@@ -42,17 +44,18 @@ export default function page() {
 
 const eventsInfo={
   name1:"Garima",
-  daughterOf:" Mrs. Rashmi Rastogi & Lt. Shri Anil Rastogi",
+  daughterOf:" Mrs. Rashmi Rastogi & Late Shri Anil Rastogi",
   bride:true,
   name2:"Bhaskar",
   sonOf:" Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney",
-  grandSonOf:" Lt. Smt. Jaidevi & Lt. Shri Madan Lal Gupta",
-  grandDaughterOf:" Lt. Smt. Premlata Rastogi &  Shri Vinay Kumar Rastogi",
+  grandSonOf:" Late Smt. Jaidevi & Late Shri Madan Lal Gupta",
+  grandDaughterOf:" Late Smt. Premlata Rastogi &  Shri Vinay Kumar Rastogi",
   eventsData: [
   {
     id: 3,
     title: "Engagement",
     date: "Wednesday, 18th February 2026",
+    text:"An evening of rings, rituals, and rejoicing. Followed by Dinner. ",
     venue: "Bravura Gold Resort, Meerut",
     time: "7 pm Onwards",
     image: "/img/illustrations/Engagment.webp",
@@ -65,6 +68,7 @@ const eventsInfo={
     title: "Haldi/Bhaat",
     date: "Thursday, 19th February 2026",
     venue: "Bravura Gold Resort, Meerut",
+     text:"A splash of turmeric and showers of blessings. ",
     time: "9 am Onwards",
     image: "/img/illustrations/Haldi.webp",
     illustration1: "/img/illustrations/haldi-bride.webp",
@@ -76,6 +80,7 @@ const eventsInfo={
     title: "Wedding",
     date: "Thursday, 19th February 2026",
     venue: "Bravura Gold Resort, Meerut",
+    text:"Witnessing the sacred fire and the seven vows of eternity. ",
     time: "4 pm Onwards",
     image: "/img/illustrations/shaadi.webp",
     mirror: true,
@@ -88,6 +93,7 @@ const eventsInfo={
     title: "Reception",
     date: "Thursday, 19th February 2026",
     venue: "Bravura Gold Resort, Meerut",
+     text:"Celebrating the newlyweds with elegance and euphoria. ",
     time: "8 pm Onwards",
     image: "/img/illustrations/reception.webp",
     mirror: true,

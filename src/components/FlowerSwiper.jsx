@@ -39,7 +39,7 @@ export default function FlowerSwiper() {
     <div className="h-[63vw] max-md:h-[100vw] w-auto aspect-square py-[5vw] max-md:py-[10vw] relative">
       <div className="w-full h-auto aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Image
-          src="/img/final/webp/flowerframe.webp"
+          src="/img/final/webp/mandala.webp"
           alt="background"
           width={800}
           height={800}

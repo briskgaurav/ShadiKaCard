@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import FlowerSwiper from "./FlowerSwiper";
-import RotationComponent from "./RotationComponent";
-import Copy from "./Copy";
 import CopyLines from "./CopyLines";
 
 export default function BrideGroom({ bride }) {

@@ -50,7 +50,7 @@ export default function CountDown({ bride }) {
        <CopyLines>
 
           <p className=" font-notoserif italic text-[1.4vw]!   max-md:text-[4vw]! leading-[1.6] max-md:leading-[1.4] text-center w-[72%] max-md:w-[80%]  mt-[2vw] max-md:mt-[6vw]">
-            {bride ? " Rastogi's and Varshney's are excited that you are able to join us in celebrating what we hope will be one of the happiest days of our lives." : "As our son begins this sacred journey of 'forever,' the Varshney Family welcomes you to share in the joy of this union with hearts full of gratitude. Your presence turns our moments into memories and our joy into a blessing. Thank you for being part of our happiness and adding your warmth to this auspicious occasion."}
+            {bride ? "As our daughter begins this sacred journey of 'forever,' the Rastogi Family welcomes you to share in the joy of this union with hearts full of gratitude. Your presence turns our moments into memories and our joy into a blessing. Thank you for being part of our happiness and adding your warmth to this auspicious occasion." : "As our son begins this sacred journey of 'forever,' the Varshney Family welcomes you to share in the joy of this union with hearts full of gratitude. Your presence turns our moments into memories and our joy into a blessing. Thank you for being part of our happiness and adding your warmth to this auspicious occasion."}
           </p>
 
        </CopyLines>

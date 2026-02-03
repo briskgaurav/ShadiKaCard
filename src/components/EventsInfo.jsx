@@ -52,11 +52,11 @@ export default function EventsInfo({eventsInfo}) {
             </CopyLines>
             <CopyLines>
               <p className="text-[2.3vw] max-md:text-[6vw] mt-5 font-bold! ">
-               Mrs. Vimlesh Varshney & Mr. Mahendra Pal Varshney
+                {eventsInfo.bride? eventsInfo.daughterOf:eventsInfo.sonOf}
               </p>
             </CopyLines>
             
-              <p className=" text-[1.8vw]  leading-[1.5] fadeup w-[70%] max-md:w-[100%] max-md:text-[4vw] text-center italic">Solicit your gracious presence and blessings as they celebrate the holy union of their beloved son</p>
+              <p className=" text-[1.8vw]  leading-[1.5] fadeup w-[70%] max-md:w-[100%] max-md:text-[4vw] text-center italic">Solicit your gracious presence and blessings as they celebrate the holy union of their beloved {eventsInfo.bride? "daughter":"son"}.</p>
             
           </div>
 
@@ -119,7 +119,7 @@ export default function EventsInfo({eventsInfo}) {
           
           <div className={`grid ${eventsInfo.bride ? 'grid-cols-2' : 'grid-cols-3'} max-md:grid-cols-1 gap-x-[8vw] max-md:gap-x-[5vw] gap-y-[8vw] max-md:gap-y-[15vw] place-items-center mt-[8vw] max-md:mt-[15vw]`}>
             {eventsInfo.eventsData.map((event) => (
-              <EventCard key={event.id} event={event} />
+              <EventCard key={event.id} event={event}  bride={eventsInfo.bride}/>
             ))}
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function EventsInfo({eventsInfo}) {
   );
 }
 
-export function EventCard({ event }) {
+export function EventCard({ event , bride}) {
   return (
     <div className="flex flex-col items-center justify-center gap-y-[2vw] max-md:gap-y-[4vw] max-md:mb-[7vw]">
       <div className="h-[50vh] max-md:h-[90vw] w-[19vw] max-md:w-[60vw] p-[0.5vw] max-md:p-[3vw] relative flex items-center justify-center rounded-full border-3 fadeup max-md:border-4 border-primary">
@@ -171,10 +171,10 @@ export function EventCard({ event }) {
          
         <p className="text-[1.3vw] fadeup font-medium font-notoserif-italic pt-8 tracking-tight w-[90%] max-md:w-full leading-[1.4] text-center max-md:text-[4.5vw] max-md:pt-5 italic ">{event.text}</p>
        
-        <div className="space-y-[.5vw] mt-[1vw] max-md:mt-4 w-[90%] max-md:w-full">
-          <CopyLines>
+        <div className={`space-y-[.5vw] mt-[1vw] max-md:mt-4  max-md:w-full ${bride ?" w-[70%]" :"w-[90%]"}`}>
+          {/* <CopyLines> */}
           <p className="text-[1.3vw] font-medium font-notoserif-italic leading-[1.2] max-md:leading-[1.4] max-md:text-[4vw] italic">{event.date} {event.time} {event.venue} </p>
-          </CopyLines>
+          {/* </CopyLines> */}
         </div>
       </div>
     </div>
