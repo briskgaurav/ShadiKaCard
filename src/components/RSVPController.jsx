@@ -6,7 +6,7 @@ import { FloatRsvp } from './FloatRsvp'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export const RsvpController = () => {
+export const RsvpController = ({number}) => {
   const rsvpRef = useRef(null)
 
   useEffect(() => {
@@ -32,5 +32,5 @@ export const RsvpController = () => {
     })
   }, [])
 
-  return <FloatRsvp ref={rsvpRef} />
+  return <FloatRsvp ref={rsvpRef} number={number} />
 }

@@ -29,7 +29,7 @@ export default function page() {
       <Loader />
       <UseScrollToTopOnReload />
       <Sound src={"/sound/bhaskar-audio.mp3"}/>
-      <RsvpController />
+      <RsvpController  number="9897449928"/>
       <Herov2 name1={"Bhaskar"} name2={"Garima"} />
       <Scene />
       <BrideGroom bride={false}/>
